@@ -6,5 +6,5 @@ http://example.com/2023/11/22/%E6%8B%9B%E6%96%B0%E5%90%8D%E5%8D%95/
 http://example.com/link/index.html
 http://example.com/archives/index.html
 http://example.com/
-http://example.com/tags/Notice/
 http://example.com/tags/%E6%8B%9B%E6%96%B0/
+http://example.com/tags/Notice/
