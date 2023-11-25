@@ -1,8 +1,10 @@
-http://example.com/2023/11/19/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC/
-http://example.com/link/index.html
-http://example.com/2023/11/22/%E6%8B%9B%E6%96%B0%E5%90%8D%E5%8D%95/
-http://example.com/2023/11/25/%E7%88%B1%E5%8F%91%E7%94%B5%E5%85%A5%E9%A9%BB%E9%80%9A%E7%9F%A5/
-http://example.com/archives/index.html
-http://example.com/tags/index.html
 http://example.com/categories/index.html
+http://example.com/tags/index.html
+http://example.com/about/index.html
+http://example.com/2023/11/25/%E7%88%B1%E5%8F%91%E7%94%B5%E5%85%A5%E9%A9%BB%E9%80%9A%E7%9F%A5/
+http://example.com/2023/11/22/%E6%8B%9B%E6%96%B0%E5%90%8D%E5%8D%95/
+http://example.com/link/index.html
+http://example.com/archives/index.html
 http://example.com/
+http://example.com/tags/Notice/
+http://example.com/tags/%E6%8B%9B%E6%96%B0/
