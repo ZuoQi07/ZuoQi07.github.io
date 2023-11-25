@@ -1,8 +1,8 @@
+http://example.com/article/189dfb54
 http://example.com/article/d5e55daf
 http://example.com/tags/
 http://example.com/categories/
 http://example.com/about/
-http://example.com/article/189dfb54
 http://example.com/link/
 http://example.com/archives/
 http://example.com/
