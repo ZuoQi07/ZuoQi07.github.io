@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-25T17:35:45.805Z</updated>
+  <updated>2023-11-26T07:19:12.232Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>招新结果</title>
+    <link href="http://example.com/article/49f72389"/>
+    <id>http://example.com/article/49f72389</id>
+    <published>2023-11-26T06:54:25.000Z</published>
+    <updated>2023-11-26T07:19:12.232Z</updated>
+    
+    <content type="html"><![CDATA[<p>恭喜以下同学通过考核进入科创社<br>|班级|姓名|<br>|: - :|: - :|<br>| 107| 康裴俊 |<br>| 206| 王佳铮 |<br>| 208| 戴齐隽 |<br>| 104| 金星宇 |<br>| 102| 吴忧 |<br>| 205| 蒋储赢 |<br>| 102| 刘晓华 |<br>| 102| 张万年 |<br>| 102| 潘笑笑 |<br>| 206| 童城语 |<br>| 102| 崔子卉 |<br>| 102| 童艺初 |<br>| 105| 汪树一 |</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;恭喜以下同学通过考核进入科创社&lt;br&gt;|班级|姓名|&lt;br&gt;|: - :|: - :|&lt;br&gt;| 107	| 康裴俊 |&lt;br&gt;| 206	| 王佳铮 |&lt;br&gt;| 208	| 戴齐隽 |&lt;br&gt;| 104	| 金星宇 |&lt;br&gt;| 102	| 吴忧 |&lt;br&gt;| 205	</summary>
+      
+    
+    
+    
+    
+    <category term="招新" scheme="http://example.com/tags/%E6%8B%9B%E6%96%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>爱发电入驻通知</title>
