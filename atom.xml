@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-26T07:27:19.801Z</updated>
+  <updated>2023-11-28T04:08:36.839Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>324实验室登记表</title>
+    <link href="http://example.com/article/4ba8635c"/>
+    <id>http://example.com/article/4ba8635c</id>
+    <published>2023-11-28T04:04:38.000Z</published>
+    <updated>2023-11-28T04:08:36.839Z</updated>
+    
+    <content type="html"><![CDATA[<p>该表为324实验室进出人员登记表，会实时更新，用于管理人员<br>| 日期 | 时间 | 班级 | 人员 | 备注 |<br>| :-: | :-: | :-: | :-: | :-: |<br>| 11.28 | 中午 | 110 | 胡逸轩 | |</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;该表为324实验室进出人员登记表，会实时更新，用于管理人员&lt;br&gt;| 日期 | 时间 | 班级 | 人员 | 备注 |&lt;br&gt;| :-: | :-: | :-: | :-: | :-: |&lt;br&gt;| 11.28 | 中午 | 110 | 胡逸轩 | |&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="表单" scheme="http://example.com/tags/%E8%A1%A8%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>招新结果</title>
     <link href="http://example.com/article/49f72389"/>
     <id>http://example.com/article/49f72389</id>
     <published>2023-11-26T06:54:25.000Z</published>
-    <updated>2023-11-26T07:27:19.801Z</updated>
+    <updated>2023-11-28T04:02:19.794Z</updated>
     
     <content type="html"><![CDATA[<p>恭喜以下同学通过考核进入科创社<br>| 班级 | 姓名 |<br>| :-: | :-: |<br>| 107 | 康裴俊 |<br>| 206 | 王佳铮 |<br>| 208 | 戴齐隽 |<br>| 104 | 金星宇 |<br>| 102 | 吴忧 |<br>| 205 | 蒋储赢 |<br>| 102 | 刘晓华 |<br>| 102 | 张万年 |<br>| 102 | 潘笑笑 |<br>| 206 | 童城语 |<br>| 102 | 崔子卉 |<br>| 102 | 童艺初 |<br>| 105 | 汪树一 |</p>]]></content>
     
@@ -43,7 +66,7 @@
     <link href="http://example.com/article/d5e55daf"/>
     <id>http://example.com/article/d5e55daf</id>
     <published>2023-11-25T05:12:59.000Z</published>
-    <updated>2023-11-25T17:35:45.805Z</updated>
+    <updated>2023-11-28T04:03:20.673Z</updated>
     
     <content type="html"><![CDATA[<p>德高科创社正式入驻爱发电<br>感谢大家对我们的支持！<br><a href="https://afdian.net/a/dgsti_club">爱发电主页链接</a></p>]]></content>
     
@@ -57,7 +80,7 @@
     
     
     
-    <category term="Notice" scheme="http://example.com/tags/Notice/"/>
+    <category term="通知" scheme="http://example.com/tags/%E9%80%9A%E7%9F%A5/"/>
     
   </entry>
   
@@ -66,7 +89,7 @@
     <link href="http://example.com/article/189dfb54"/>
     <id>http://example.com/article/189dfb54</id>
     <published>2023-11-22T08:06:20.000Z</published>
-    <updated>2023-11-25T17:35:45.805Z</updated>
+    <updated>2023-11-28T04:02:03.243Z</updated>
     
     <content type="html"><![CDATA[<h2 id="招新名单公示"><a href="#招新名单公示" class="headerlink" title="招新名单公示"></a>招新名单公示</h2><div class="table-container"><table><thead><tr><th style="text-align:center">班级</th><th style="text-align:center">姓名</th><th style="text-align:center">班级</th><th style="text-align:center">姓名</th></tr></thead><tbody><tr><td style="text-align:center">101</td><td style="text-align:center">姚方浩</td><td style="text-align:center">107</td><td style="text-align:center">王俊志</td></tr><tr><td style="text-align:center">101</td><td style="text-align:center">钟乐凡</td><td style="text-align:center">107</td><td style="text-align:center">王慧雯</td></tr><tr><td style="text-align:center">101</td><td style="text-align:center">朱婧悦</td><td style="text-align:center">107</td><td style="text-align:center">王嘉宇</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">曹岳</td><td style="text-align:center">107</td><td style="text-align:center">徐管睿</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">崔子卉</td><td style="text-align:center">109</td><td style="text-align:center">方姚涵</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">葛元敏</td><td style="text-align:center">109</td><td style="text-align:center">徐思源</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">李善宇</td><td style="text-align:center">205</td><td style="text-align:center">蒋储赢</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">刘晓华</td><td style="text-align:center">205</td><td style="text-align:center">朱格</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">潘笑笑</td><td style="text-align:center">206</td><td style="text-align:center">华东</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">沈阳</td><td style="text-align:center">206</td><td style="text-align:center">王佳铮</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">童艺初</td><td style="text-align:center">206</td><td style="text-align:center">童城语</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">吴忧</td><td style="text-align:center">208</td><td style="text-align:center">戴齐隽</td></tr><tr><td style="text-align:center">102</td><td style="text-align:center">张万年</td><td style="text-align:center">211</td><td style="text-align:center">陈溪</td></tr><tr><td style="text-align:center">103</td><td style="text-align:center">刘晓琪</td><td style="text-align:center">211</td><td style="text-align:center">蔡依成</td></tr><tr><td style="text-align:center">103</td><td style="text-align:center">张亦琛</td><td style="text-align:center">211</td><td style="text-align:center">郎浪</td></tr><tr><td style="text-align:center">104</td><td style="text-align:center">丁浚泽</td><td style="text-align:center">三营</td><td style="text-align:center">钟嘉楷</td></tr><tr><td style="text-align:center">104</td><td style="text-align:center">金星宇</td><td style="text-align:center">三营</td><td style="text-align:center">沈宸</td></tr><tr><td style="text-align:center">104</td><td style="text-align:center">邵俊喆</td><td style="text-align:center">三营</td><td style="text-align:center">黄依垒</td></tr><tr><td style="text-align:center">104</td><td style="text-align:center">叶舒阳</td><td style="text-align:center">三营</td><td style="text-align:center">曾诚俊</td></tr><tr><td style="text-align:center">105</td><td style="text-align:center">汪树一</td><td style="text-align:center">三营</td><td style="text-align:center">刘文昊</td></tr><tr><td style="text-align:center">107</td><td style="text-align:center">丁奕</td><td style="text-align:center">三营</td><td style="text-align:center">杨博凡</td></tr><tr><td style="text-align:center">107</td><td style="text-align:center">康裴俊</td><td style="text-align:center">三营</td><td style="text-align:center">方赟哲</td></tr><tr><td style="text-align:center">107</td><td style="text-align:center">王昌龙</td><td style="text-align:center">三营</td><td style="text-align:center">陆喆淏</td></tr><tr><td style="text-align:center">107</td><td style="text-align:center">王嘉禾</td><td style="text-align:center">三营</td><td style="text-align:center">杨郑</td></tr></tbody></table></div>]]></content>
     
