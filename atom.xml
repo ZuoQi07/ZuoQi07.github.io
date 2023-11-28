@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-28T04:08:36.839Z</updated>
+  <updated>2023-11-28T04:17:48.813Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/article/4ba8635c"/>
     <id>http://example.com/article/4ba8635c</id>
     <published>2023-11-28T04:04:38.000Z</published>
-    <updated>2023-11-28T04:08:36.839Z</updated>
+    <updated>2023-11-28T04:17:48.813Z</updated>
     
     <content type="html"><![CDATA[<p>该表为324实验室进出人员登记表，会实时更新，用于管理人员<br>| 日期 | 时间 | 班级 | 人员 | 备注 |<br>| :-: | :-: | :-: | :-: | :-: |<br>| 11.28 | 中午 | 110 | 胡逸轩 | |</p>]]></content>
     
@@ -44,14 +44,14 @@
     <link href="http://example.com/article/49f72389"/>
     <id>http://example.com/article/49f72389</id>
     <published>2023-11-26T06:54:25.000Z</published>
-    <updated>2023-11-28T04:02:19.794Z</updated>
+    <updated>2023-11-28T04:16:21.187Z</updated>
     
-    <content type="html"><![CDATA[<p>恭喜以下同学通过考核进入科创社<br>| 班级 | 姓名 |<br>| :-: | :-: |<br>| 107 | 康裴俊 |<br>| 206 | 王佳铮 |<br>| 208 | 戴齐隽 |<br>| 104 | 金星宇 |<br>| 102 | 吴忧 |<br>| 205 | 蒋储赢 |<br>| 102 | 刘晓华 |<br>| 102 | 张万年 |<br>| 102 | 潘笑笑 |<br>| 206 | 童城语 |<br>| 102 | 崔子卉 |<br>| 102 | 童艺初 |<br>| 105 | 汪树一 |</p>]]></content>
+    <content type="html"><![CDATA[<p>恭喜以下同学通过考核进入科创社<br>| 班级 | 姓名 |<br>| :———: | :———: |<br>| 107 | 康裴俊 |<br>| 206 | 王佳铮 |<br>| 208 | 戴齐隽 |<br>| 104 | 金星宇 |<br>| 102 | 吴忧 |<br>| 205 | 蒋储赢 |<br>| 102 | 刘晓华 |<br>| 102 | 张万年 |<br>| 102 | 潘笑笑 |<br>| 206 | 童城语 |<br>| 102 | 崔子卉 |<br>| 102 | 童艺初 |<br>| 105 | 汪树一 |</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;恭喜以下同学通过考核进入科创社&lt;br&gt;| 班级 | 姓名 |&lt;br&gt;| :-: | :-: |&lt;br&gt;| 107 | 康裴俊 |&lt;br&gt;| 206 | 王佳铮 |&lt;br&gt;| 208 | 戴齐隽 |&lt;br&gt;| 104 | 金星宇 |&lt;br&gt;| 102 | 吴忧 |&lt;br&gt;| </summary>
+    <summary type="html">&lt;p&gt;恭喜以下同学通过考核进入科创社&lt;br&gt;| 班级 | 姓名 |&lt;br&gt;| :———: | :———: |&lt;br&gt;| 107 | 康裴俊 |&lt;br&gt;| 206 | 王佳铮 |&lt;br&gt;| 208 | 戴齐隽 |&lt;br&gt;| 104 | 金星宇 |&lt;br&gt;| 102 | 吴忧 |&lt;b</summary>
       
     
     
