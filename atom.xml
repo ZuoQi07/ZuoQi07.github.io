@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-28T04:17:48.813Z</updated>
+  <updated>2023-11-28T04:24:51.454Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,15 @@
     <link href="http://example.com/article/4ba8635c"/>
     <id>http://example.com/article/4ba8635c</id>
     <published>2023-11-28T04:04:38.000Z</published>
-    <updated>2023-11-28T04:17:48.813Z</updated>
+    <updated>2023-11-28T04:24:51.454Z</updated>
     
-    <content type="html"><![CDATA[<p>该表为324实验室进出人员登记表，会实时更新，用于管理人员<br>| 日期 | 时间 | 班级 | 人员 | 备注 |<br>| :-: | :-: | :-: | :-: | :-: |<br>| 11.28 | 中午 | 110 | 胡逸轩 | |</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="324实验室登记表"><a href="#324实验室登记表" class="headerlink" title="324实验室登记表"></a>324实验室登记表</h2><p>该表为324实验室进出人员登记表，会实时更新，用于管理人员</p><table><thead><tr><th align="center">日期</th><th align="center">时间</th><th align="center">班级</th><th align="center">人员</th><th align="center">备注</th></tr></thead><tbody><tr><td align="center">11.28</td><td align="center">中午</td><td align="center">110</td><td align="center">胡逸轩</td><td align="center"></td></tr></tbody></table>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;该表为324实验室进出人员登记表，会实时更新，用于管理人员&lt;br&gt;| 日期 | 时间 | 班级 | 人员 | 备注 |&lt;br&gt;| :-: | :-: | :-: | :-: | :-: |&lt;br&gt;| 11.28 | 中午 | 110 | 胡逸轩 | |&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;324实验室登记表&quot;&gt;&lt;a href=&quot;#324实验室登记表&quot; class=&quot;headerlink&quot; title=&quot;324实验室登记表&quot;&gt;&lt;/a&gt;324实验室登记表&lt;/h2&gt;&lt;p&gt;该表为324实验室进出人员登记表，会实时更新，用于管理人员&lt;/p&gt;
+&lt;table&gt;
 </summary>
       
     
@@ -44,20 +45,26 @@
     <link href="http://example.com/article/49f72389"/>
     <id>http://example.com/article/49f72389</id>
     <published>2023-11-26T06:54:25.000Z</published>
-    <updated>2023-11-28T04:16:21.187Z</updated>
+    <updated>2023-11-28T04:24:25.101Z</updated>
     
-    <content type="html"><![CDATA[<p>恭喜以下同学通过考核进入科创社<br>| 班级 | 姓名 |<br>| :———: | :———: |<br>| 107 | 康裴俊 |<br>| 206 | 王佳铮 |<br>| 208 | 戴齐隽 |<br>| 104 | 金星宇 |<br>| 102 | 吴忧 |<br>| 205 | 蒋储赢 |<br>| 102 | 刘晓华 |<br>| 102 | 张万年 |<br>| 102 | 潘笑笑 |<br>| 206 | 童城语 |<br>| 102 | 崔子卉 |<br>| 102 | 童艺初 |<br>| 105 | 汪树一 |</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="招新结果"><a href="#招新结果" class="headerlink" title="招新结果"></a>招新结果</h2><p>恭喜以下同学通过考核进入科创社</p><table><thead><tr><th align="center">班级</th><th align="center">姓名</th></tr></thead><tbody><tr><td align="center">107</td><td align="center">康裴俊</td></tr><tr><td align="center">206</td><td align="center">王佳铮</td></tr><tr><td align="center">208</td><td align="center">戴齐隽</td></tr><tr><td align="center">104</td><td align="center">金星宇</td></tr><tr><td align="center">102</td><td align="center">吴忧</td></tr><tr><td align="center">205</td><td align="center">蒋储赢</td></tr><tr><td align="center">102</td><td align="center">刘晓华</td></tr><tr><td align="center">102</td><td align="center">张万年</td></tr><tr><td align="center">102</td><td align="center">潘笑笑</td></tr><tr><td align="center">206</td><td align="center">童城语</td></tr><tr><td align="center">102</td><td align="center">崔子卉</td></tr><tr><td align="center">102</td><td align="center">童艺初</td></tr><tr><td align="center">105</td><td align="center">汪树一</td></tr></tbody></table>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;恭喜以下同学通过考核进入科创社&lt;br&gt;| 班级 | 姓名 |&lt;br&gt;| :———: | :———: |&lt;br&gt;| 107 | 康裴俊 |&lt;br&gt;| 206 | 王佳铮 |&lt;br&gt;| 208 | 戴齐隽 |&lt;br&gt;| 104 | 金星宇 |&lt;br&gt;| 102 | 吴忧 |&lt;b</summary>
+    <summary type="html">&lt;h2 id=&quot;招新结果&quot;&gt;&lt;a href=&quot;#招新结果&quot; class=&quot;headerlink&quot; title=&quot;招新结果&quot;&gt;&lt;/a&gt;招新结果&lt;/h2&gt;&lt;p&gt;恭喜以下同学通过考核进入科创社&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;班级</summary>
       
     
     
     
     
     <category term="招新" scheme="http://example.com/tags/%E6%8B%9B%E6%96%B0/"/>
+    
+    <category term="通知" scheme="http://example.com/tags/%E9%80%9A%E7%9F%A5/"/>
     
   </entry>
   
