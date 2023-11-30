@@ -17,27 +17,22 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前级放大器设计隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。  图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1">
+  <meta name="description" content="B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1-1 前级放大器设计">
-<meta property="og:url" content="http://example.com/article/a239ffc1">
+<meta property="og:title" content="马伟霖设计参考">
+<meta property="og:url" content="http://example.com/article/6686496a">
 <meta property="og:site_name" content="德高科创社">
-<meta property="og:description" content="前级放大器设计隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。  图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1">
+<meta property="og:description" content="B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png">
-<meta property="og:image" content="https://pic.imgdb.cn/item/656814c2c458853aef2ca75b.png">
-<meta property="og:image" content="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png">
-<meta property="og:image" content="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png">
-<meta property="article:published_time" content="2023-11-30T04:46:29.000Z">
-<meta property="article:modified_time" content="2023-11-30T05:18:50.721Z">
+<meta property="article:published_time" content="2023-11-30T12:51:46.000Z">
+<meta property="article:modified_time" content="2023-11-30T13:08:06.092Z">
 <meta property="article:author" content="左柒Qi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png">
 
-<link rel="canonical" href="http://example.com/article/a239ffc1.html">
+<link rel="canonical" href="http://example.com/article/6686496a.html">
 
 
 <script id="page-configurations">
@@ -50,7 +45,7 @@
   };
 </script>
 
-  <title>1-1 前级放大器设计 | 德高科创社</title>
+  <title>马伟霖设计参考 | 德高科创社</title>
   
 
 
@@ -110,6 +105,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -144,11 +140,38 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -172,7 +195,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/article/a239ffc1">
+    <link itemprop="mainEntityOfPage" href="http://example.com/article/6686496a">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://pic.imgdb.cn/item/656459ffc458853aeffea9f2.png">
@@ -185,7 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          1-1 前级放大器设计
+          马伟霖设计参考
         </h1>
 
         <div class="post-meta">
@@ -196,7 +219,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-30 12:46:29 / 修改时间：13:18:50" itemprop="dateCreated datePublished" datetime="2023-11-30T12:46:29+08:00">2023-11-30</time>
+              <time title="创建时间：2023-11-30 20:51:46 / 修改时间：21:08:06" itemprop="dateCreated datePublished" datetime="2023-11-30T20:51:46+08:00">2023-11-30</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -205,10 +228,6 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
                 </span>
             </span>
 
@@ -223,22 +242,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="前级放大器设计"><a href="#前级放大器设计" class="headerlink" title="前级放大器设计"></a>前级放大器设计</h2><p>隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。</p>
-<p><img src="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png" alt=""></p>
-<p>图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1pA，即大小为隧穿电流最小值的1/100，偏置电流大小与最小隧穿电流大小相差两个数量级，满足对隧穿电流的测量条件。</p>
-<p>通过如图所示电路可以将端口probe处输入的隧穿电流转换电压信号在端口output处输出。通过运算放大器的特性可知，前级放大器的电流-电压转化公式为（其中，U_out为前级放大器的输出电压，R_1为反馈电阻阻值，I_Tunneling为隧穿电流，方向定义为从端口probe处流入）：</p>
-<script type="math/tex; mode=display">
-U_{out}=-R_1 I_{Tunneling}</script><p>即电流-电压放大倍数由反馈电阻R1直接决定，在上图中，R1阻值为100MΩ，即放大倍数为10^8倍。可认为当存在10nA大小的隧穿电流输入至输入端时，该电流将被放大为-1V的电压在输出端输出。</p>
-<h1 id="放大性能简易验证"><a href="#放大性能简易验证" class="headerlink" title="放大性能简易验证"></a>放大性能简易验证</h1><p><img src="https://pic.imgdb.cn/item/656814c2c458853aef2ca75b.png" alt=""></p>
-<p>可变电压源V1经过阻值与R_1接近的大电阻R_2（范围在1MΩ~100MΩ）接入前级放大器的输入端，产生小电流。通过运算放大器的虚地特性可知，当运放的同相输入端接地时，反相输入端的电位也同时为地，则如图所示的测试电路中的前级放大器的输入电流可由公式(3.2)计算（其中U_V1为可变电压源输出电压，R_2为电阻阻值）：</p>
-<script type="math/tex; mode=display">
-I_{INPUT}=\frac{U_{V1}}{R_2}</script><p>结合前级放大器的转换公式(3.1)，则此时可变电压源V1输出电压与前级放大器输出电压间的关系应为（其中R_1为前级放大器的反馈电阻阻值）：</p>
-<script type="math/tex; mode=display">
-U_{OUTPUT}=-R_1×\frac{U_{V1}}{R_2}</script><p>若前级放大器性能良好，则在改变可变电压源V1的电压时，前级放大器的输出电压值应始终满足上述公式并拥有良好的线性度。</p>
-<p>在放大器性能验证中，测试将分为两组：两组测试的R_1均被设置为误差为±5%的100MΩ电阻，两组测试的R_2被分别设置为误差为±5%，阻值为1MΩ、100MΩ的电阻。测试将对可变电压源输出电压-前级放大器输出电压曲线进行测量，测量仪器为RIGOL-DS1102型示波器，测试结果如下：</p>
-<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png" alt=""></p>
-<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png" alt=""></p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>[1].    Ellis M D. Construction of a scanning tunneling microscope for imaging of carbon nanotubes[D]. Texas Tech University, 1998.</p>
+        <p>B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档</p>
+<div class="pdfobject-container" data-target="/pdf/231005413.pdf" data-height="500px"></div>
 
     </div>
 
@@ -254,13 +259,10 @@ U_{OUTPUT}=-R_1×\frac{U_{V1}}{R_2}</script><p>若前级放大器性能良好，
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/article/e44566dd" rel="prev" title="0-2 STM工作模式">
-      <i class="fa fa-chevron-left"></i> 0-2 STM工作模式
+    <a href="/article/42af9bcf" rel="prev" title="STM-DIY项目简述">
+      <i class="fa fa-chevron-left"></i> STM-DIY项目简述
     </a></div>
-      <div class="post-nav-item">
-    <a href="/article/c082a883" rel="next" title="1-2 扫描探针制备">
-      1-2 扫描探针制备 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -319,7 +321,6 @@ U_{OUTPUT}=-R_1×\frac{U_{V1}}{R_2}</script><p>若前级放大器性能良好，
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BA%A7%E6%94%BE%E5%A4%A7%E5%99%A8%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">前级放大器设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%94%BE%E5%A4%A7%E6%80%A7%E8%83%BD%E7%AE%80%E6%98%93%E9%AA%8C%E8%AF%81"><span class="nav-number"></span> <span class="nav-text">放大性能简易验证</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number"></span> <span class="nav-text">参考资料</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -335,14 +336,14 @@ U_{OUTPUT}=-R_1×\frac{U_{V1}}{R_2}</script><p>若前级放大器性能良好，
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -488,6 +489,8 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
 
 
@@ -495,6 +498,28 @@ window.addEventListener('pjax:success', () => {
 
 
 
+
+
+<script data-pjax>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 

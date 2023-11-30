@@ -17,15 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="关于德高科创社科创社招新亲爱的同学们：你是否对科技和创新充满了好奇心和热情？你是否梦想着能够在科学的世界中探索未知、创造新奇？如果是的话，那么科创社将是你实现梦想的舞台！科创社是一个集结了对科学和创新充满热情的学生们的大家庭。在这里，你将有机会与志同道合的伙伴们一起探索科学的奥秘、挑战创新的极限。无论你对物理、化学、生物感兴趣，我们都将为你提供一个展示才能的平台。 加入科创社，你将获得以下提升：">
+  <meta name="description" content="关于德高科创社  科创社招新 亲爱的同学们： 你是否对科技和创新充满了好奇心和热情？你是否梦想着能够在科学的世界中探索未知、创造新奇？如果是的话，那么科创社将是你实现梦想的舞台！ 科创社是一个集结了对科学和创新充满热情的学生们的大家庭。在这里，你将有机会与志同道合的伙伴们一起探索科学的奥秘、挑战创新的极限。 无论你对物理、化学、生物感兴趣，我们都将为你提供一个展示才能的平台。 加入科创社，你将获">
 <meta property="og:type" content="website">
 <meta property="og:title" content="关于德高科创社">
 <meta property="og:url" content="http://example.com/about/">
 <meta property="og:site_name" content="德高科创社">
-<meta property="og:description" content="关于德高科创社科创社招新亲爱的同学们：你是否对科技和创新充满了好奇心和热情？你是否梦想着能够在科学的世界中探索未知、创造新奇？如果是的话，那么科创社将是你实现梦想的舞台！科创社是一个集结了对科学和创新充满热情的学生们的大家庭。在这里，你将有机会与志同道合的伙伴们一起探索科学的奥秘、挑战创新的极限。无论你对物理、化学、生物感兴趣，我们都将为你提供一个展示才能的平台。 加入科创社，你将获得以下提升：">
+<meta property="og:description" content="关于德高科创社  科创社招新 亲爱的同学们： 你是否对科技和创新充满了好奇心和热情？你是否梦想着能够在科学的世界中探索未知、创造新奇？如果是的话，那么科创社将是你实现梦想的舞台！ 科创社是一个集结了对科学和创新充满热情的学生们的大家庭。在这里，你将有机会与志同道合的伙伴们一起探索科学的奥秘、挑战创新的极限。 无论你对物理、化学、生物感兴趣，我们都将为你提供一个展示才能的平台。 加入科创社，你将获">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-25T12:01:41.000Z">
 <meta property="article:modified_time" content="2023-11-27T09:06:47.440Z">
@@ -106,6 +106,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -140,11 +141,38 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -186,14 +214,26 @@
       
       
       <div class="post-body">
-          <h1 id="关于德高科创社"><a href="#关于德高科创社" class="headerlink" title="关于德高科创社"></a>关于德高科创社</h1><h2 id="科创社招新"><a href="#科创社招新" class="headerlink" title="科创社招新"></a>科创社招新</h2><p>亲爱的同学们：<br>你是否对科技和创新充满了好奇心和热情？你是否梦想着能够在科学的世界中探索未知、创造新奇？如果是的话，那么科创社将是你实现梦想的舞台！<br>科创社是一个集结了对科学和创新充满热情的学生们的大家庭。在这里，你将有机会与志同道合的伙伴们一起探索科学的奥秘、挑战创新的极限。<br>无论你对物理、化学、生物感兴趣，我们都将为你提供一个展示才能的平台。</p>
+          <h1 id="关于德高科创社"><a class="markdownIt-Anchor" href="#关于德高科创社"></a> 关于德高科创社</h1>
+<h2 id="科创社招新"><a class="markdownIt-Anchor" href="#科创社招新"></a> 科创社招新</h2>
+<p>亲爱的同学们：<br />
+你是否对科技和创新充满了好奇心和热情？你是否梦想着能够在科学的世界中探索未知、创造新奇？如果是的话，那么科创社将是你实现梦想的舞台！<br />
+科创社是一个集结了对科学和创新充满热情的学生们的大家庭。在这里，你将有机会与志同道合的伙伴们一起探索科学的奥秘、挑战创新的极限。<br />
+无论你对物理、化学、生物感兴趣，我们都将为你提供一个展示才能的平台。</p>
 <p>加入科创社，你将获得以下提升：</p>
-<h3 id="拓宽视野："><a href="#拓宽视野：" class="headerlink" title="拓宽视野："></a>拓宽视野：</h3><p>参与各类科学实验、竞赛和讲座，与专家学者交流，拓宽自己的视野。</p>
-<h3 id="培养能力："><a href="#培养能力：" class="headerlink" title="培养能力："></a>培养能力：</h3><p>通过科学实践和创新项目，培养自己的实验能力、观察力、逻辑思维和创新思维。</p>
-<h3 id="团队合作："><a href="#团队合作：" class="headerlink" title="团队合作："></a>团队合作：</h3><p>与其他成员一起合作，解决生活中的问题，培养团队合作能力和沟通能力。</p>
-<h3 id="个人成长："><a href="#个人成长：" class="headerlink" title="个人成长："></a>个人成长：</h3><p>通过参与科创社的活动，你将不断提升自己的科学素养、创新能力和领导力，为未来的发展打下坚实的基础。<br>无论你是有实验经验的高手，还是对科技和创新一无所知的小白，科创社都欢迎你的加入！<br>我们相信，只要你对科技和创新怀有热情和好奇心，我们就能创造出更美好的未来。</p>
+<h3 id="拓宽视野"><a class="markdownIt-Anchor" href="#拓宽视野"></a> 拓宽视野：</h3>
+<p>参与各类科学实验、竞赛和讲座，与专家学者交流，拓宽自己的视野。</p>
+<h3 id="培养能力"><a class="markdownIt-Anchor" href="#培养能力"></a> 培养能力：</h3>
+<p>通过科学实践和创新项目，培养自己的实验能力、观察力、逻辑思维和创新思维。</p>
+<h3 id="团队合作"><a class="markdownIt-Anchor" href="#团队合作"></a> 团队合作：</h3>
+<p>与其他成员一起合作，解决生活中的问题，培养团队合作能力和沟通能力。</p>
+<h3 id="个人成长"><a class="markdownIt-Anchor" href="#个人成长"></a> 个人成长：</h3>
+<p>通过参与科创社的活动，你将不断提升自己的科学素养、创新能力和领导力，为未来的发展打下坚实的基础。<br />
+无论你是有实验经验的高手，还是对科技和创新一无所知的小白，科创社都欢迎你的加入！<br />
+我们相信，只要你对科技和创新怀有热情和好奇心，我们就能创造出更美好的未来。</p>
 <p>让我们一起探索科学的奥秘，创造属于我们自己的未来！</p>
-<h2 id="骨干成员名单"><a href="#骨干成员名单" class="headerlink" title="骨干成员名单"></a>骨干成员名单</h2><h3 id="竞赛组"><a href="#竞赛组" class="headerlink" title="竞赛组"></a>竞赛组</h3><div class="table-container">
+<h2 id="骨干成员名单"><a class="markdownIt-Anchor" href="#骨干成员名单"></a> 骨干成员名单</h2>
+<h3 id="竞赛组"><a class="markdownIt-Anchor" href="#竞赛组"></a> 竞赛组</h3>
 <table>
 <thead>
 <tr>
@@ -310,11 +350,11 @@
 <td style="text-align:center">110班</td>
 <td style="text-align:center">陈佳彬</td>
 <td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
-</div>
-<h3 id="科创组"><a href="#科创组" class="headerlink" title="科创组"></a>科创组</h3><div class="table-container">
+<h3 id="科创组"><a class="markdownIt-Anchor" href="#科创组"></a> 科创组</h3>
 <table>
 <thead>
 <tr>
@@ -363,13 +403,30 @@
 </tr>
 </tbody>
 </table>
-</div>
-<p>指导老师    解学仁    </p>
-<h2 id="申请书公示"><a href="#申请书公示" class="headerlink" title="申请书公示"></a>申请书公示</h2><h3 id="申请目的"><a href="#申请目的" class="headerlink" title="申请目的"></a>申请目的</h3><p>我们希望创建一个科创社，以促进学生对科学和创新的兴趣和能力的培养。<br>通过科创社的活动，我们将提供一个平台，让学生们可以自由地探索、实践和分享科学知识和创新想法，激发他们的创造力和创新思维。</p>
-<h3 id="申请理由"><a href="#申请理由" class="headerlink" title="申请理由"></a>申请理由</h3><p>1.培养科学素养：科学是现代社会发展的重要驱动力，培养学生的科学素养对他们未来的发展至关重要。<br>通过科创社的活动，我们将提供学生们更多的机会接触和了解科学知识，培养他们的科学素养和科学思维能力。<br>2.培养创新能力：创新是推动社会进步和发展的关键，培养学生的创新能力对他们未来的职业发展和社会贡献至关重要。<br>科创社将提供学生们一个创新的平台，鼓励他们提出新的想法和解决问题的方法，培养他们的创新思维和实践能力。<br>3.提供交流合作机会：科创社将提供学生们一个交流和合作的平台，让他们可以互相学习、互相启发。<br>通过与其他成员的交流和合作，学生们可以拓宽自己的视野，学习到更多的知识和技能，培养团队合作能力和沟通能力。</p>
-<h3 id="组织架构"><a href="#组织架构" class="headerlink" title="组织架构"></a>组织架构</h3><p>社长：负责整个科创社的日常管理和活动组织，协调各个部门的工作。<br>科学部：负责组织和开展与科学知识相关的活动，如科学实验、科学讲座（解学仁老师组织领导）等。<br>创新部（竞赛）：负责组织和开展与创新能力相关的活动，如各科竞赛、创意思维训练等。</p>
-<h3 id="活动内容"><a href="#活动内容" class="headerlink" title="活动内容"></a>活动内容</h3><p>科学实验：组织学生进行科学实验，提供实践机会，培养学生的实验能力和科学思维。<br>创新竞赛：组织学生参加各类创新竞赛，提供展示和竞争的平台，激发学生的创新潜能。<br>科学讲座：邀请专家学者给学生们讲解最新的科学研究成果，拓宽学生们的科学视野。<br>学术交流会：组织学生间的学术交流，让他们互相学习、互相启发。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>我们相信，科创社的创建将为学生们提供一个更广阔的舞台，让他们能够充分发挥自己的才能和潜力。<br>我们希望学校能够支持我们的申请，给予我们创建科创社的机会，让我们共同为学生们的科学和创新梦想努力奋斗。</p>
+<p>指导老师	解学仁</p>
+<h2 id="申请书公示"><a class="markdownIt-Anchor" href="#申请书公示"></a> 申请书公示</h2>
+<h3 id="申请目的"><a class="markdownIt-Anchor" href="#申请目的"></a> 申请目的</h3>
+<p>我们希望创建一个科创社，以促进学生对科学和创新的兴趣和能力的培养。<br />
+通过科创社的活动，我们将提供一个平台，让学生们可以自由地探索、实践和分享科学知识和创新想法，激发他们的创造力和创新思维。</p>
+<h3 id="申请理由"><a class="markdownIt-Anchor" href="#申请理由"></a> 申请理由</h3>
+<p>1.培养科学素养：科学是现代社会发展的重要驱动力，培养学生的科学素养对他们未来的发展至关重要。<br />
+通过科创社的活动，我们将提供学生们更多的机会接触和了解科学知识，培养他们的科学素养和科学思维能力。<br />
+2.培养创新能力：创新是推动社会进步和发展的关键，培养学生的创新能力对他们未来的职业发展和社会贡献至关重要。<br />
+科创社将提供学生们一个创新的平台，鼓励他们提出新的想法和解决问题的方法，培养他们的创新思维和实践能力。<br />
+3.提供交流合作机会：科创社将提供学生们一个交流和合作的平台，让他们可以互相学习、互相启发。<br />
+通过与其他成员的交流和合作，学生们可以拓宽自己的视野，学习到更多的知识和技能，培养团队合作能力和沟通能力。</p>
+<h3 id="组织架构"><a class="markdownIt-Anchor" href="#组织架构"></a> 组织架构</h3>
+<p>社长：负责整个科创社的日常管理和活动组织，协调各个部门的工作。<br />
+科学部：负责组织和开展与科学知识相关的活动，如科学实验、科学讲座（解学仁老师组织领导）等。<br />
+创新部（竞赛）：负责组织和开展与创新能力相关的活动，如各科竞赛、创意思维训练等。</p>
+<h3 id="活动内容"><a class="markdownIt-Anchor" href="#活动内容"></a> 活动内容</h3>
+<p>科学实验：组织学生进行科学实验，提供实践机会，培养学生的实验能力和科学思维。<br />
+创新竞赛：组织学生参加各类创新竞赛，提供展示和竞争的平台，激发学生的创新潜能。<br />
+科学讲座：邀请专家学者给学生们讲解最新的科学研究成果，拓宽学生们的科学视野。<br />
+学术交流会：组织学生间的学术交流，让他们互相学习、互相启发。</p>
+<h2 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h2>
+<p>我们相信，科创社的创建将为学生们提供一个更广阔的舞台，让他们能够充分发挥自己的才能和潜力。<br />
+我们希望学校能够支持我们的申请，给予我们创建科创社的机会，让我们共同为学生们的科学和创新梦想努力奋斗。</p>
 
       </div>
       
@@ -431,7 +488,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%BE%B7%E9%AB%98%E7%A7%91%E5%88%9B%E7%A4%BE"><span class="nav-number">1.</span> <span class="nav-text">关于德高科创社</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%91%E5%88%9B%E7%A4%BE%E6%8B%9B%E6%96%B0"><span class="nav-number">1.1.</span> <span class="nav-text">科创社招新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%93%E5%AE%BD%E8%A7%86%E9%87%8E%EF%BC%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">拓宽视野：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B9%E5%85%BB%E8%83%BD%E5%8A%9B%EF%BC%9A"><span class="nav-number">1.1.2.</span> <span class="nav-text">培养能力：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%A2%E9%98%9F%E5%90%88%E4%BD%9C%EF%BC%9A"><span class="nav-number">1.1.3.</span> <span class="nav-text">团队合作：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%EF%BC%9A"><span class="nav-number">1.1.4.</span> <span class="nav-text">个人成长：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AA%A8%E5%B9%B2%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95"><span class="nav-number">1.2.</span> <span class="nav-text">骨干成员名单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AB%9E%E8%B5%9B%E7%BB%84"><span class="nav-number">1.2.1.</span> <span class="nav-text">竞赛组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%91%E5%88%9B%E7%BB%84"><span class="nav-number">1.2.2.</span> <span class="nav-text">科创组</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B3%E8%AF%B7%E4%B9%A6%E5%85%AC%E7%A4%BA"><span class="nav-number">1.3.</span> <span class="nav-text">申请书公示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B3%E8%AF%B7%E7%9B%AE%E7%9A%84"><span class="nav-number">1.3.1.</span> <span class="nav-text">申请目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B3%E8%AF%B7%E7%90%86%E7%94%B1"><span class="nav-number">1.3.2.</span> <span class="nav-text">申请理由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84"><span class="nav-number">1.3.3.</span> <span class="nav-text">组织架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B4%BB%E5%8A%A8%E5%86%85%E5%AE%B9"><span class="nav-number">1.3.4.</span> <span class="nav-text">活动内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">1.4.</span> <span class="nav-text">结语</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%BE%B7%E9%AB%98%E7%A7%91%E5%88%9B%E7%A4%BE"><span class="nav-number">1.</span> <span class="nav-text"> 关于德高科创社</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%91%E5%88%9B%E7%A4%BE%E6%8B%9B%E6%96%B0"><span class="nav-number">1.1.</span> <span class="nav-text"> 科创社招新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%93%E5%AE%BD%E8%A7%86%E9%87%8E"><span class="nav-number">1.1.1.</span> <span class="nav-text"> 拓宽视野：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%B9%E5%85%BB%E8%83%BD%E5%8A%9B"><span class="nav-number">1.1.2.</span> <span class="nav-text"> 培养能力：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%A2%E9%98%9F%E5%90%88%E4%BD%9C"><span class="nav-number">1.1.3.</span> <span class="nav-text"> 团队合作：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF"><span class="nav-number">1.1.4.</span> <span class="nav-text"> 个人成长：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AA%A8%E5%B9%B2%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95"><span class="nav-number">1.2.</span> <span class="nav-text"> 骨干成员名单</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AB%9E%E8%B5%9B%E7%BB%84"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 竞赛组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%91%E5%88%9B%E7%BB%84"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 科创组</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B3%E8%AF%B7%E4%B9%A6%E5%85%AC%E7%A4%BA"><span class="nav-number">1.3.</span> <span class="nav-text"> 申请书公示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B3%E8%AF%B7%E7%9B%AE%E7%9A%84"><span class="nav-number">1.3.1.</span> <span class="nav-text"> 申请目的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B3%E8%AF%B7%E7%90%86%E7%94%B1"><span class="nav-number">1.3.2.</span> <span class="nav-text"> 申请理由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84"><span class="nav-number">1.3.3.</span> <span class="nav-text"> 组织架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B4%BB%E5%8A%A8%E5%86%85%E5%AE%B9"><span class="nav-number">1.3.4.</span> <span class="nav-text"> 活动内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">1.4.</span> <span class="nav-text"> 结语</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -447,14 +504,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -600,6 +657,8 @@ window.addEventListener('pjax:success', () => {
 
 
 
+  
+<script src="/js/local-search.js"></script>
 
 
 
@@ -607,6 +666,28 @@ window.addEventListener('pjax:success', () => {
 
 
 
+
+
+<script data-pjax>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
