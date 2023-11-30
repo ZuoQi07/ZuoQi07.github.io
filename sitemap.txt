@@ -15,8 +15,8 @@ http://example.com/link/
 http://example.com/about/
 http://example.com/archives/
 http://example.com/
+http://example.com/tags/%E8%A1%A8%E5%8D%95/
 http://example.com/tags/%E6%8B%9B%E6%96%B0/
 http://example.com/tags/%E9%80%9A%E7%9F%A5/
-http://example.com/tags/%E8%A1%A8%E5%8D%95/
 http://example.com/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/
 http://example.com/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/
