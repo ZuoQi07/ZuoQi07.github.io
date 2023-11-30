@@ -169,6 +169,228 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/article/75482096">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://pic.imgdb.cn/item/656459ffc458853aeffea9f2.png">
+      <meta itemprop="name" content="左柒Qi">
+      <meta itemprop="description" content="Nothing but for devotion">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="德高科创社">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/article/75482096" class="post-title-link" itemprop="url">1-3 压电扫描头设计</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-11-30 12:57:16 / 修改时间：13:19:12" itemprop="dateCreated datePublished" datetime="2023-11-30T12:57:16+08:00">2023-11-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="压电扫描头设计"><a class="markdownIt-Anchor" href="#压电扫描头设计"></a> 压电扫描头设计</h1>
+<h2 id="压电扫描头器件选择"><a class="markdownIt-Anchor" href="#压电扫描头器件选择"></a> 压电扫描头器件选择</h2>
+<p>对于扫描隧道显微镜而言，扫描头的分辨率决定了图像的分辨率。除此之外，对于隧道电流的建立也主要由扫描头来完成。考虑到空气中隧穿距离的普遍距离在10Å以内[1][2]，故需要扫描头的形变需要控制在纳米级别。</p>
+<p>在商业扫描隧道显微镜中，普遍采用压电晶体作为压电扫描头的执行器，但直接购买商用压电晶体管成本较高且驱动难度较大。在经过调研后发现，由John D. Alexander提出的结构[3]可以利用内置了压电晶体的压电蜂鸣器（如图）进行改造，制成能够用于扫描隧道显微镜的压电扫描头。</p>
+<p><img src="https://pic.imgdb.cn/item/6568190dc458853aef3ae621.pngmedia/54c76efedd099461ea1cd25a082f362e.png" alt="" /></p>
+<h2 id="压电蜂鸣器工作原理"><a class="markdownIt-Anchor" href="#压电蜂鸣器工作原理"></a> 压电蜂鸣器工作原理</h2>
+<p>常见的盘状压电蜂鸣器的侧视结构如下图所示：</p>
+<p><img src="https://pic.imgdb.cn/item/65681966c458853aef3c264a.png" alt="" /></p>
+<p>压电蜂鸣器主要由三个圆盘层构成：铜层、压电陶瓷层和镀银层。铜层半径为d1，压电陶瓷层及镀银层半径为d2。本项目使用的木村(muRata)7BB-20-6L0型压电蜂鸣器直径d1=20mm，d2=14mm。</p>
+<p>铜层与镀银层与压电陶瓷存在直接的导电接触，并且导线被分别焊接在铜层和镀银层上用于给压电陶瓷施加电场。此外，铜层除了提供导电接触外，还能够为压电蜂鸣器提供一定的机械强度以及作为蜂鸣器的振膜。</p>
+<p>利用逆压电效应，通过在压电陶瓷两侧施加电压，可以让压电陶瓷发生形变。对压电蜂鸣器施加不同频率的交变电压，压电蜂鸣器便会发出不同频率的声音，这即是压电蜂鸣器的工作原理。</p>
+<p>以7BB-20-6L0型压电蜂鸣器为例，如下图所示：当通过引线对镀银层施加正向电压时，蜂鸣器整体向镀银层方向弯曲，当对铜层施加正向电压时，蜂鸣器整体向铜层方向弯曲。</p>
+<p><img src="https://pic.imgdb.cn/item/656819cec458853aef3d918d.png" alt="" /></p>
+<p>对于压电陶瓷而言，存在两个需要关注的参数：即纵向压电应变常数和横向压电应变常数。纵向压电应变常数(d33)描述了电场和形变方向一致时的电场、电压对应变的转换关系，而横向压电应变常数(d31)则是描述了电场和形变方向垂直时的转换关系[4]。用公式可表达为（其中S为材料应变，d为压电常数，E为电场强度）：S=dE</p>
+<p>当考虑对压电陶瓷施加电压时，压电陶瓷产生的形变量可以使用以下公式表示（其中ΔL为形变量，d为压电常数，V为施加电压）：ΔL=dV</p>
+<p>下表列出了常用于压电蜂鸣器的压电陶瓷的横向压电应变常数：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">压电陶瓷类型</th>
+<th style="text-align:center">d31(nm/V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">PZT-5A</td>
+<td style="text-align:center">-0.18</td>
+</tr>
+<tr>
+<td style="text-align:center">BM500</td>
+<td style="text-align:center">-0.16</td>
+</tr>
+<tr>
+<td style="text-align:center">PZT-5H</td>
+<td style="text-align:center">-0.27</td>
+</tr>
+<tr>
+<td style="text-align:center">BM527</td>
+<td style="text-align:center">-0.25</td>
+</tr>
+<tr>
+<td style="text-align:center">PZT-4</td>
+<td style="text-align:center">-0.12</td>
+</tr>
+</tbody>
+</table>
+<p>对于压电蜂鸣器而言，其所能够产生的弯曲形变是利用了压电陶瓷的横向应变的特性。在图3.9中，压电蜂鸣器的圆盘形压电陶瓷在受到电场作用下沿水平方向“舒张”或“收缩”，从而产生弯曲。在应力一定的情况下，压电蜂鸣器的弯曲程度由横向应变常数和电压决定，从表3.1的参数中可以看到，常用的压电陶瓷d31在-0.12nm/V~-0.25nm/V，由此可判断将压电蜂鸣器用于扫描隧道显微镜的扫描头是可行的。</p>
+<h2 id="压电扫描头结构"><a class="markdownIt-Anchor" href="#压电扫描头结构"></a> 压电扫描头结构</h2>
+<p>本项目的压电扫描头的实物图及结构图如图所示：</p>
+<p><img src="https://pic.imgdb.cn/item/656819e7c458853aef3de660.pngmedia/bbab0a534fa2089c4f1739aa809188e2.png" alt="" /></p>
+<p><img src="https://pic.imgdb.cn/item/65681a06c458853aef3e5789.png" alt="" /></p>
+<p>压电扫描头的部件由图3.11所示的五个部分组成。PLA连接器为聚乳酸的3D打印结构，用于连接压电蜂鸣器与PCB。PCB为玻璃纤维材料，为MMCX连接器提供焊盘。MMCX连接器为通讯用信号连接器，其内部具有直径为0.3~0.4mm的针座，可用于安装探针。压电蜂鸣器、PLA连接器、PCB之间使用502胶水进行粘接，PCB与MMCX连接器之间使用焊锡进行焊接固定。压电蜂鸣器的弯曲动作将通过中间的连接组件（PLA连接器、PCB、MMCX连接器）传递至探针，从而带动探针的移动。</p>
+<p>压电蜂鸣器的镀银层被均匀地覆盖在压电陶瓷的表面，此时的压电蜂鸣器只能实现一维弯曲。若使用切割工具将镀银层进行切割，并切割成如图所示的结构，压电蜂鸣器将能够实现三维的移动。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a24c458853aef3eb8b7.png" alt="" /></p>
+<p>所示的镀银层分割为+X、-X、+Y、-Y四个区域，四个区域的镀银层互不导通。此时若让蜂鸣器的铜层接地，即电压为0，当对四个区域施加相同的正电压或负电压时，探针将被带动向上移动或向下移动。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a42c458853aef3f1cdd.png" alt="" /></p>
+<p>对切割图的红色线条方向进行剖视，剖视的示意图如图3.14所示。当对-X区域的镀银层施加正向电压，对+X区域的镀银层施加大小相同的反向电压时，压电陶瓷将发生“S形”弯曲，探针将被带向-X方向。反之，若对-X区域施加反向电压，对+X区域施加正向电压，探针将被带向+X方向。对于-Y、+Y区域的情况和-X、+X原理相同。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a59c458853aef3f6a3c.png" alt="" /></p>
+<p>通过控制+X、-X和+Y、-Y间的相对电压差，可以实现探针的X、Y（前后左右）轴移动，通过控制四个区域整体对地（铜层）的电压差，可以实现探针的Z轴（上下）移动。</p>
+<h2 id="压电陶瓷的去极化"><a class="markdownIt-Anchor" href="#压电陶瓷的去极化"></a> 压电陶瓷的去极化</h2>
+<p>目前广泛使用的压电陶瓷主要成分为锆钛酸铅Pb[Zr_x Ti_(1-x)]O_3 (0≤x≤1)，在制作过程中会将烧结好的压电陶瓷加以强场进行极化，但如果对已经极化完成的压电陶瓷施加过高的温度，压电陶瓷将去极化从而失效。</p>
+<p>主要成分同样为锆钛酸铅的NCE51型压电陶瓷在350~370℃将发生去极化[5]，由于muRata公司未提供7BB-20-6L0型压电蜂鸣器所用压电陶瓷的具体型号，为保险起见，在对压电蜂鸣器进行导线焊接时需要使用熔点为170℃左右的低温焊锡进行焊接，并将烙铁头温度控制在200℃左右以避免压电陶瓷发生去极化，从而影响压电扫描头的整体性能。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a76c458853aef3fcd72.png" alt="" /></p>
+<h1 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h1>
+<p>[1].    Hahn J R, Hong Y A, Kang H. Electron tunneling across an interfacial water layer inside an STM junction: tunneling distance, barrier height and water polarization effect[J]. Applied Physics A, 1998, 66(1): S467-S472.</p>
+<p>[2].    Woo D H, Choi E M, Yoon Y H, et al. Current–distance–voltage characteristics of electron tunneling through an electrochemical STM junction[J]. Surface science, 2007, 601(6): 1554-1559.</p>
+<p>[3].    Alexander J D, Tortonese M, Nguyen T. Atomic force microscope with integrated optics for attachment to optical microscope: U.S. Patent 5,952,657[P]. 1999-9-14.</p>
+<p>[4].    陈大任,李国荣,殷庆瑞.逆压电效应的压电常数和压电陶瓷微位移驱动器[J].无机材料学报,1997(06):861-866.</p>
+<p>[5].    Fialka J, Benes P, Michlovska L, et al. Measurement of thermal depolarization effects in piezoelectric coefficients of soft PZT ceramics via the frequency and direct methods[J]. Journal of the European Ceramic Society, 2016, 36(11): 2727-2738.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/article/c082a883">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://pic.imgdb.cn/item/656459ffc458853aeffea9f2.png">
+      <meta itemprop="name" content="左柒Qi">
+      <meta itemprop="description" content="Nothing but for devotion">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="德高科创社">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/article/c082a883" class="post-title-link" itemprop="url">1-2 扫描探针制备</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-11-30 12:56:30 / 修改时间：13:19:04" itemprop="dateCreated datePublished" datetime="2023-11-30T12:56:30+08:00">2023-11-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>对于扫描隧道显微镜的扫描探针，最理想的情况是扫描探针的针尖仅有一个原子用于传输隧穿电流[1]。但需要制备这种探针的条件过于苛刻，且对于本项目而言难度过大。</p>
+<p>在参考了瑞士Nano Surf公司生产的桌面扫描隧道显微镜的操作过程以及部分爱好者在网络上公开对于扫描探针的制备方法后，采用以下方法对探针进行制备：</p>
+<p>（1）选择导电惰性金属材料（如铂铱合金）作为探针材料，以避免制备后的针尖氧化。此处选择直径为0.3mm~0.4mm的铂金丝或钨丝作为探针材料。</p>
+<p>（2）使用剪线钳以45°对探针丝进行剪切的同时向前拉“扯探”针丝，制备形成探针尖端。</p>
+<p><img src="https://pic.imgdb.cn/item/656817b5c458853aef36568e.png" alt="" /></p>
+<p>在上述针尖制备方法的过程中，探针丝的尖端由于“拉扯”而断裂形成，断裂截面的原子分布并非绝对平整。在显微镜的实际扫描的过程中，推测隧穿电流可能由某个最为突出的原子“主导”，从而也能实现较高的分辨率。</p>
+<p>根据普渡大学对直径为0.008&quot;的Pt/Ir金属丝进行机械拉伸剪裁后，对针尖的SEM图像显示[2]，通过此方法制备的扫描针尖能够达到可观的尖锐程度。</p>
+<p><img src="https://pic.imgdb.cn/item/65681819c458853aef37a48e.png" alt="" /></p>
+<h1 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h1>
+<p>[1].    Lounis S. Theory of scanning tunneling microscopy[J]. arXiv preprint arXiv:1404.0961, 2014.</p>
+<p>[2].    <a target="_blank" rel="noopener" href="https://www.physics.purdue.edu/nanophys/uhvstm/tip.html.">Purdue University. TEM Pictures of STM Tips</a>   [EB/OL]. 2002[2022-9-20].</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/article/a239ffc1">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -194,7 +416,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-30 12:46:29 / 修改时间：12:52:37" itemprop="dateCreated datePublished" datetime="2023-11-30T12:46:29+08:00">2023-11-30</time>
+              <time title="创建时间：2023-11-30 12:46:29 / 修改时间：13:18:50" itemprop="dateCreated datePublished" datetime="2023-11-30T12:46:29+08:00">2023-11-30</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -203,6 +425,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
                 </span>
             </span>
 
@@ -217,22 +443,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="前级放大器设计"><a href="#前级放大器设计" class="headerlink" title="前级放大器设计"></a>前级放大器设计</h2><p>隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。</p>
-<p><img src="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png"></p>
-<p>图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1pA，即大小为隧穿电流最小值的1&#x2F;100，偏置电流大小与最小隧穿电流大小相差两个数量级，满足对隧穿电流的测量条件。</p>
+          <h2 id="前级放大器设计"><a class="markdownIt-Anchor" href="#前级放大器设计"></a> 前级放大器设计</h2>
+<p>隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。</p>
+<p><img src="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png" alt="" /></p>
+<p>图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1pA，即大小为隧穿电流最小值的1/100，偏置电流大小与最小隧穿电流大小相差两个数量级，满足对隧穿电流的测量条件。</p>
 <p>通过如图所示电路可以将端口probe处输入的隧穿电流转换电压信号在端口output处输出。通过运算放大器的特性可知，前级放大器的电流-电压转化公式为（其中，U_out为前级放大器的输出电压，R_1为反馈电阻阻值，I_Tunneling为隧穿电流，方向定义为从端口probe处流入）：</p>
-<p>$$<br>U_{out}&#x3D;-R_1 I_{Tunneling}<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>U</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub><mo>=</mo><mo>−</mo><msub><mi>R</mi><mn>1</mn></msub><msub><mi>I</mi><mrow><mi>T</mi><mi>u</mi><mi>n</mi><mi>n</mi><mi>e</mi><mi>l</mi><mi>i</mi><mi>n</mi><mi>g</mi></mrow></msub></mrow><annotation encoding="application/x-tex">U_{out}=-R_1 I_{Tunneling}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord">−</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">e</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">g</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
 <p>即电流-电压放大倍数由反馈电阻R1直接决定，在上图中，R1阻值为100MΩ，即放大倍数为10^8倍。可认为当存在10nA大小的隧穿电流输入至输入端时，该电流将被放大为-1V的电压在输出端输出。</p>
-<h1 id="放大性能简易验证"><a href="#放大性能简易验证" class="headerlink" title="放大性能简易验证"></a>放大性能简易验证</h1><p><img src="https://pic.imgdb.cn/item/656814c2c458853aef2ca75b.png"></p>
+<h1 id="放大性能简易验证"><a class="markdownIt-Anchor" href="#放大性能简易验证"></a> 放大性能简易验证</h1>
+<p><img src="https://pic.imgdb.cn/item/656814c2c458853aef2ca75b.png" alt="" /></p>
 <p>可变电压源V1经过阻值与R_1接近的大电阻R_2（范围在1MΩ~100MΩ）接入前级放大器的输入端，产生小电流。通过运算放大器的虚地特性可知，当运放的同相输入端接地时，反相输入端的电位也同时为地，则如图所示的测试电路中的前级放大器的输入电流可由公式(3.2)计算（其中U_V1为可变电压源输出电压，R_2为电阻阻值）：</p>
-<p>$$<br>I_{INPUT}&#x3D;\frac{U_{V1}}{R_2}<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>I</mi><mrow><mi>I</mi><mi>N</mi><mi>P</mi><mi>U</mi><mi>T</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>U</mi><mrow><mi>V</mi><mn>1</mn></mrow></msub><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">I_{INPUT}=\frac{U_{V1}}{R_2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.10903em;">U</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>结合前级放大器的转换公式(3.1)，则此时可变电压源V1输出电压与前级放大器输出电压间的关系应为（其中R_1为前级放大器的反馈电阻阻值）：</p>
-<p>$$<br>U_{OUTPUT}&#x3D;-R_1×\frac{U_{V1}}{R_2}<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>U</mi><mrow><mi>O</mi><mi>U</mi><mi>T</mi><mi>P</mi><mi>U</mi><mi>T</mi></mrow></msub><mo>=</mo><mo>−</mo><msub><mi>R</mi><mn>1</mn></msub><mo>×</mo><mfrac><msub><mi>U</mi><mrow><mi>V</mi><mn>1</mn></mrow></msub><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">U_{OUTPUT}=-R_1×\frac{U_{V1}}{R_2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">O</span><span class="mord mathnormal mtight" style="margin-right:0.10903em;">U</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span><span class="mord mathnormal mtight" style="margin-right:0.10903em;">U</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord">−</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>若前级放大器性能良好，则在改变可变电压源V1的电压时，前级放大器的输出电压值应始终满足上述公式并拥有良好的线性度。</p>
 <p>在放大器性能验证中，测试将分为两组：两组测试的R_1均被设置为误差为±5%的100MΩ电阻，两组测试的R_2被分别设置为误差为±5%，阻值为1MΩ、100MΩ的电阻。测试将对可变电压源输出电压-前级放大器输出电压曲线进行测量，测量仪器为RIGOL-DS1102型示波器，测试结果如下：</p>
-<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png"></p>
-<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png"></p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>[1].    Ellis M D. Construction of a scanning tunneling microscope for imaging of carbon nanotubes[D]. Texas Tech University, 1998.</p>
+<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png" alt="" /></p>
+<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png" alt="" /></p>
+<h1 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h1>
+<p>[1].    Ellis M D. Construction of a scanning tunneling microscope for imaging of carbon nanotubes[D]. Texas Tech University, 1998.</p>
 
       
     </div>
@@ -277,7 +509,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-30 12:36:55 / 修改时间：12:42:24" itemprop="dateCreated datePublished" datetime="2023-11-30T12:36:55+08:00">2023-11-30</time>
+              <time title="创建时间：2023-11-30 12:36:55 / 修改时间：13:18:42" itemprop="dateCreated datePublished" datetime="2023-11-30T12:36:55+08:00">2023-11-30</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -286,6 +518,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
                 </span>
             </span>
 
@@ -300,10 +536,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="恒高扫描模式"><a href="#恒高扫描模式" class="headerlink" title="恒高扫描模式"></a>恒高扫描模式</h2><p>在恒高扫描模式中，扫描头的Z轴的高度将固定，通过控制X、Y轴的移动完成对样品表面的扫描，其扫描路径如图所示。在该模式下，样品的形貌变化通过隧穿电流变化体现，当隧穿电流变大时，表示样品表面存在突起，当隧穿电流减小时，表示样品表面存在凹陷。但由于样品表面的平整性不能完全保证，若样品表面某处存在大于探针悬停距离（隧穿距离）的突起时，探针在扫描该处时将与突起碰撞，从而导致探针针尖损毁。</p>
-<p><img src="https://pic.imgdb.cn/item/65681265c458853aef250f02.png"></p>
-<h2 id="恒流扫描模式"><a href="#恒流扫描模式" class="headerlink" title="恒流扫描模式"></a>恒流扫描模式</h2><p>在恒流扫描模式中，扫描头在对X、Y轴扫描的过程中，将控制探针Z轴的高度使隧穿电流大小恒定，即在扫描过程中探针与样品间距离保持恒定，Z轴运动轨迹呈现为贴合样品形貌起伏进行扫描，如图所示。扫描路径在扫描完成后通过分析Z轴位置信息将可以得出样品表面的形貌状态。在扫描隧道显微镜扫描的过程中通常会选择恒流扫描模式，以避免针尖损毁的情况发生。</p>
-<p><img src="https://pic.imgdb.cn/item/6568129fc458853aef25bc7b.png"></p>
+          <h2 id="恒高扫描模式"><a class="markdownIt-Anchor" href="#恒高扫描模式"></a> 恒高扫描模式</h2>
+<p>在恒高扫描模式中，扫描头的Z轴的高度将固定，通过控制X、Y轴的移动完成对样品表面的扫描，其扫描路径如图所示。在该模式下，样品的形貌变化通过隧穿电流变化体现，当隧穿电流变大时，表示样品表面存在突起，当隧穿电流减小时，表示样品表面存在凹陷。但由于样品表面的平整性不能完全保证，若样品表面某处存在大于探针悬停距离（隧穿距离）的突起时，探针在扫描该处时将与突起碰撞，从而导致探针针尖损毁。</p>
+<p><img src="https://pic.imgdb.cn/item/65681265c458853aef250f02.png" alt="" /></p>
+<h2 id="恒流扫描模式"><a class="markdownIt-Anchor" href="#恒流扫描模式"></a> 恒流扫描模式</h2>
+<p>在恒流扫描模式中，扫描头在对X、Y轴扫描的过程中，将控制探针Z轴的高度使隧穿电流大小恒定，即在扫描过程中探针与样品间距离保持恒定，Z轴运动轨迹呈现为贴合样品形貌起伏进行扫描，如图所示。扫描路径在扫描完成后通过分析Z轴位置信息将可以得出样品表面的形貌状态。在扫描隧道显微镜扫描的过程中通常会选择恒流扫描模式，以避免针尖损毁的情况发生。</p>
+<p><img src="https://pic.imgdb.cn/item/6568129fc458853aef25bc7b.png" alt="" /></p>
 
       
     </div>
@@ -348,7 +586,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-30 12:30:12 / 修改时间：12:43:47" itemprop="dateCreated datePublished" datetime="2023-11-30T12:30:12+08:00">2023-11-30</time>
+              <time title="创建时间：2023-11-30 12:30:12 / 修改时间：13:18:34" itemprop="dateCreated datePublished" datetime="2023-11-30T12:30:12+08:00">2023-11-30</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -357,6 +595,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
                 </span>
             </span>
 
@@ -371,18 +613,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="整体结构"><a href="#整体结构" class="headerlink" title="整体结构"></a>整体结构</h2><p><img src="https://pic.imgdb.cn/item/65681055c458853aef1f4703.jpg"></p>
-<p>扫描隧道显微镜的整体结构如图所示，其主要部件包括：机械进近结构、扫描头、探针、样品、前级放大器、控制及采集电路、控制及成像系统、隔音&#x2F;隔震系统。</p>
-<h2 id="机械进近结构"><a href="#机械进近结构" class="headerlink" title="机械进近结构"></a>机械进近结构</h2><p>机械进近结构负责将探针与样品进近到隧穿距离内，通常这个距离在1纳米左右。为了实现如此小尺度的进近，比较广泛的解决方案是利用机械结构设计进行位移的比例缩放[1]，通过将较大的位移缩放为小尺度的位移，从而实现精细移动。</p>
+          <h2 id="整体结构"><a class="markdownIt-Anchor" href="#整体结构"></a> 整体结构</h2>
+<p><img src="https://pic.imgdb.cn/item/65681055c458853aef1f4703.jpg" alt="" /></p>
+<p>扫描隧道显微镜的整体结构如图所示，其主要部件包括：机械进近结构、扫描头、探针、样品、前级放大器、控制及采集电路、控制及成像系统、隔音/隔震系统。</p>
+<h2 id="机械进近结构"><a class="markdownIt-Anchor" href="#机械进近结构"></a> 机械进近结构</h2>
+<p>机械进近结构负责将探针与样品进近到隧穿距离内，通常这个距离在1纳米左右。为了实现如此小尺度的进近，比较广泛的解决方案是利用机械结构设计进行位移的比例缩放[1]，通过将较大的位移缩放为小尺度的位移，从而实现精细移动。</p>
 <p>对于机械结构的控制，通常会引入步进电机作为位移驱动器。但是步进电机的使用会额外引入热噪声，为了避免热漂移问题，目前最合适作为STM的位移驱动器马达是粘-滑压电马达。</p>
-<h2 id="扫描头"><a href="#扫描头" class="headerlink" title="扫描头"></a>扫描头</h2><p>在机械进近结构将探针进近到隧穿距离后，扫描头将负责控制探针进行X、Y、Z轴移动，对样品表面进行扫描，并且扫描头的位移精度决定了最终成像的图像精度。为了实现微小位移，目前，以锆钛酸铅为主要成分的压电陶瓷（PZT）被广泛被应用与扫描隧道显微镜的扫描头中。由于逆压电效应，通过对压电陶瓷施加电压，压电陶瓷产生的位移将可以带动探针实现纳米级的X、Y、Z轴移动。</p>
-<h2 id="探针"><a href="#探针" class="headerlink" title="探针"></a>探针</h2><p>对于扫描隧道显微镜而言，隧穿电流最好由探针针尖的单个原子进行拾取，故需要原子级尖锐的针尖。对于针尖的制备，通常会选择金、铂等不易氧化的惰性材料进行电解制备而成[2]。但根据Nano Surf公司生产的STM技术资料以及普渡大学的资料显示，使用剪线钳对金属丝进行拉伸式剪切所得到的探针同样能够实现原子级分辨率。</p>
-<h2 id="前级放大器"><a href="#前级放大器" class="headerlink" title="前级放大器"></a>前级放大器</h2><p>由于隧穿电流通常在纳安数量级，故需要前级放大器对该数量级下的隧穿电流进行信号放大处理。在扫描隧道显微镜中，通常采用基于运算放大器的跨阻放大器[3]将隧穿电流信号转换为数字信号。</p>
-<h2 id="控制及采集电路"><a href="#控制及采集电路" class="headerlink" title="控制及采集电路"></a>控制及采集电路</h2><p>控制及采集电路主要负责控制机械进近结构进行进近、控制扫描头进行图像扫描以及采集前级放大器放大后的隧穿电流信号。通常控制及采集电路需要包括数模、模数转换器以及电机控制器。</p>
-<h2 id="控制及成像系统"><a href="#控制及成像系统" class="headerlink" title="控制及成像系统"></a>控制及成像系统</h2><p>控制及成像系统通常为运行在计算机上的能够与用于进行交互的程序。用户通过程序向控制电路发送信号，完成对样品的图像扫描头，通过程序内部的图像转换程序实现隧穿电流对可视化图像的转换。</p>
-<h2 id="隔音、隔震系统"><a href="#隔音、隔震系统" class="headerlink" title="隔音、隔震系统"></a>隔音、隔震系统</h2><p>由于扫描隧道显微镜的成像尺度在原子级，故对机械震动以及声波震动的敏感性极高，故需要搭建隔音、隔震系统保证扫描隧道显微镜工作在最佳环境。</p>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>[1].    Grafstrom S, Kowalski J, Neumann R. Design and detailed analysis of a scanning tunnelling microscope[J]. Measurement Science and Technology, 1990, 1(2): 139.</p>
-<p>[2].    Nam A J, Teren A, Lusby T A, et al. Benign making of sharp tips for STM and FIM: Pt, Ir, Au, Pd, and Rh[J]. Journal of Vacuum Science &amp; Technology B: Microelectronics </p>
+<h2 id="扫描头"><a class="markdownIt-Anchor" href="#扫描头"></a> 扫描头</h2>
+<p>在机械进近结构将探针进近到隧穿距离后，扫描头将负责控制探针进行X、Y、Z轴移动，对样品表面进行扫描，并且扫描头的位移精度决定了最终成像的图像精度。为了实现微小位移，目前，以锆钛酸铅为主要成分的压电陶瓷（PZT）被广泛被应用与扫描隧道显微镜的扫描头中。由于逆压电效应，通过对压电陶瓷施加电压，压电陶瓷产生的位移将可以带动探针实现纳米级的X、Y、Z轴移动。</p>
+<h2 id="探针"><a class="markdownIt-Anchor" href="#探针"></a> 探针</h2>
+<p>对于扫描隧道显微镜而言，隧穿电流最好由探针针尖的单个原子进行拾取，故需要原子级尖锐的针尖。对于针尖的制备，通常会选择金、铂等不易氧化的惰性材料进行电解制备而成[2]。但根据Nano Surf公司生产的STM技术资料以及普渡大学的资料显示，使用剪线钳对金属丝进行拉伸式剪切所得到的探针同样能够实现原子级分辨率。</p>
+<h2 id="前级放大器"><a class="markdownIt-Anchor" href="#前级放大器"></a> 前级放大器</h2>
+<p>由于隧穿电流通常在纳安数量级，故需要前级放大器对该数量级下的隧穿电流进行信号放大处理。在扫描隧道显微镜中，通常采用基于运算放大器的跨阻放大器[3]将隧穿电流信号转换为数字信号。</p>
+<h2 id="控制及采集电路"><a class="markdownIt-Anchor" href="#控制及采集电路"></a> 控制及采集电路</h2>
+<p>控制及采集电路主要负责控制机械进近结构进行进近、控制扫描头进行图像扫描以及采集前级放大器放大后的隧穿电流信号。通常控制及采集电路需要包括数模、模数转换器以及电机控制器。</p>
+<h2 id="控制及成像系统"><a class="markdownIt-Anchor" href="#控制及成像系统"></a> 控制及成像系统</h2>
+<p>控制及成像系统通常为运行在计算机上的能够与用于进行交互的程序。用户通过程序向控制电路发送信号，完成对样品的图像扫描头，通过程序内部的图像转换程序实现隧穿电流对可视化图像的转换。</p>
+<h2 id="隔音-隔震系统"><a class="markdownIt-Anchor" href="#隔音-隔震系统"></a> 隔音、隔震系统</h2>
+<p>由于扫描隧道显微镜的成像尺度在原子级，故对机械震动以及声波震动的敏感性极高，故需要搭建隔音、隔震系统保证扫描隧道显微镜工作在最佳环境。</p>
+<h1 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h1>
+<p>[1].    Grafstrom S, Kowalski J, Neumann R. Design and detailed analysis of a scanning tunnelling microscope[J]. Measurement Science and Technology, 1990, 1(2): 139.</p>
+<p>[2].    Nam A J, Teren A, Lusby T A, et al. Benign making of sharp tips for STM and FIM: Pt, Ir, Au, Pd, and Rh[J]. Journal of Vacuum Science &amp; Technology B: Microelectronics</p>
 <p>[3].    Petersen J P, Kandel S A. Circuit design considerations for current preamplifiers for scanning tunneling microscopy[J]. 2017.</p>
 
       
@@ -434,7 +685,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-30 12:43:59" itemprop="dateModified" datetime="2023-11-30T12:43:59+08:00">2023-11-30</time>
+                <time title="修改时间：2023-11-30 13:18:27" itemprop="dateModified" datetime="2023-11-30T13:18:27+08:00">2023-11-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -443,6 +694,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/" itemprop="url" rel="index"><span itemprop="name">扫描隧道显微镜（STM）</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%89%AB%E6%8F%8F%E9%9A%A7%E9%81%93%E6%98%BE%E5%BE%AE%E9%95%9C%EF%BC%88STM%EF%BC%89/%E9%A9%AC%E4%BC%9F%E9%9C%96%E8%AE%BE%E8%AE%A1%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">马伟霖设计参考</span></a>
                 </span>
             </span>
 
@@ -457,44 +712,82 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="理论准备"><a href="#理论准备" class="headerlink" title="理论准备"></a>理论准备</h2><p>在经典力学中，在一维情况下，总能量为E的电子在位置为x处的运动情况可以用以下公式表示：</p>
-<p>$$<br>E&#x3D;\frac{1}{2} m v^2+V(x)<br>$$</p>
-<p>其中，m为电子质量，v为电子速度，V(x)为与电子位置x处有关的势能。由式子(2.1)可知，只有当E&gt;Ep时，电子才具有正值的速度。因此，若某一位置势能Ep1&gt;E时，电子将不可能到达该位置。<br>德布罗意在1924年提出电子如光的波粒二象性一样，具有波的性质，并且电子的波长λ可以通过公式(2.2)描述：</p>
-<p>$$<br>E&#x3D;\frac{h}{p}<br>$$</p>
+          <h2 id="理论准备"><a class="markdownIt-Anchor" href="#理论准备"></a> 理论准备</h2>
+<p>在经典力学中，在一维情况下，总能量为E的电子在位置为x处的运动情况可以用以下公式表示：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>+</mo><mi>V</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E=\frac{1}{2} m v^2+V(x)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal">m</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中，m为电子质量，v为电子速度，V(x)为与电子位置x处有关的势能。由式子(2.1)可知，只有当E&gt;Ep时，电子才具有正值的速度。因此，若某一位置势能Ep1&gt;E时，电子将不可能到达该位置。<br />
+德布罗意在1924年提出电子如光的波粒二象性一样，具有波的性质，并且电子的波长λ可以通过公式(2.2)描述：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mi>h</mi><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">E=\frac{h}{p}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">p</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">h</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>其中，h为普朗克常量，p为电子动量。</p>
 <p>可以将扫描隧道显微镜的势能模型简化为下图所示的一维形式，探针与样品间的间隙被描述为方势垒，其中红色横线为电子能量：</p>
-<p><img src="https://pic.imgdb.cn/item/6566bd5bc458853aef6b2314.png"></p>
-<p>即势能可以通过公式描述为：V(x)&#x3D;0(x&lt;a, x&gt;a), V(x)&#x3D;V_1(a&lt;x&lt;b)<br>在量子力学中，电子将被满足薛定谔方程的波函数ψ(x)描述。此处讨论电子在一维定态下量子隧穿的情况，设电子的势能方程为：</p>
-<p>$$<br>V&#x3D;V(x)<br>$$</p>
+<p><img src="https://pic.imgdb.cn/item/6566bd5bc458853aef6b2314.png" alt="" /></p>
+<p>即势能可以通过公式描述为：V(x)=0(x&lt;a, x&gt;a), V(x)=V_1(a&lt;x&lt;b)<br />
+在量子力学中，电子将被满足薛定谔方程的波函数ψ(x)描述。此处讨论电子在一维定态下量子隧穿的情况，设电子的势能方程为：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>V</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V=V(x)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span></p>
 <p>此时波函数也只和空间坐标有关：</p>
-<p>$$<br>\psi&#x3D;\psi(x)<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ψ</mi><mo>=</mo><mi>ψ</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\psi=\psi(x)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span></p>
 <p>在定态情况下，不含时薛定谔方程取这样的形式：</p>
-<p>$$<br>\frac{d^2 \psi}{d x^2}+\frac{\hbar^2}{2 m}(E-V) \psi&#x3D;0<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>ψ</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mo stretchy="false">(</mo><mi>E</mi><mo>−</mo><mi>V</mi><mo stretchy="false">)</mo><mi>ψ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\frac{d^2 \psi}{d x^2}+\frac{\hbar^2}{2 m}(E-V) \psi=0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.177108em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.491108em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.177108em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.491108em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal">m</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">ℏ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></p>
 <p>其中：</p>
-<p>$$<br>ℏ&#x3D;\frac{h}{2π}<br>$$</p>
-<p>在扫描隧道显微镜工作时，电子可视为从探针区域射向势垒，但由于电子能量小于势垒，在经典力学角度上电子不可能跨过势垒到达样品处，即在样品与探针间不可能存在电流。<br>从经典力学角度对电子存在性上进行分析，可将空间区域分为经典允许区与经典禁区。当电子位于探针区域时，此时的电子总能量大于所处位置势能E&gt;V，从经典力学的角度上看，电子能够位于该区域，即经典允许区。当电子处于真空区域时，电子的总能量小于所处位置势能E&lt;V，从经典力学的角度上看电子不可能运动到该区域，即经典禁区。</p>
-<p>在经典允许区中，V&#x3D;0，薛定谔方程表示为：</p>
-<p>$$<br>\psi^{\prime \prime}+\frac{2 m E}{\hbar^2} \psi&#x3D;0<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">ℏ</mi><mo>=</mo><mfrac><mi>h</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">ℏ=\frac{h}{2π}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord">ℏ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">h</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>在扫描隧道显微镜工作时，电子可视为从探针区域射向势垒，但由于电子能量小于势垒，在经典力学角度上电子不可能跨过势垒到达样品处，即在样品与探针间不可能存在电流。<br />
+从经典力学角度对电子存在性上进行分析，可将空间区域分为经典允许区与经典禁区。当电子位于探针区域时，此时的电子总能量大于所处位置势能E&gt;V，从经典力学的角度上看，电子能够位于该区域，即经典允许区。当电子处于真空区域时，电子的总能量小于所处位置势能E&lt;V，从经典力学的角度上看电子不可能运动到该区域，即经典禁区。</p>
+<p>在经典允许区中，V=0，薛定谔方程表示为：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>ψ</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup><mo>+</mo><mfrac><mrow><mn>2</mn><mi>m</mi><mi>E</mi></mrow><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup></mfrac><mi>ψ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\psi^{\prime \prime}+\frac{2 m E}{\hbar^2} \psi=0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">ℏ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal">m</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></p>
 <p>设：</p>
-<p>$$<br>\frac{2 m E}{\hbar^2}&#x3D;k^2<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mn>2</mn><mi>m</mi><mi>E</mi></mrow><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup></mfrac><mo>=</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{2 m E}{\hbar^2}=k^2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">ℏ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal">m</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p>则方程变为：</p>
-<p>$$<br>\psi^{\prime \prime}+k^2 \psi&#x3D;0<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>ψ</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup><mi>ψ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\psi^{\prime \prime}+k^2 \psi=0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.0585479999999998em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></p>
 <p>该微分方程的通解为：</p>
-<p>$$<br>\psi_1(x)&#x3D;A \sin (k x+\delta), \delta&lt;\pi<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>ψ</mi><mn>1</mn></msub><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>k</mi><mi>x</mi><mo>+</mo><mi>δ</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>δ</mi><mo>&lt;</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">\psi_1(x)=A \sin (k x+\delta), \delta&lt;\pi
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span></span></p>
 <p>在经典禁区中的薛定谔方程为：</p>
-<p>$$<br>\psi^{\prime \prime}-\frac{2 m}{\hbar^2}(V-E) \psi&#x3D;0<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>ψ</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup><mo>−</mo><mfrac><mrow><mn>2</mn><mi>m</mi></mrow><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup></mfrac><mo stretchy="false">(</mo><mi>V</mi><mo>−</mo><mi>E</mi><mo stretchy="false">)</mo><mi>ψ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\psi^{\prime \prime}-\frac{2 m}{\hbar^2}(V-E) \psi=0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">ℏ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></p>
 <p>设：</p>
-<p>$$<br>\frac{2 m}{\hbar^2}(V-E)&#x3D;\beta^2<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mn>2</mn><mi>m</mi></mrow><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup></mfrac><mo stretchy="false">(</mo><mi>V</mi><mo>−</mo><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>β</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{2 m}{\hbar^2}(V-E)=\beta^2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">ℏ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathnormal">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0585479999999998em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
 <p>因为E&lt;V1，所以β为实数。此时经典禁区的薛定谔方程变为：</p>
-<p>$$<br>\psi^{\prime \prime}+k^2 \psi&#x3D;0<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>ψ</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup><mi>ψ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\psi^{\prime \prime}+k^2 \psi=0
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.996332em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.801892em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.0585479999999998em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></span></p>
 <p>该方程的形式解为：</p>
-<p>$$<br>\psi \sim e^{\pm \beta x}<br>$$</p>
-<p>可见，在经典力学中不可能出现电子的真空势垒中，在量子力学中仍然存在概率分布，并且其以指数形式衰减。<br>即对于如势垒模型图描述的模型中，电子将有概率穿过真空势垒，并在样品区域产生透射波。这种电子能够穿透比其能量更高的势垒的效应即量子隧穿效应。<br>通过对该模型的边界条件以及连续条件可求解得到隧穿电流与真空势垒的关系为：</p>
-<p>$$<br>I \propto e^{-2 \kappa d}<br>$$</p>
-<p> 其中：</p>
-<p>$$<br>\kappa&#x3D;\frac{\sqrt{2m(V-E)}}{\hbar}<br>$$</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ψ</mi><mo>∼</mo><msup><mi>e</mi><mrow><mo>±</mo><mi>β</mi><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\psi \sim e^{\pm \beta x}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8991079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">±</span><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>可见，在经典力学中不可能出现电子的真空势垒中，在量子力学中仍然存在概率分布，并且其以指数形式衰减。<br />
+即对于如势垒模型图描述的模型中，电子将有概率穿过真空势垒，并在样品区域产生透射波。这种电子能够穿透比其能量更高的势垒的效应即量子隧穿效应。<br />
+通过对该模型的边界条件以及连续条件可求解得到隧穿电流与真空势垒的关系为：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>∝</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>κ</mi><mi>d</mi></mrow></msup></mrow><annotation encoding="application/x-tex">I \propto e^{-2 \kappa d}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∝</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8991079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">2</span><span class="mord mathnormal mtight">κ</span><span class="mord mathnormal mtight">d</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>其中：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>κ</mi><mo>=</mo><mfrac><msqrt><mrow><mn>2</mn><mi>m</mi><mo stretchy="false">(</mo><mi>V</mi><mo>−</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></msqrt><mi mathvariant="normal">ℏ</mi></mfrac></mrow><annotation encoding="application/x-tex">\kappa=\frac{\sqrt{2m(V-E)}}{\hbar}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">κ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.316em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.63em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">ℏ</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.6950000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord">2</span><span class="mord mathnormal">m</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span><span style="top:-2.8950000000000005em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg width='400em' height='1.28em' viewBox='0 0 400000 1296' preserveAspectRatio='xMinYMin slice'><path d='M263,681c0.7,0,18,39.7,52,119
+c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
+c340,-704.7,510.7,-1060.3,512,-1067
+l0 -0
+c4.7,-7.3,11,-11,19,-11
+H40000v40H1012.3
+s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
+c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
+s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
+c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
+M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.30499999999999994em;"><span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>d为探针样品间距。从公式可以看出，当进入隧穿距离后，探针与样品间距与隧穿电流呈指数关系。当探针样品间距离变化0.1nm左右时，隧穿电流大小将改变一个量级[6]，这也为扫描隧道显微镜的超高分辨率提供了理论基础。</p>
-<h2 id="技术难点"><a href="#技术难点" class="headerlink" title="技术难点"></a>技术难点</h2><p>1.样品-探针推进至隧穿距离（2nm），不碰撞<br>2.控制探针实现纳米级移动<br>3.探针尖端需要纳米级锐度<br>4.隔离振动<br>5.探测nA级隧穿电流<br>6.控制系统</p>
+<h2 id="技术难点"><a class="markdownIt-Anchor" href="#技术难点"></a> 技术难点</h2>
+<p>1.样品-探针推进至隧穿距离（2nm），不碰撞<br />
+2.控制探针实现纳米级移动<br />
+3.探针尖端需要纳米级锐度<br />
+4.隔离振动<br />
+5.探测nA级隧穿电流<br />
+6.控制系统</p>
 
       
     </div>
@@ -919,227 +1212,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/article/189dfb54">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://pic.imgdb.cn/item/656459ffc458853aeffea9f2.png">
-      <meta itemprop="name" content="左柒Qi">
-      <meta itemprop="description" content="Nothing but for devotion">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="德高科创社">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/article/189dfb54" class="post-title-link" itemprop="url">招新名单</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-11-22 16:06:20" itemprop="dateCreated datePublished" datetime="2023-11-22T16:06:20+08:00">2023-11-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-30 12:44:22" itemprop="dateModified" datetime="2023-11-30T12:44:22+08:00">2023-11-30</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>##招新名单公示</p>
-<table>
-<thead>
-<tr>
-<th align="center">班级</th>
-<th align="center">姓名</th>
-<th align="center">班级</th>
-<th align="center">姓名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">101</td>
-<td align="center">姚方浩</td>
-<td align="center">107</td>
-<td align="center">王俊志</td>
-</tr>
-<tr>
-<td align="center">101</td>
-<td align="center">钟乐凡</td>
-<td align="center">107</td>
-<td align="center">王慧雯</td>
-</tr>
-<tr>
-<td align="center">101</td>
-<td align="center">朱婧悦</td>
-<td align="center">107</td>
-<td align="center">王嘉宇</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">曹岳</td>
-<td align="center">107</td>
-<td align="center">徐管睿</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">崔子卉</td>
-<td align="center">109</td>
-<td align="center">方姚涵</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">葛元敏</td>
-<td align="center">109</td>
-<td align="center">徐思源</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">李善宇</td>
-<td align="center">205</td>
-<td align="center">蒋储赢</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">刘晓华</td>
-<td align="center">205</td>
-<td align="center">朱格</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">潘笑笑</td>
-<td align="center">206</td>
-<td align="center">华东</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">沈阳</td>
-<td align="center">206</td>
-<td align="center">王佳铮</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">童艺初</td>
-<td align="center">206</td>
-<td align="center">童城语</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">吴忧</td>
-<td align="center">208</td>
-<td align="center">戴齐隽</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="center">张万年</td>
-<td align="center">211</td>
-<td align="center">陈溪</td>
-</tr>
-<tr>
-<td align="center">103</td>
-<td align="center">刘晓琪</td>
-<td align="center">211</td>
-<td align="center">蔡依成</td>
-</tr>
-<tr>
-<td align="center">103</td>
-<td align="center">张亦琛</td>
-<td align="center">211</td>
-<td align="center">郎浪</td>
-</tr>
-<tr>
-<td align="center">104</td>
-<td align="center">丁浚泽</td>
-<td align="center">三营</td>
-<td align="center">钟嘉楷</td>
-</tr>
-<tr>
-<td align="center">104</td>
-<td align="center">金星宇</td>
-<td align="center">三营</td>
-<td align="center">沈宸</td>
-</tr>
-<tr>
-<td align="center">104</td>
-<td align="center">邵俊喆</td>
-<td align="center">三营</td>
-<td align="center">黄依垒</td>
-</tr>
-<tr>
-<td align="center">104</td>
-<td align="center">叶舒阳</td>
-<td align="center">三营</td>
-<td align="center">曾诚俊</td>
-</tr>
-<tr>
-<td align="center">105</td>
-<td align="center">汪树一</td>
-<td align="center">三营</td>
-<td align="center">刘文昊</td>
-</tr>
-<tr>
-<td align="center">107</td>
-<td align="center">丁奕</td>
-<td align="center">三营</td>
-<td align="center">杨博凡</td>
-</tr>
-<tr>
-<td align="center">107</td>
-<td align="center">康裴俊</td>
-<td align="center">三营</td>
-<td align="center">方赟哲</td>
-</tr>
-<tr>
-<td align="center">107</td>
-<td align="center">王昌龙</td>
-<td align="center">三营</td>
-<td align="center">陆喆淏</td>
-</tr>
-<tr>
-<td align="center">107</td>
-<td align="center">王嘉禾</td>
-<td align="center">三营</td>
-<td align="center">杨郑</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -1206,14 +1283,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">

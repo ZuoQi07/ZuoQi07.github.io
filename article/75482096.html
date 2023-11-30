@@ -20,21 +20,29 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="整体结构  扫描隧道显微镜的整体结构如图所示，其主要部件包括：机械进近结构、扫描头、探针、样品、前级放大器、控制及采集电路、控制及成像系统、隔音&#x2F;隔震系统。  机械进近结构 机械进近结构负责将探针与样品进近到隧穿距离内，通常这个距离在1纳米左右。为了实现如此小尺度的进近，比较广泛的解决方案是利用机械结构设计进行位移的比例缩放[1]，通过将较大的位移缩放为小尺度的位移，从而实现精细移动。 对于机械">
+  <meta name="description" content="压电扫描头设计  压电扫描头器件选择 对于扫描隧道显微镜而言，扫描头的分辨率决定了图像的分辨率。除此之外，对于隧道电流的建立也主要由扫描头来完成。考虑到空气中隧穿距离的普遍距离在10Å以内[1][2]，故需要扫描头的形变需要控制在纳米级别。 在商业扫描隧道显微镜中，普遍采用压电晶体作为压电扫描头的执行器，但直接购买商用压电晶体管成本较高且驱动难度较大。在经过调研后发现，由John D. Alex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="0-1 STM基本结构">
-<meta property="og:url" content="http://example.com/article/6a74499e">
+<meta property="og:title" content="1-3 压电扫描头设计">
+<meta property="og:url" content="http://example.com/article/75482096">
 <meta property="og:site_name" content="德高科创社">
-<meta property="og:description" content="整体结构  扫描隧道显微镜的整体结构如图所示，其主要部件包括：机械进近结构、扫描头、探针、样品、前级放大器、控制及采集电路、控制及成像系统、隔音&#x2F;隔震系统。  机械进近结构 机械进近结构负责将探针与样品进近到隧穿距离内，通常这个距离在1纳米左右。为了实现如此小尺度的进近，比较广泛的解决方案是利用机械结构设计进行位移的比例缩放[1]，通过将较大的位移缩放为小尺度的位移，从而实现精细移动。 对于机械">
+<meta property="og:description" content="压电扫描头设计  压电扫描头器件选择 对于扫描隧道显微镜而言，扫描头的分辨率决定了图像的分辨率。除此之外，对于隧道电流的建立也主要由扫描头来完成。考虑到空气中隧穿距离的普遍距离在10Å以内[1][2]，故需要扫描头的形变需要控制在纳米级别。 在商业扫描隧道显微镜中，普遍采用压电晶体作为压电扫描头的执行器，但直接购买商用压电晶体管成本较高且驱动难度较大。在经过调研后发现，由John D. Alex">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imgdb.cn/item/65681055c458853aef1f4703.jpg">
-<meta property="article:published_time" content="2023-11-30T04:30:12.000Z">
-<meta property="article:modified_time" content="2023-11-30T05:18:34.405Z">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6568190dc458853aef3ae621.pngmedia/54c76efedd099461ea1cd25a082f362e.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/65681966c458853aef3c264a.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/656819cec458853aef3d918d.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/656819e7c458853aef3de660.pngmedia/bbab0a534fa2089c4f1739aa809188e2.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/65681a06c458853aef3e5789.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/65681a24c458853aef3eb8b7.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/65681a42c458853aef3f1cdd.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/65681a59c458853aef3f6a3c.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/65681a76c458853aef3fcd72.png">
+<meta property="article:published_time" content="2023-11-30T04:57:16.000Z">
+<meta property="article:modified_time" content="2023-11-30T05:19:12.768Z">
 <meta property="article:author" content="左柒Qi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imgdb.cn/item/65681055c458853aef1f4703.jpg">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/6568190dc458853aef3ae621.pngmedia/54c76efedd099461ea1cd25a082f362e.png">
 
-<link rel="canonical" href="http://example.com/article/6a74499e.html">
+<link rel="canonical" href="http://example.com/article/75482096.html">
 
 
 <script id="page-configurations">
@@ -47,7 +55,7 @@
   };
 </script>
 
-  <title>0-1 STM基本结构 | 德高科创社</title>
+  <title>1-3 压电扫描头设计 | 德高科创社</title>
   
 
 
@@ -174,7 +182,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/article/6a74499e">
+    <link itemprop="mainEntityOfPage" href="http://example.com/article/75482096">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://pic.imgdb.cn/item/656459ffc458853aeffea9f2.png">
@@ -187,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          0-1 STM基本结构
+          1-3 压电扫描头设计
         </h1>
 
         <div class="post-meta">
@@ -198,7 +206,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-30 12:30:12 / 修改时间：13:18:34" itemprop="dateCreated datePublished" datetime="2023-11-30T12:30:12+08:00">2023-11-30</time>
+              <time title="创建时间：2023-11-30 12:57:16 / 修改时间：13:19:12" itemprop="dateCreated datePublished" datetime="2023-11-30T12:57:16+08:00">2023-11-30</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -225,28 +233,75 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="整体结构"><a class="markdownIt-Anchor" href="#整体结构"></a> 整体结构</h2>
-<p><img src="https://pic.imgdb.cn/item/65681055c458853aef1f4703.jpg" alt="" /></p>
-<p>扫描隧道显微镜的整体结构如图所示，其主要部件包括：机械进近结构、扫描头、探针、样品、前级放大器、控制及采集电路、控制及成像系统、隔音/隔震系统。</p>
-<h2 id="机械进近结构"><a class="markdownIt-Anchor" href="#机械进近结构"></a> 机械进近结构</h2>
-<p>机械进近结构负责将探针与样品进近到隧穿距离内，通常这个距离在1纳米左右。为了实现如此小尺度的进近，比较广泛的解决方案是利用机械结构设计进行位移的比例缩放[1]，通过将较大的位移缩放为小尺度的位移，从而实现精细移动。</p>
-<p>对于机械结构的控制，通常会引入步进电机作为位移驱动器。但是步进电机的使用会额外引入热噪声，为了避免热漂移问题，目前最合适作为STM的位移驱动器马达是粘-滑压电马达。</p>
-<h2 id="扫描头"><a class="markdownIt-Anchor" href="#扫描头"></a> 扫描头</h2>
-<p>在机械进近结构将探针进近到隧穿距离后，扫描头将负责控制探针进行X、Y、Z轴移动，对样品表面进行扫描，并且扫描头的位移精度决定了最终成像的图像精度。为了实现微小位移，目前，以锆钛酸铅为主要成分的压电陶瓷（PZT）被广泛被应用与扫描隧道显微镜的扫描头中。由于逆压电效应，通过对压电陶瓷施加电压，压电陶瓷产生的位移将可以带动探针实现纳米级的X、Y、Z轴移动。</p>
-<h2 id="探针"><a class="markdownIt-Anchor" href="#探针"></a> 探针</h2>
-<p>对于扫描隧道显微镜而言，隧穿电流最好由探针针尖的单个原子进行拾取，故需要原子级尖锐的针尖。对于针尖的制备，通常会选择金、铂等不易氧化的惰性材料进行电解制备而成[2]。但根据Nano Surf公司生产的STM技术资料以及普渡大学的资料显示，使用剪线钳对金属丝进行拉伸式剪切所得到的探针同样能够实现原子级分辨率。</p>
-<h2 id="前级放大器"><a class="markdownIt-Anchor" href="#前级放大器"></a> 前级放大器</h2>
-<p>由于隧穿电流通常在纳安数量级，故需要前级放大器对该数量级下的隧穿电流进行信号放大处理。在扫描隧道显微镜中，通常采用基于运算放大器的跨阻放大器[3]将隧穿电流信号转换为数字信号。</p>
-<h2 id="控制及采集电路"><a class="markdownIt-Anchor" href="#控制及采集电路"></a> 控制及采集电路</h2>
-<p>控制及采集电路主要负责控制机械进近结构进行进近、控制扫描头进行图像扫描以及采集前级放大器放大后的隧穿电流信号。通常控制及采集电路需要包括数模、模数转换器以及电机控制器。</p>
-<h2 id="控制及成像系统"><a class="markdownIt-Anchor" href="#控制及成像系统"></a> 控制及成像系统</h2>
-<p>控制及成像系统通常为运行在计算机上的能够与用于进行交互的程序。用户通过程序向控制电路发送信号，完成对样品的图像扫描头，通过程序内部的图像转换程序实现隧穿电流对可视化图像的转换。</p>
-<h2 id="隔音-隔震系统"><a class="markdownIt-Anchor" href="#隔音-隔震系统"></a> 隔音、隔震系统</h2>
-<p>由于扫描隧道显微镜的成像尺度在原子级，故对机械震动以及声波震动的敏感性极高，故需要搭建隔音、隔震系统保证扫描隧道显微镜工作在最佳环境。</p>
+        <h1 id="压电扫描头设计"><a class="markdownIt-Anchor" href="#压电扫描头设计"></a> 压电扫描头设计</h1>
+<h2 id="压电扫描头器件选择"><a class="markdownIt-Anchor" href="#压电扫描头器件选择"></a> 压电扫描头器件选择</h2>
+<p>对于扫描隧道显微镜而言，扫描头的分辨率决定了图像的分辨率。除此之外，对于隧道电流的建立也主要由扫描头来完成。考虑到空气中隧穿距离的普遍距离在10Å以内[1][2]，故需要扫描头的形变需要控制在纳米级别。</p>
+<p>在商业扫描隧道显微镜中，普遍采用压电晶体作为压电扫描头的执行器，但直接购买商用压电晶体管成本较高且驱动难度较大。在经过调研后发现，由John D. Alexander提出的结构[3]可以利用内置了压电晶体的压电蜂鸣器（如图）进行改造，制成能够用于扫描隧道显微镜的压电扫描头。</p>
+<p><img src="https://pic.imgdb.cn/item/6568190dc458853aef3ae621.pngmedia/54c76efedd099461ea1cd25a082f362e.png" alt="" /></p>
+<h2 id="压电蜂鸣器工作原理"><a class="markdownIt-Anchor" href="#压电蜂鸣器工作原理"></a> 压电蜂鸣器工作原理</h2>
+<p>常见的盘状压电蜂鸣器的侧视结构如下图所示：</p>
+<p><img src="https://pic.imgdb.cn/item/65681966c458853aef3c264a.png" alt="" /></p>
+<p>压电蜂鸣器主要由三个圆盘层构成：铜层、压电陶瓷层和镀银层。铜层半径为d1，压电陶瓷层及镀银层半径为d2。本项目使用的木村(muRata)7BB-20-6L0型压电蜂鸣器直径d1=20mm，d2=14mm。</p>
+<p>铜层与镀银层与压电陶瓷存在直接的导电接触，并且导线被分别焊接在铜层和镀银层上用于给压电陶瓷施加电场。此外，铜层除了提供导电接触外，还能够为压电蜂鸣器提供一定的机械强度以及作为蜂鸣器的振膜。</p>
+<p>利用逆压电效应，通过在压电陶瓷两侧施加电压，可以让压电陶瓷发生形变。对压电蜂鸣器施加不同频率的交变电压，压电蜂鸣器便会发出不同频率的声音，这即是压电蜂鸣器的工作原理。</p>
+<p>以7BB-20-6L0型压电蜂鸣器为例，如下图所示：当通过引线对镀银层施加正向电压时，蜂鸣器整体向镀银层方向弯曲，当对铜层施加正向电压时，蜂鸣器整体向铜层方向弯曲。</p>
+<p><img src="https://pic.imgdb.cn/item/656819cec458853aef3d918d.png" alt="" /></p>
+<p>对于压电陶瓷而言，存在两个需要关注的参数：即纵向压电应变常数和横向压电应变常数。纵向压电应变常数(d33)描述了电场和形变方向一致时的电场、电压对应变的转换关系，而横向压电应变常数(d31)则是描述了电场和形变方向垂直时的转换关系[4]。用公式可表达为（其中S为材料应变，d为压电常数，E为电场强度）：S=dE</p>
+<p>当考虑对压电陶瓷施加电压时，压电陶瓷产生的形变量可以使用以下公式表示（其中ΔL为形变量，d为压电常数，V为施加电压）：ΔL=dV</p>
+<p>下表列出了常用于压电蜂鸣器的压电陶瓷的横向压电应变常数：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">压电陶瓷类型</th>
+<th style="text-align:center">d31(nm/V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">PZT-5A</td>
+<td style="text-align:center">-0.18</td>
+</tr>
+<tr>
+<td style="text-align:center">BM500</td>
+<td style="text-align:center">-0.16</td>
+</tr>
+<tr>
+<td style="text-align:center">PZT-5H</td>
+<td style="text-align:center">-0.27</td>
+</tr>
+<tr>
+<td style="text-align:center">BM527</td>
+<td style="text-align:center">-0.25</td>
+</tr>
+<tr>
+<td style="text-align:center">PZT-4</td>
+<td style="text-align:center">-0.12</td>
+</tr>
+</tbody>
+</table>
+<p>对于压电蜂鸣器而言，其所能够产生的弯曲形变是利用了压电陶瓷的横向应变的特性。在图3.9中，压电蜂鸣器的圆盘形压电陶瓷在受到电场作用下沿水平方向“舒张”或“收缩”，从而产生弯曲。在应力一定的情况下，压电蜂鸣器的弯曲程度由横向应变常数和电压决定，从表3.1的参数中可以看到，常用的压电陶瓷d31在-0.12nm/V~-0.25nm/V，由此可判断将压电蜂鸣器用于扫描隧道显微镜的扫描头是可行的。</p>
+<h2 id="压电扫描头结构"><a class="markdownIt-Anchor" href="#压电扫描头结构"></a> 压电扫描头结构</h2>
+<p>本项目的压电扫描头的实物图及结构图如图所示：</p>
+<p><img src="https://pic.imgdb.cn/item/656819e7c458853aef3de660.pngmedia/bbab0a534fa2089c4f1739aa809188e2.png" alt="" /></p>
+<p><img src="https://pic.imgdb.cn/item/65681a06c458853aef3e5789.png" alt="" /></p>
+<p>压电扫描头的部件由图3.11所示的五个部分组成。PLA连接器为聚乳酸的3D打印结构，用于连接压电蜂鸣器与PCB。PCB为玻璃纤维材料，为MMCX连接器提供焊盘。MMCX连接器为通讯用信号连接器，其内部具有直径为0.3~0.4mm的针座，可用于安装探针。压电蜂鸣器、PLA连接器、PCB之间使用502胶水进行粘接，PCB与MMCX连接器之间使用焊锡进行焊接固定。压电蜂鸣器的弯曲动作将通过中间的连接组件（PLA连接器、PCB、MMCX连接器）传递至探针，从而带动探针的移动。</p>
+<p>压电蜂鸣器的镀银层被均匀地覆盖在压电陶瓷的表面，此时的压电蜂鸣器只能实现一维弯曲。若使用切割工具将镀银层进行切割，并切割成如图所示的结构，压电蜂鸣器将能够实现三维的移动。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a24c458853aef3eb8b7.png" alt="" /></p>
+<p>所示的镀银层分割为+X、-X、+Y、-Y四个区域，四个区域的镀银层互不导通。此时若让蜂鸣器的铜层接地，即电压为0，当对四个区域施加相同的正电压或负电压时，探针将被带动向上移动或向下移动。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a42c458853aef3f1cdd.png" alt="" /></p>
+<p>对切割图的红色线条方向进行剖视，剖视的示意图如图3.14所示。当对-X区域的镀银层施加正向电压，对+X区域的镀银层施加大小相同的反向电压时，压电陶瓷将发生“S形”弯曲，探针将被带向-X方向。反之，若对-X区域施加反向电压，对+X区域施加正向电压，探针将被带向+X方向。对于-Y、+Y区域的情况和-X、+X原理相同。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a59c458853aef3f6a3c.png" alt="" /></p>
+<p>通过控制+X、-X和+Y、-Y间的相对电压差，可以实现探针的X、Y（前后左右）轴移动，通过控制四个区域整体对地（铜层）的电压差，可以实现探针的Z轴（上下）移动。</p>
+<h2 id="压电陶瓷的去极化"><a class="markdownIt-Anchor" href="#压电陶瓷的去极化"></a> 压电陶瓷的去极化</h2>
+<p>目前广泛使用的压电陶瓷主要成分为锆钛酸铅Pb[Zr_x Ti_(1-x)]O_3 (0≤x≤1)，在制作过程中会将烧结好的压电陶瓷加以强场进行极化，但如果对已经极化完成的压电陶瓷施加过高的温度，压电陶瓷将去极化从而失效。</p>
+<p>主要成分同样为锆钛酸铅的NCE51型压电陶瓷在350~370℃将发生去极化[5]，由于muRata公司未提供7BB-20-6L0型压电蜂鸣器所用压电陶瓷的具体型号，为保险起见，在对压电蜂鸣器进行导线焊接时需要使用熔点为170℃左右的低温焊锡进行焊接，并将烙铁头温度控制在200℃左右以避免压电陶瓷发生去极化，从而影响压电扫描头的整体性能。</p>
+<p><img src="https://pic.imgdb.cn/item/65681a76c458853aef3fcd72.png" alt="" /></p>
 <h1 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h1>
-<p>[1].    Grafstrom S, Kowalski J, Neumann R. Design and detailed analysis of a scanning tunnelling microscope[J]. Measurement Science and Technology, 1990, 1(2): 139.</p>
-<p>[2].    Nam A J, Teren A, Lusby T A, et al. Benign making of sharp tips for STM and FIM: Pt, Ir, Au, Pd, and Rh[J]. Journal of Vacuum Science &amp; Technology B: Microelectronics</p>
-<p>[3].    Petersen J P, Kandel S A. Circuit design considerations for current preamplifiers for scanning tunneling microscopy[J]. 2017.</p>
+<p>[1].    Hahn J R, Hong Y A, Kang H. Electron tunneling across an interfacial water layer inside an STM junction: tunneling distance, barrier height and water polarization effect[J]. Applied Physics A, 1998, 66(1): S467-S472.</p>
+<p>[2].    Woo D H, Choi E M, Yoon Y H, et al. Current–distance–voltage characteristics of electron tunneling through an electrochemical STM junction[J]. Surface science, 2007, 601(6): 1554-1559.</p>
+<p>[3].    Alexander J D, Tortonese M, Nguyen T. Atomic force microscope with integrated optics for attachment to optical microscope: U.S. Patent 5,952,657[P]. 1999-9-14.</p>
+<p>[4].    陈大任,李国荣,殷庆瑞.逆压电效应的压电常数和压电陶瓷微位移驱动器[J].无机材料学报,1997(06):861-866.</p>
+<p>[5].    Fialka J, Benes P, Michlovska L, et al. Measurement of thermal depolarization effects in piezoelectric coefficients of soft PZT ceramics via the frequency and direct methods[J]. Journal of the European Ceramic Society, 2016, 36(11): 2727-2738.</p>
 
     </div>
 
@@ -262,13 +317,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/article/b4fbd8" rel="prev" title="0-0 STM的理论准备和技术难点">
-      <i class="fa fa-chevron-left"></i> 0-0 STM的理论准备和技术难点
+    <a href="/article/c082a883" rel="prev" title="1-2 扫描探针制备">
+      <i class="fa fa-chevron-left"></i> 1-2 扫描探针制备
     </a></div>
-      <div class="post-nav-item">
-    <a href="/article/e44566dd" rel="next" title="0-2 STM工作模式">
-      0-2 STM工作模式 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -327,7 +379,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B4%E4%BD%93%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text"> 整体结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%BA%E6%A2%B0%E8%BF%9B%E8%BF%91%E7%BB%93%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text"> 机械进近结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%AB%E6%8F%8F%E5%A4%B4"><span class="nav-number">3.</span> <span class="nav-text"> 扫描头</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A2%E9%92%88"><span class="nav-number">4.</span> <span class="nav-text"> 探针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BA%A7%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="nav-number">5.</span> <span class="nav-text"> 前级放大器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6%E5%8F%8A%E9%87%87%E9%9B%86%E7%94%B5%E8%B7%AF"><span class="nav-number">6.</span> <span class="nav-text"> 控制及采集电路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6%E5%8F%8A%E6%88%90%E5%83%8F%E7%B3%BB%E7%BB%9F"><span class="nav-number">7.</span> <span class="nav-text"> 控制及成像系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%94%E9%9F%B3-%E9%9A%94%E9%9C%87%E7%B3%BB%E7%BB%9F"><span class="nav-number">8.</span> <span class="nav-text"> 隔音、隔震系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number"></span> <span class="nav-text"> 参考文献</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8E%8B%E7%94%B5%E6%89%AB%E6%8F%8F%E5%A4%B4%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text"> 压电扫描头设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%8B%E7%94%B5%E6%89%AB%E6%8F%8F%E5%A4%B4%E5%99%A8%E4%BB%B6%E9%80%89%E6%8B%A9"><span class="nav-number">1.1.</span> <span class="nav-text"> 压电扫描头器件选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%8B%E7%94%B5%E8%9C%82%E9%B8%A3%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text"> 压电蜂鸣器工作原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%8B%E7%94%B5%E6%89%AB%E6%8F%8F%E5%A4%B4%E7%BB%93%E6%9E%84"><span class="nav-number">1.3.</span> <span class="nav-text"> 压电扫描头结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%8B%E7%94%B5%E9%99%B6%E7%93%B7%E7%9A%84%E5%8E%BB%E6%9E%81%E5%8C%96"><span class="nav-number">1.4.</span> <span class="nav-text"> 压电陶瓷的去极化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">2.</span> <span class="nav-text"> 参考文献</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
