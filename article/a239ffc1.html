@@ -20,21 +20,24 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="理论准备在经典力学中，在一维情况下，总能量为E的电子在位置为x处的运动情况可以用以下公式表示： $$E&#x3D;\frac{1}{2} m v^2+V(x)$$ 其中，m为电子质量，v为电子速度，V(x)为与电子位置x处有关的势能。由式子(2.1)可知，只有当E&gt;Ep时，电子才具有正值的速度。因此，若某一位置势能Ep1&gt;E时，电子将不可能到达该位置。德布罗意在1924年提出电子如光的">
+  <meta name="description" content="前级放大器设计隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。  图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="0-0 STM的理论准备和技术难点">
-<meta property="og:url" content="http://example.com/article/b4fbd8">
+<meta property="og:title" content="1-1 前级放大器设计">
+<meta property="og:url" content="http://example.com/article/a239ffc1">
 <meta property="og:site_name" content="德高科创社">
-<meta property="og:description" content="理论准备在经典力学中，在一维情况下，总能量为E的电子在位置为x处的运动情况可以用以下公式表示： $$E&#x3D;\frac{1}{2} m v^2+V(x)$$ 其中，m为电子质量，v为电子速度，V(x)为与电子位置x处有关的势能。由式子(2.1)可知，只有当E&gt;Ep时，电子才具有正值的速度。因此，若某一位置势能Ep1&gt;E时，电子将不可能到达该位置。德布罗意在1924年提出电子如光的">
+<meta property="og:description" content="前级放大器设计隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。  图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pic.imgdb.cn/item/6566bd5bc458853aef6b2314.png">
-<meta property="article:published_time" content="2023-11-29T04:22:56.000Z">
-<meta property="article:modified_time" content="2023-11-30T04:43:59.836Z">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/656814c2c458853aef2ca75b.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png">
+<meta property="og:image" content="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png">
+<meta property="article:published_time" content="2023-11-30T04:46:29.000Z">
+<meta property="article:modified_time" content="2023-11-30T04:52:37.892Z">
 <meta property="article:author" content="左柒Qi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://pic.imgdb.cn/item/6566bd5bc458853aef6b2314.png">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png">
 
-<link rel="canonical" href="http://example.com/article/b4fbd8.html">
+<link rel="canonical" href="http://example.com/article/a239ffc1.html">
 
 
 <script id="page-configurations">
@@ -47,7 +50,7 @@
   };
 </script>
 
-  <title>0-0 STM的理论准备和技术难点 | 德高科创社</title>
+  <title>1-1 前级放大器设计 | 德高科创社</title>
   
 
 
@@ -174,7 +177,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/article/b4fbd8">
+    <link itemprop="mainEntityOfPage" href="http://example.com/article/a239ffc1">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://pic.imgdb.cn/item/656459ffc458853aeffea9f2.png">
@@ -187,7 +190,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          0-0 STM的理论准备和技术难点
+          1-1 前级放大器设计
         </h1>
 
         <div class="post-meta">
@@ -196,16 +199,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-11-29 12:22:56" itemprop="dateCreated datePublished" datetime="2023-11-29T12:22:56+08:00">2023-11-29</time>
+              <time title="创建时间：2023-11-30 12:46:29 / 修改时间：12:52:37" itemprop="dateCreated datePublished" datetime="2023-11-30T12:46:29+08:00">2023-11-30</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-30 12:43:59" itemprop="dateModified" datetime="2023-11-30T12:43:59+08:00">2023-11-30</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -227,44 +224,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="理论准备"><a href="#理论准备" class="headerlink" title="理论准备"></a>理论准备</h2><p>在经典力学中，在一维情况下，总能量为E的电子在位置为x处的运动情况可以用以下公式表示：</p>
-<p>$$<br>E&#x3D;\frac{1}{2} m v^2+V(x)<br>$$</p>
-<p>其中，m为电子质量，v为电子速度，V(x)为与电子位置x处有关的势能。由式子(2.1)可知，只有当E&gt;Ep时，电子才具有正值的速度。因此，若某一位置势能Ep1&gt;E时，电子将不可能到达该位置。<br>德布罗意在1924年提出电子如光的波粒二象性一样，具有波的性质，并且电子的波长λ可以通过公式(2.2)描述：</p>
-<p>$$<br>E&#x3D;\frac{h}{p}<br>$$</p>
-<p>其中，h为普朗克常量，p为电子动量。</p>
-<p>可以将扫描隧道显微镜的势能模型简化为下图所示的一维形式，探针与样品间的间隙被描述为方势垒，其中红色横线为电子能量：</p>
-<p><img src="https://pic.imgdb.cn/item/6566bd5bc458853aef6b2314.png"></p>
-<p>即势能可以通过公式描述为：V(x)&#x3D;0(x&lt;a, x&gt;a), V(x)&#x3D;V_1(a&lt;x&lt;b)<br>在量子力学中，电子将被满足薛定谔方程的波函数ψ(x)描述。此处讨论电子在一维定态下量子隧穿的情况，设电子的势能方程为：</p>
-<p>$$<br>V&#x3D;V(x)<br>$$</p>
-<p>此时波函数也只和空间坐标有关：</p>
-<p>$$<br>\psi&#x3D;\psi(x)<br>$$</p>
-<p>在定态情况下，不含时薛定谔方程取这样的形式：</p>
-<p>$$<br>\frac{d^2 \psi}{d x^2}+\frac{\hbar^2}{2 m}(E-V) \psi&#x3D;0<br>$$</p>
-<p>其中：</p>
-<p>$$<br>ℏ&#x3D;\frac{h}{2π}<br>$$</p>
-<p>在扫描隧道显微镜工作时，电子可视为从探针区域射向势垒，但由于电子能量小于势垒，在经典力学角度上电子不可能跨过势垒到达样品处，即在样品与探针间不可能存在电流。<br>从经典力学角度对电子存在性上进行分析，可将空间区域分为经典允许区与经典禁区。当电子位于探针区域时，此时的电子总能量大于所处位置势能E&gt;V，从经典力学的角度上看，电子能够位于该区域，即经典允许区。当电子处于真空区域时，电子的总能量小于所处位置势能E&lt;V，从经典力学的角度上看电子不可能运动到该区域，即经典禁区。</p>
-<p>在经典允许区中，V&#x3D;0，薛定谔方程表示为：</p>
-<p>$$<br>\psi^{\prime \prime}+\frac{2 m E}{\hbar^2} \psi&#x3D;0<br>$$</p>
-<p>设：</p>
-<p>$$<br>\frac{2 m E}{\hbar^2}&#x3D;k^2<br>$$</p>
-<p>则方程变为：</p>
-<p>$$<br>\psi^{\prime \prime}+k^2 \psi&#x3D;0<br>$$</p>
-<p>该微分方程的通解为：</p>
-<p>$$<br>\psi_1(x)&#x3D;A \sin (k x+\delta), \delta&lt;\pi<br>$$</p>
-<p>在经典禁区中的薛定谔方程为：</p>
-<p>$$<br>\psi^{\prime \prime}-\frac{2 m}{\hbar^2}(V-E) \psi&#x3D;0<br>$$</p>
-<p>设：</p>
-<p>$$<br>\frac{2 m}{\hbar^2}(V-E)&#x3D;\beta^2<br>$$</p>
-<p>因为E&lt;V1，所以β为实数。此时经典禁区的薛定谔方程变为：</p>
-<p>$$<br>\psi^{\prime \prime}+k^2 \psi&#x3D;0<br>$$</p>
-<p>该方程的形式解为：</p>
-<p>$$<br>\psi \sim e^{\pm \beta x}<br>$$</p>
-<p>可见，在经典力学中不可能出现电子的真空势垒中，在量子力学中仍然存在概率分布，并且其以指数形式衰减。<br>即对于如势垒模型图描述的模型中，电子将有概率穿过真空势垒，并在样品区域产生透射波。这种电子能够穿透比其能量更高的势垒的效应即量子隧穿效应。<br>通过对该模型的边界条件以及连续条件可求解得到隧穿电流与真空势垒的关系为：</p>
-<p>$$<br>I \propto e^{-2 \kappa d}<br>$$</p>
-<p> 其中：</p>
-<p>$$<br>\kappa&#x3D;\frac{\sqrt{2m(V-E)}}{\hbar}<br>$$</p>
-<p>d为探针样品间距。从公式可以看出，当进入隧穿距离后，探针与样品间距与隧穿电流呈指数关系。当探针样品间距离变化0.1nm左右时，隧穿电流大小将改变一个量级[6]，这也为扫描隧道显微镜的超高分辨率提供了理论基础。</p>
-<h2 id="技术难点"><a href="#技术难点" class="headerlink" title="技术难点"></a>技术难点</h2><p>1.样品-探针推进至隧穿距离（2nm），不碰撞<br>2.控制探针实现纳米级移动<br>3.探针尖端需要纳米级锐度<br>4.隔离振动<br>5.探测nA级隧穿电流<br>6.控制系统</p>
+        <h2 id="前级放大器设计"><a href="#前级放大器设计" class="headerlink" title="前级放大器设计"></a>前级放大器设计</h2><p>隧穿电流大小在100pA~10nA[1]区间，故需要前级放大器具备可观的电流放大能力。本项目采用运算放大器（运放）作为核心放大元件，通过搭配反馈电阻构成跨组放大器对隧穿电流进行放大。</p>
+<p><img src="https://pic.imgdb.cn/item/6568146dc458853aef2bacaf.png"></p>
+<p>图上为前级放大器的简化原理图，运放型号为德州仪器公司生产的OPA627，反馈电阻阻值为100×10^6 Ω即100MΩ。在选择运算放大器时主要关注输入偏置电流参数：OPA627的输入偏置电流典型值为1pA，即大小为隧穿电流最小值的1&#x2F;100，偏置电流大小与最小隧穿电流大小相差两个数量级，满足对隧穿电流的测量条件。</p>
+<p>通过如图所示电路可以将端口probe处输入的隧穿电流转换电压信号在端口output处输出。通过运算放大器的特性可知，前级放大器的电流-电压转化公式为（其中，U_out为前级放大器的输出电压，R_1为反馈电阻阻值，I_Tunneling为隧穿电流，方向定义为从端口probe处流入）：</p>
+<p>$$<br>U_{out}&#x3D;-R_1 I_{Tunneling}<br>$$</p>
+<p>即电流-电压放大倍数由反馈电阻R1直接决定，在上图中，R1阻值为100MΩ，即放大倍数为10^8倍。可认为当存在10nA大小的隧穿电流输入至输入端时，该电流将被放大为-1V的电压在输出端输出。</p>
+<h1 id="放大性能简易验证"><a href="#放大性能简易验证" class="headerlink" title="放大性能简易验证"></a>放大性能简易验证</h1><p><img src="https://pic.imgdb.cn/item/656814c2c458853aef2ca75b.png"></p>
+<p>可变电压源V1经过阻值与R_1接近的大电阻R_2（范围在1MΩ~100MΩ）接入前级放大器的输入端，产生小电流。通过运算放大器的虚地特性可知，当运放的同相输入端接地时，反相输入端的电位也同时为地，则如图所示的测试电路中的前级放大器的输入电流可由公式(3.2)计算（其中U_V1为可变电压源输出电压，R_2为电阻阻值）：</p>
+<p>$$<br>I_{INPUT}&#x3D;\frac{U_{V1}}{R_2}<br>$$</p>
+<p>结合前级放大器的转换公式(3.1)，则此时可变电压源V1输出电压与前级放大器输出电压间的关系应为（其中R_1为前级放大器的反馈电阻阻值）：</p>
+<p>$$<br>U_{OUTPUT}&#x3D;-R_1×\frac{U_{V1}}{R_2}<br>$$</p>
+<p>若前级放大器性能良好，则在改变可变电压源V1的电压时，前级放大器的输出电压值应始终满足上述公式并拥有良好的线性度。</p>
+<p>在放大器性能验证中，测试将分为两组：两组测试的R_1均被设置为误差为±5%的100MΩ电阻，两组测试的R_2被分别设置为误差为±5%，阻值为1MΩ、100MΩ的电阻。测试将对可变电压源输出电压-前级放大器输出电压曲线进行测量，测量仪器为RIGOL-DS1102型示波器，测试结果如下：</p>
+<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png"></p>
+<p><img src="https://pic.imgdb.cn/item/656814ecc458853aef2d3971.png"></p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>[1].    Ellis M D. Construction of a scanning tunneling microscope for imaging of carbon nanotubes[D]. Texas Tech University, 1998.</p>
 
     </div>
 
@@ -280,13 +255,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/article/42af9bcf" rel="prev" title="STM-DIY项目简述">
-      <i class="fa fa-chevron-left"></i> STM-DIY项目简述
+    <a href="/article/e44566dd" rel="prev" title="0-2 STM工作模式">
+      <i class="fa fa-chevron-left"></i> 0-2 STM工作模式
     </a></div>
-      <div class="post-nav-item">
-    <a href="/article/6a74499e" rel="next" title="0-1 STM基本结构">
-      0-1 STM基本结构 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -345,7 +317,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%90%86%E8%AE%BA%E5%87%86%E5%A4%87"><span class="nav-number">1.</span> <span class="nav-text">理论准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E9%9A%BE%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">技术难点</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BA%A7%E6%94%BE%E5%A4%A7%E5%99%A8%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">前级放大器设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%94%BE%E5%A4%A7%E6%80%A7%E8%83%BD%E7%AE%80%E6%98%93%E9%AA%8C%E8%AF%81"><span class="nav-number"></span> <span class="nav-text">放大性能简易验证</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number"></span> <span class="nav-text">参考资料</span></a></div>
       </div>
       <!--/noindex-->
 
