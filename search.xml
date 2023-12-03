@@ -76,114 +76,142 @@
   <entry>
     <title>324实验室登记表</title>
     <url>/article/4ba8635c.html</url>
-    <content><![CDATA[<h2 id="324实验室登记表"><a class="markdownIt-Anchor" href="#324实验室登记表"></a> 324实验室登记表</h2>
-<p>该表为324实验室进出人员登记表，会实时更新，用于管理人员</p>
+    <content><![CDATA[<h2 id="324实验室登记表"><a href="#324实验室登记表" class="headerlink" title="324实验室登记表"></a>324实验室登记表</h2><p>该表为324实验室进出人员登记表，会实时更新，用于管理人员</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">日期</th>
-<th style="text-align:center">时间</th>
-<th style="text-align:center">人员</th>
-<th style="text-align:center">备注</th>
+<th align="center">日期</th>
+<th align="center">时间</th>
+<th align="center">人员</th>
+<th align="center">备注</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">11.20</td>
-<td style="text-align:center">第九节拓展课</td>
-<td style="text-align:center">胡逸轩 张驰 许多多 陈佳彬 沈宇昊</td>
-<td style="text-align:center">焊接 示波器使用</td>
+<tbody><tr>
+<td align="center">11.20</td>
+<td align="center">第九节拓展课</td>
+<td align="center">胡逸轩 张驰 许多多 陈佳彬 沈宇昊</td>
+<td align="center">焊接 示波器使用</td>
 </tr>
 <tr>
-<td style="text-align:center">11.22</td>
-<td style="text-align:center">中午</td>
-<td style="text-align:center">沈宇昊 胡逸轩 张驰</td>
-<td style="text-align:center"></td>
+<td align="center">11.22</td>
+<td align="center">中午</td>
+<td align="center">沈宇昊 胡逸轩 张驰</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">11.23</td>
-<td style="text-align:center">晚自习第三节</td>
-<td style="text-align:center">胡逸轩 张驰 许多多</td>
-<td style="text-align:center">会议准备</td>
+<td align="center">11.23</td>
+<td align="center">晚自习第三节</td>
+<td align="center">胡逸轩 张驰 许多多</td>
+<td align="center">会议准备</td>
 </tr>
 <tr>
-<td style="text-align:center">11.24</td>
-<td style="text-align:center">第九节拓展课</td>
-<td style="text-align:center">胡逸轩 张驰 刘静怡</td>
-<td style="text-align:center">成绩登记</td>
+<td align="center">11.24</td>
+<td align="center">第九节拓展课</td>
+<td align="center">胡逸轩 张驰 刘静怡</td>
+<td align="center">成绩登记</td>
 </tr>
 <tr>
-<td style="text-align:center">11.25</td>
-<td style="text-align:center">中午</td>
-<td style="text-align:center">胡逸轩</td>
-<td style="text-align:center">网站制作</td>
+<td align="center">11.25</td>
+<td align="center">中午</td>
+<td align="center">胡逸轩</td>
+<td align="center">网站制作</td>
 </tr>
 <tr>
-<td style="text-align:center">11.25</td>
-<td style="text-align:center">下午</td>
-<td style="text-align:center">许多多 张驰</td>
-<td style="text-align:center">焊接</td>
+<td align="center">11.25</td>
+<td align="center">下午</td>
+<td align="center">许多多 张驰</td>
+<td align="center">焊接</td>
 </tr>
 <tr>
-<td style="text-align:center">11.26</td>
-<td style="text-align:center">晚自习第三节</td>
-<td style="text-align:center">胡逸轩 张驰 许多多</td>
-<td style="text-align:center">焊接 网站修复</td>
+<td align="center">11.26</td>
+<td align="center">晚自习第三节</td>
+<td align="center">胡逸轩 张驰 许多多</td>
+<td align="center">焊接 网站修复</td>
 </tr>
 <tr>
-<td style="text-align:center">11.27</td>
-<td style="text-align:center">第九节拓展课</td>
-<td style="text-align:center">胡逸轩 张驰</td>
-<td style="text-align:center"></td>
+<td align="center">11.27</td>
+<td align="center">第九节拓展课</td>
+<td align="center">胡逸轩 张驰</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">11.28</td>
-<td style="text-align:center">中午</td>
-<td style="text-align:center">胡逸轩</td>
-<td style="text-align:center"></td>
+<td align="center">11.28</td>
+<td align="center">中午</td>
+<td align="center">胡逸轩</td>
+<td align="center"></td>
 </tr>
 <tr>
-<td style="text-align:center">11.28</td>
-<td style="text-align:center">晚自习第三节</td>
-<td style="text-align:center">张驰</td>
-<td style="text-align:center">焊接</td>
+<td align="center">11.28</td>
+<td align="center">晚自习第三节</td>
+<td align="center">张驰</td>
+<td align="center">焊接</td>
 </tr>
 <tr>
-<td style="text-align:center">11.29</td>
-<td style="text-align:center">中午</td>
-<td style="text-align:center">胡逸轩</td>
-<td style="text-align:center">文档编纂 活动安排</td>
+<td align="center">11.29</td>
+<td align="center">中午</td>
+<td align="center">胡逸轩</td>
+<td align="center">文档编纂 活动安排</td>
 </tr>
 <tr>
-<td style="text-align:center">11.30</td>
-<td style="text-align:center">中午</td>
-<td style="text-align:center">胡逸轩</td>
-<td style="text-align:center">文档编纂</td>
+<td align="center">11.30</td>
+<td align="center">中午</td>
+<td align="center">胡逸轩</td>
+<td align="center">文档编纂</td>
 </tr>
 <tr>
-<td style="text-align:center">11.30</td>
-<td style="text-align:center">晚自习第三节</td>
-<td style="text-align:center">胡逸轩 张驰</td>
-<td style="text-align:center">文档编纂 焊接</td>
+<td align="center">11.30</td>
+<td align="center">晚自习第三节</td>
+<td align="center">胡逸轩 张驰</td>
+<td align="center">文档编纂 焊接</td>
 </tr>
 <tr>
-<td style="text-align:center">12.1</td>
-<td style="text-align:center">中午</td>
-<td style="text-align:center">胡逸轩</td>
-<td style="text-align:center">文档编纂</td>
+<td align="center">12.1</td>
+<td align="center">中午</td>
+<td align="center">胡逸轩</td>
+<td align="center">文档编纂</td>
 </tr>
 <tr>
-<td style="text-align:center">12.1</td>
-<td style="text-align:center">第九节拓展课</td>
-<td style="text-align:center">胡逸轩 许多多</td>
-<td style="text-align:center">焊接</td>
+<td align="center">12.1</td>
+<td align="center">第九节拓展课</td>
+<td align="center">胡逸轩 许多多</td>
+<td align="center">焊接</td>
 </tr>
-</tbody>
-</table>
+<tr>
+<td align="center">12.2</td>
+<td align="center">中午</td>
+<td align="center">胡逸轩 许多多</td>
+<td align="center">整理</td>
+</tr>
+</tbody></table>
 ]]></content>
       <tags>
         <tag>表单</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>关于组织学生参观浙大人工智能实验室的活动</title>
+    <url>/article/da499ff3.html</url>
+    <content><![CDATA[<h2 id="关于组织学生参观浙大人工智能实验室的活动"><a class="markdownIt-Anchor" href="#关于组织学生参观浙大人工智能实验室的活动"></a> 关于组织学生参观浙大人工智能实验室的活动</h2>
+<h3 id="一-参观日期与地点-出行方式"><a class="markdownIt-Anchor" href="#一-参观日期与地点-出行方式"></a> 一、参观日期与地点、出行方式</h3>
+<p>日期：初定12.17周日上午9:00<br />
+集中地点：浙大玉泉校区附近，看导航<br />
+出行：私车自行前往，安全自行负责</p>
+<h3 id="二-参加对象"><a class="markdownIt-Anchor" href="#二-参加对象"></a> 二、参加对象：</h3>
+<p>科创社成员与高一学科竞赛成员，自愿在微信群里报名</p>
+<h3 id="三-联系人"><a class="markdownIt-Anchor" href="#三-联系人"></a> 三、联系人</h3>
+<p>张老师，顾元涛</p>
+<h3 id="四-专家与项目简介"><a class="markdownIt-Anchor" href="#四-专家与项目简介"></a> 四、专家与项目简介</h3>
+<p><img src="https://pic.imgdb.cn/item/656bf738c458853aef9f0a52.png" alt="" /></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>马伟霖设计参考-中文（机翻）</title>
+    <url>/article/6124c6f9.html</url>
+    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档中文-机翻"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档中文-机翻"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档（中文-机翻）</h2>
+<div class="pdfobject-container" data-target="/pdf/231005413zh.pdf" data-height="500px"></div>]]></content>
+      <categories>
+        <category>-扫描隧道显微镜（STM）</category>
+      </categories>
   </entry>
   <entry>
     <title>计划招新需求</title>
@@ -314,9 +342,9 @@ A:PreAmp板厚1.0其余都是嘉立创默认</p>
       </categories>
   </entry>
   <entry>
-    <title>马伟霖设计参考</title>
+    <title>马伟霖设计参考-English</title>
     <url>/article/6686496a.html</url>
-    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档</h2>
+    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档english"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档english"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档（English）</h2>
 <div class="pdfobject-container" data-target="/pdf/231005413.pdf" data-height="500px"></div>
 ]]></content>
       <categories>
