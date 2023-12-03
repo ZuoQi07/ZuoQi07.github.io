@@ -1,355 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>招新结果</title>
-    <url>/article/49f72389.html</url>
-    <content><![CDATA[<h2 id="招新结果"><a class="markdownIt-Anchor" href="#招新结果"></a> 招新结果</h2>
-<p>恭喜以下同学通过考核进入科创社</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">班级</th>
-<th style="text-align:center">姓名</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">107</td>
-<td style="text-align:center">康裴俊</td>
-</tr>
-<tr>
-<td style="text-align:center">206</td>
-<td style="text-align:center">王佳铮</td>
-</tr>
-<tr>
-<td style="text-align:center">208</td>
-<td style="text-align:center">戴齐隽</td>
-</tr>
-<tr>
-<td style="text-align:center">104</td>
-<td style="text-align:center">金星宇</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">吴忧</td>
-</tr>
-<tr>
-<td style="text-align:center">205</td>
-<td style="text-align:center">蒋储赢</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">刘晓华</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">张万年</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">潘笑笑</td>
-</tr>
-<tr>
-<td style="text-align:center">206</td>
-<td style="text-align:center">童城语</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">崔子卉</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">童艺初</td>
-</tr>
-<tr>
-<td style="text-align:center">105</td>
-<td style="text-align:center">汪树一</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-      <tags>
-        <tag>表单</tag>
-        <tag>招新</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>324实验室登记表</title>
     <url>/article/4ba8635c.html</url>
-    <content><![CDATA[<h2 id="324实验室登记表"><a href="#324实验室登记表" class="headerlink" title="324实验室登记表"></a>324实验室登记表</h2><p>该表为324实验室进出人员登记表，会实时更新，用于管理人员</p>
+    <content><![CDATA[<h2 id="324实验室登记表"><a class="markdownIt-Anchor" href="#324实验室登记表"></a> 324实验室登记表</h2>
+<p>该表为324实验室进出人员登记表，会实时更新，用于管理人员</p>
 <table>
 <thead>
 <tr>
-<th align="center">日期</th>
-<th align="center">时间</th>
-<th align="center">人员</th>
-<th align="center">备注</th>
+<th style="text-align:center">日期</th>
+<th style="text-align:center">时间</th>
+<th style="text-align:center">人员</th>
+<th style="text-align:center">备注</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">11.20</td>
-<td align="center">第九节拓展课</td>
-<td align="center">胡逸轩 张驰 许多多 陈佳彬 沈宇昊</td>
-<td align="center">焊接 示波器使用</td>
+<tbody>
+<tr>
+<td style="text-align:center">11.20</td>
+<td style="text-align:center">第九节拓展课</td>
+<td style="text-align:center">胡逸轩 张驰 许多多 陈佳彬 沈宇昊</td>
+<td style="text-align:center">焊接 示波器使用</td>
 </tr>
 <tr>
-<td align="center">11.22</td>
-<td align="center">中午</td>
-<td align="center">沈宇昊 胡逸轩 张驰</td>
-<td align="center"></td>
+<td style="text-align:center">11.22</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">沈宇昊 胡逸轩 张驰</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">11.23</td>
-<td align="center">晚自习第三节</td>
-<td align="center">胡逸轩 张驰 许多多</td>
-<td align="center">会议准备</td>
+<td style="text-align:center">11.23</td>
+<td style="text-align:center">晚自习第三节</td>
+<td style="text-align:center">胡逸轩 张驰 许多多</td>
+<td style="text-align:center">会议准备</td>
 </tr>
 <tr>
-<td align="center">11.24</td>
-<td align="center">第九节拓展课</td>
-<td align="center">胡逸轩 张驰 刘静怡</td>
-<td align="center">成绩登记</td>
+<td style="text-align:center">11.24</td>
+<td style="text-align:center">第九节拓展课</td>
+<td style="text-align:center">胡逸轩 张驰 刘静怡</td>
+<td style="text-align:center">成绩登记</td>
 </tr>
 <tr>
-<td align="center">11.25</td>
-<td align="center">中午</td>
-<td align="center">胡逸轩</td>
-<td align="center">网站制作</td>
+<td style="text-align:center">11.25</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">胡逸轩</td>
+<td style="text-align:center">网站制作</td>
 </tr>
 <tr>
-<td align="center">11.25</td>
-<td align="center">下午</td>
-<td align="center">许多多 张驰</td>
-<td align="center">焊接</td>
+<td style="text-align:center">11.25</td>
+<td style="text-align:center">下午</td>
+<td style="text-align:center">许多多 张驰</td>
+<td style="text-align:center">焊接</td>
 </tr>
 <tr>
-<td align="center">11.26</td>
-<td align="center">晚自习第三节</td>
-<td align="center">胡逸轩 张驰 许多多</td>
-<td align="center">焊接 网站修复</td>
+<td style="text-align:center">11.26</td>
+<td style="text-align:center">晚自习第三节</td>
+<td style="text-align:center">胡逸轩 张驰 许多多</td>
+<td style="text-align:center">焊接 网站修复</td>
 </tr>
 <tr>
-<td align="center">11.27</td>
-<td align="center">第九节拓展课</td>
-<td align="center">胡逸轩 张驰</td>
-<td align="center"></td>
+<td style="text-align:center">11.27</td>
+<td style="text-align:center">第九节拓展课</td>
+<td style="text-align:center">胡逸轩 张驰</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">11.28</td>
-<td align="center">中午</td>
-<td align="center">胡逸轩</td>
-<td align="center"></td>
+<td style="text-align:center">11.28</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">胡逸轩</td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
-<td align="center">11.28</td>
-<td align="center">晚自习第三节</td>
-<td align="center">张驰</td>
-<td align="center">焊接</td>
+<td style="text-align:center">11.28</td>
+<td style="text-align:center">晚自习第三节</td>
+<td style="text-align:center">张驰</td>
+<td style="text-align:center">焊接</td>
 </tr>
 <tr>
-<td align="center">11.29</td>
-<td align="center">中午</td>
-<td align="center">胡逸轩</td>
-<td align="center">文档编纂 活动安排</td>
+<td style="text-align:center">11.29</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">胡逸轩</td>
+<td style="text-align:center">文档编纂 活动安排</td>
 </tr>
 <tr>
-<td align="center">11.30</td>
-<td align="center">中午</td>
-<td align="center">胡逸轩</td>
-<td align="center">文档编纂</td>
+<td style="text-align:center">11.30</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">胡逸轩</td>
+<td style="text-align:center">文档编纂</td>
 </tr>
 <tr>
-<td align="center">11.30</td>
-<td align="center">晚自习第三节</td>
-<td align="center">胡逸轩 张驰</td>
-<td align="center">文档编纂 焊接</td>
+<td style="text-align:center">11.30</td>
+<td style="text-align:center">晚自习第三节</td>
+<td style="text-align:center">胡逸轩 张驰</td>
+<td style="text-align:center">文档编纂 焊接</td>
 </tr>
 <tr>
-<td align="center">12.1</td>
-<td align="center">中午</td>
-<td align="center">胡逸轩</td>
-<td align="center">文档编纂</td>
+<td style="text-align:center">12.1</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">胡逸轩</td>
+<td style="text-align:center">文档编纂</td>
 </tr>
 <tr>
-<td align="center">12.1</td>
-<td align="center">第九节拓展课</td>
-<td align="center">胡逸轩 许多多</td>
-<td align="center">焊接</td>
+<td style="text-align:center">12.1</td>
+<td style="text-align:center">第九节拓展课</td>
+<td style="text-align:center">胡逸轩 许多多</td>
+<td style="text-align:center">焊接</td>
 </tr>
 <tr>
-<td align="center">12.2</td>
-<td align="center">中午</td>
-<td align="center">胡逸轩 许多多</td>
-<td align="center">整理</td>
+<td style="text-align:center">12.2</td>
+<td style="text-align:center">中午</td>
+<td style="text-align:center">胡逸轩 许多多</td>
+<td style="text-align:center">整理</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 ]]></content>
       <tags>
         <tag>表单</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>关于组织学生参观浙大人工智能实验室的活动</title>
-    <url>/article/da499ff3.html</url>
-    <content><![CDATA[<h2 id="关于组织学生参观浙大人工智能实验室的活动"><a class="markdownIt-Anchor" href="#关于组织学生参观浙大人工智能实验室的活动"></a> 关于组织学生参观浙大人工智能实验室的活动</h2>
-<h3 id="一-参观日期与地点-出行方式"><a class="markdownIt-Anchor" href="#一-参观日期与地点-出行方式"></a> 一、参观日期与地点、出行方式</h3>
-<p>日期：初定12.17周日上午9:00<br />
-集中地点：浙大玉泉校区附近，看导航<br />
-出行：私车自行前往，安全自行负责</p>
-<h3 id="二-参加对象"><a class="markdownIt-Anchor" href="#二-参加对象"></a> 二、参加对象：</h3>
-<p>科创社成员与高一学科竞赛成员，自愿在微信群里报名</p>
-<h3 id="三-联系人"><a class="markdownIt-Anchor" href="#三-联系人"></a> 三、联系人</h3>
-<p>张老师，顾元涛</p>
-<h3 id="四-专家与项目简介"><a class="markdownIt-Anchor" href="#四-专家与项目简介"></a> 四、专家与项目简介</h3>
-<p><img src="https://pic.imgdb.cn/item/656bf738c458853aef9f0a52.png" alt="" /></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>马伟霖设计参考-中文（机翻）</title>
-    <url>/article/6124c6f9.html</url>
-    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档中文-机翻"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档中文-机翻"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档（中文-机翻）</h2>
-<div class="pdfobject-container" data-target="/pdf/231005413zh.pdf" data-height="500px"></div>]]></content>
-      <categories>
-        <category>-扫描隧道显微镜（STM）</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>计划招新需求</title>
-    <url>/article/23180f70.html</url>
-    <content><![CDATA[<h2 id="计划招新需求"><a class="markdownIt-Anchor" href="#计划招新需求"></a> 计划招新需求</h2>
-<p>对象：<font color="Red">全体社团成员</font><br />
-需求：一周至少有40min在该项目活动</p>
-<h3 id="具体内容"><a class="markdownIt-Anchor" href="#具体内容"></a> 具体内容</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">负责部分</th>
-<th style="text-align:center">人数</th>
-<th style="text-align:center">优先考虑</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">电路板焊接</td>
-<td style="text-align:center">1-2人</td>
-<td style="text-align:center">有一定的电焊基础的</td>
-</tr>
-<tr>
-<td style="text-align:center">减震系统搭建</td>
-<td style="text-align:center">2人</td>
-<td style="text-align:center">有一定材料学基础的</td>
-</tr>
-<tr>
-<td style="text-align:center">程序开发</td>
-<td style="text-align:center">1人</td>
-<td style="text-align:center">有一定编程基础的</td>
-</tr>
-<tr>
-<td style="text-align:center">显微镜整体结构搭建</td>
-<td style="text-align:center">2人</td>
-<td style="text-align:center">有金工操作基础的</td>
-</tr>
-<tr>
-<td style="text-align:center">摄影</td>
-<td style="text-align:center">1人</td>
-<td style="text-align:center">有摄影技术经验的</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-      <categories>
-        <category>扫描隧道显微镜（STM）</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>项目组成员名单</title>
-    <url>/article/49771c91.html</url>
-    <content><![CDATA[<h2 id="项目组成员名单"><a class="markdownIt-Anchor" href="#项目组成员名单"></a> 项目组成员名单</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">姓名</th>
-<th>负责部分</th>
-<th style="text-align:center">职位</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">张驰</td>
-<td>减震系统搭建 电路板焊接</td>
-<td style="text-align:center">组长</td>
-</tr>
-<tr>
-<td style="text-align:center">许多多</td>
-<td>电路板焊接</td>
-<td style="text-align:center">组长</td>
-</tr>
-<tr>
-<td style="text-align:center">沈宇昊</td>
-<td>电路板焊接</td>
-<td style="text-align:center">助手</td>
-</tr>
-<tr>
-<td style="text-align:center">胡逸轩</td>
-<td>程序开发 显微镜整体结构搭建</td>
-<td style="text-align:center">组长</td>
-</tr>
-<tr>
-<td style="text-align:center">陈佳彬</td>
-<td>摄影</td>
-<td style="text-align:center">组长</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-      <categories>
-        <category>扫描隧道显微镜（STM）</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>马伟霖（Dimsmary）对一些问题的解答</title>
-    <url>/article/6fdc3db0.html</url>
-    <content><![CDATA[<h2 id="dimsmary对一些问题的解答"><a class="markdownIt-Anchor" href="#dimsmary对一些问题的解答"></a> Dimsmary对一些问题的解答</h2>
-<p>Q:做这个项目之前的准备（组装用工具）<br />
-A:加热台、电烙铁、风箱</p>
-<p>Q:大体积部件的制作与加工（顶盖、底座）<br />
-A:3D打印</p>
-<p>Q:制作过程中遇到的主要困难<br />
-A:压电滑台成功概率低，需要尽量使磁铁接触面和滑台保持平行</p>
-<p>Q:固定用螺丝用什么型号<br />
-A:六角螺丝全套工具</p>
-<p>Q:压电蜂鸣片的切割方法<br />
-A:有两种，一个是用带钻头的小电磨（速度一般），另一个是用切割刀（速度很慢，但方便操控，成功率高）</p>
-<p>Q:各部分的连接方式及结构<br />
-A:主体-连接板-电路板（SMA转接IPEX）</p>
-<p>Q:控制程序设计<br />
-A:基于Platform IO和Python开发设计</p>
-<p>Q:样品台磁铁的材料是？<br />
-A:钕铁硼</p>
-<p>Q:PCB制版文件导出的DRC问题怎么处理<br />
-A:不用管</p>
-<p>Q:您给的Step模型在CNC加工时需要注意什么<br />
-A: 最小粗糙程度Ra1.6；最严公差GB/T 1804-2000 m级；表面不做处理</p>
-<p>Q:压电滑台中的固定轴和台面是根据模型加工还是？<br />
-A:在淘宝购买，型号是bsp715</p>
-<p>Q:压电陶瓷的型号及购买渠道<br />
-A:在淘宝购买，是Tokin的</p>
-<p>Q:PCB板在加工时注意事项<br />
-A:PreAmp板厚1.0其余都是嘉立创默认</p>
-]]></content>
-      <categories>
-        <category>扫描隧道显微镜（STM）</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>马伟霖设计参考-English</title>
-    <url>/article/6686496a.html</url>
-    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档english"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档english"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档（English）</h2>
-<div class="pdfobject-container" data-target="/pdf/231005413.pdf" data-height="500px"></div>
-]]></content>
-      <categories>
-        <category>扫描隧道显微镜（STM）</category>
-      </categories>
   </entry>
   <entry>
     <title>STM-DIY项目简述</title>
@@ -526,6 +293,546 @@ A:PreAmp板厚1.0其余都是嘉立创默认</p>
       <tags>
         <tag>表单</tag>
         <tag>招新</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>招新结果</title>
+    <url>/article/49f72389.html</url>
+    <content><![CDATA[<h2 id="招新结果"><a class="markdownIt-Anchor" href="#招新结果"></a> 招新结果</h2>
+<p>恭喜以下同学通过考核进入科创社</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">班级</th>
+<th style="text-align:center">姓名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">107</td>
+<td style="text-align:center">康裴俊</td>
+</tr>
+<tr>
+<td style="text-align:center">206</td>
+<td style="text-align:center">王佳铮</td>
+</tr>
+<tr>
+<td style="text-align:center">208</td>
+<td style="text-align:center">戴齐隽</td>
+</tr>
+<tr>
+<td style="text-align:center">104</td>
+<td style="text-align:center">金星宇</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">吴忧</td>
+</tr>
+<tr>
+<td style="text-align:center">205</td>
+<td style="text-align:center">蒋储赢</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">刘晓华</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">张万年</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">潘笑笑</td>
+</tr>
+<tr>
+<td style="text-align:center">206</td>
+<td style="text-align:center">童城语</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">崔子卉</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">童艺初</td>
+</tr>
+<tr>
+<td style="text-align:center">105</td>
+<td style="text-align:center">汪树一</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <tags>
+        <tag>表单</tag>
+        <tag>招新</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计划招新需求</title>
+    <url>/article/23180f70.html</url>
+    <content><![CDATA[<h2 id="计划招新需求"><a class="markdownIt-Anchor" href="#计划招新需求"></a> 计划招新需求</h2>
+<p>对象：<font color="Red">全体社团成员</font><br />
+需求：一周至少有40min在该项目活动</p>
+<h3 id="具体内容"><a class="markdownIt-Anchor" href="#具体内容"></a> 具体内容</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">负责部分</th>
+<th style="text-align:center">人数</th>
+<th style="text-align:center">优先考虑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">电路板焊接</td>
+<td style="text-align:center">1-2人</td>
+<td style="text-align:center">有一定的电焊基础的</td>
+</tr>
+<tr>
+<td style="text-align:center">减震系统搭建</td>
+<td style="text-align:center">2人</td>
+<td style="text-align:center">有一定材料学基础的</td>
+</tr>
+<tr>
+<td style="text-align:center">程序开发</td>
+<td style="text-align:center">1人</td>
+<td style="text-align:center">有一定编程基础的</td>
+</tr>
+<tr>
+<td style="text-align:center">显微镜整体结构搭建</td>
+<td style="text-align:center">2人</td>
+<td style="text-align:center">有金工操作基础的</td>
+</tr>
+<tr>
+<td style="text-align:center">摄影</td>
+<td style="text-align:center">1人</td>
+<td style="text-align:center">有摄影技术经验的</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>扫描隧道显微镜（STM）</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>项目组成员名单</title>
+    <url>/article/49771c91.html</url>
+    <content><![CDATA[<h2 id="项目组成员名单"><a class="markdownIt-Anchor" href="#项目组成员名单"></a> 项目组成员名单</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">姓名</th>
+<th>负责部分</th>
+<th style="text-align:center">职位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">张驰</td>
+<td>减震系统搭建 电路板焊接</td>
+<td style="text-align:center">组长</td>
+</tr>
+<tr>
+<td style="text-align:center">许多多</td>
+<td>电路板焊接</td>
+<td style="text-align:center">组长</td>
+</tr>
+<tr>
+<td style="text-align:center">沈宇昊</td>
+<td>电路板焊接</td>
+<td style="text-align:center">助手</td>
+</tr>
+<tr>
+<td style="text-align:center">胡逸轩</td>
+<td>程序开发 显微镜整体结构搭建</td>
+<td style="text-align:center">组长</td>
+</tr>
+<tr>
+<td style="text-align:center">陈佳彬</td>
+<td>摄影</td>
+<td style="text-align:center">组长</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>扫描隧道显微镜（STM）</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>马伟霖（Dimsmary）对一些问题的解答</title>
+    <url>/article/6fdc3db0.html</url>
+    <content><![CDATA[<h2 id="dimsmary对一些问题的解答"><a class="markdownIt-Anchor" href="#dimsmary对一些问题的解答"></a> Dimsmary对一些问题的解答</h2>
+<p>Q:做这个项目之前的准备（组装用工具）<br />
+A:加热台、电烙铁、风箱</p>
+<p>Q:大体积部件的制作与加工（顶盖、底座）<br />
+A:3D打印</p>
+<p>Q:制作过程中遇到的主要困难<br />
+A:压电滑台成功概率低，需要尽量使磁铁接触面和滑台保持平行</p>
+<p>Q:固定用螺丝用什么型号<br />
+A:六角螺丝全套工具</p>
+<p>Q:压电蜂鸣片的切割方法<br />
+A:有两种，一个是用带钻头的小电磨（速度一般），另一个是用切割刀（速度很慢，但方便操控，成功率高）</p>
+<p>Q:各部分的连接方式及结构<br />
+A:主体-连接板-电路板（SMA转接IPEX）</p>
+<p>Q:控制程序设计<br />
+A:基于Platform IO和Python开发设计</p>
+<p>Q:样品台磁铁的材料是？<br />
+A:钕铁硼</p>
+<p>Q:PCB制版文件导出的DRC问题怎么处理<br />
+A:不用管</p>
+<p>Q:您给的Step模型在CNC加工时需要注意什么<br />
+A: 最小粗糙程度Ra1.6；最严公差GB/T 1804-2000 m级；表面不做处理</p>
+<p>Q:压电滑台中的固定轴和台面是根据模型加工还是？<br />
+A:在淘宝购买，型号是bsp715</p>
+<p>Q:压电陶瓷的型号及购买渠道<br />
+A:在淘宝购买，是Tokin的</p>
+<p>Q:PCB板在加工时注意事项<br />
+A:PreAmp板厚1.0其余都是嘉立创默认</p>
+]]></content>
+      <categories>
+        <category>扫描隧道显微镜（STM）</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>马伟霖设计参考-English</title>
+    <url>/article/6686496a.html</url>
+    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档english"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档english"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档（English）</h2>
+<div class="pdfobject-container" data-target="/pdf/231005413.pdf" data-height="500px"></div>
+]]></content>
+      <categories>
+        <category>扫描隧道显微镜（STM）</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>马伟霖设计参考-中文（机翻）</title>
+    <url>/article/6124c6f9.html</url>
+    <content><![CDATA[<h2 id="b站up主dimsmary制作的stm-diy300设计参考文档中文-机翻"><a class="markdownIt-Anchor" href="#b站up主dimsmary制作的stm-diy300设计参考文档中文-机翻"></a> B站up主Dimsmary制作的STM-DIY3.0.0设计参考文档（中文-机翻）</h2>
+<div class="pdfobject-container" data-target="/pdf/231005413zh.pdf" data-height="500px"></div>]]></content>
+      <categories>
+        <category>-扫描隧道显微镜（STM）</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于组织学生参观浙大人工智能实验室的活动</title>
+    <url>/article/da499ff3.html</url>
+    <content><![CDATA[<h2 id="关于组织学生参观浙大人工智能实验室的活动"><a href="#关于组织学生参观浙大人工智能实验室的活动" class="headerlink" title="关于组织学生参观浙大人工智能实验室的活动"></a>关于组织学生参观浙大人工智能实验室的活动</h2><h3 id="一、参观日期与地点、出行方式"><a href="#一、参观日期与地点、出行方式" class="headerlink" title="一、参观日期与地点、出行方式"></a>一、参观日期与地点、出行方式</h3><p>日期：初定12.17周日上午9:00<br>集中地点：浙大玉泉校区附近，看导航<br>出行：私车自行前往，安全自行负责</p>
+<h3 id="二、参加对象："><a href="#二、参加对象：" class="headerlink" title="二、参加对象："></a>二、参加对象：</h3><p>科创社成员与高一学科竞赛成员，自愿在微信群里报名</p>
+<h3 id="三、联系人"><a href="#三、联系人" class="headerlink" title="三、联系人"></a>三、联系人</h3><p>张老师，顾元涛</p>
+<h3 id="四、专家与项目简介"><a href="#四、专家与项目简介" class="headerlink" title="四、专家与项目简介"></a>四、专家与项目简介</h3><p><img src="https://pic.imgdb.cn/item/656bf738c458853aef9f0a52.png"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>成员名单</title>
+    <url>/article/b6852485.html</url>
+    <content><![CDATA[<h2 id="科创社成员名单"><a class="markdownIt-Anchor" href="#科创社成员名单"></a> 科创社成员名单</h2>
+<h3 id="科创组"><a class="markdownIt-Anchor" href="#科创组"></a> 科创组</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">班级</th>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">学科</th>
+<th style="text-align:center">职位</th>
+<th style="text-align:center">联系方式</th>
+<th style="text-align:center">号码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">111班</td>
+<td style="text-align:center">陈朔晗</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">csh080703</td>
+</tr>
+<tr>
+<td style="text-align:center">111班</td>
+<td style="text-align:center">朱天乐</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">llzdengni</td>
+</tr>
+<tr>
+<td style="text-align:center">110班</td>
+<td style="text-align:center">沈宇昊</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">shenyuhao2017</td>
+</tr>
+<tr>
+<td style="text-align:center">110班</td>
+<td style="text-align:center">胡逸轩</td>
+<td style="text-align:center">信息</td>
+<td style="text-align:center">信息组组长</td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">ZuoQi0711</td>
+</tr>
+<tr>
+<td style="text-align:center">110班</td>
+<td style="text-align:center">许多多</td>
+<td style="text-align:center">生物</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">13732371220</td>
+</tr>
+<tr>
+<td style="text-align:center">110班</td>
+<td style="text-align:center">张驰</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center">科创组组长</td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">BlueArchive0117</td>
+</tr>
+<tr>
+<td style="text-align:center">208</td>
+<td style="text-align:center">戴齐隽</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">电话</td>
+<td style="text-align:center">19957159330</td>
+</tr>
+<tr>
+<td style="text-align:center">107</td>
+<td style="text-align:center">康裴俊</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">18072627339</td>
+</tr>
+<tr>
+<td style="text-align:center">206</td>
+<td style="text-align:center">王佳铮</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">电话</td>
+<td style="text-align:center">18857150854</td>
+</tr>
+<tr>
+<td style="text-align:center">104</td>
+<td style="text-align:center">金星宇</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">15824141742</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">吴忧</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">wy3426084309</td>
+</tr>
+<tr>
+<td style="text-align:center">205</td>
+<td style="text-align:center">蒋储赢</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">QQ</td>
+<td style="text-align:center">602016156</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">刘晓华</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">电话（家长）</td>
+<td style="text-align:center">18653804750</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">张万年</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">13157201598</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">潘笑笑</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">panxiaoxiao45</td>
+</tr>
+<tr>
+<td style="text-align:center">206</td>
+<td style="text-align:center">童城语</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">电话</td>
+<td style="text-align:center">18966466665</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">崔子卉</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">QQ</td>
+<td style="text-align:center">3635785398</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:center">童艺初</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">18267102612</td>
+</tr>
+<tr>
+<td style="text-align:center">105</td>
+<td style="text-align:center">汪树一</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">QQ</td>
+<td style="text-align:center">2131415975</td>
+</tr>
+</tbody>
+</table>
+<h3 id="竞赛组"><a class="markdownIt-Anchor" href="#竞赛组"></a> 竞赛组</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">班级</th>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">学科</th>
+<th style="text-align:center">职位</th>
+<th style="text-align:center">联系方式</th>
+<th style="text-align:center">号码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">金宇昊</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center">物理组组长</td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">Spasmodic-AT16</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">周光明</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">茅育玮</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">szdfz2276</td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">林杰华</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">Linili8</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">申屠锦杰</td>
+<td style="text-align:center">生物</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">stjj3010660223</td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">韩进</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">陈烨朗</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center"><em>Qiu_Shan_Ling</em></td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">黄梓橙</td>
+<td style="text-align:center">化学</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">hzc873x</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">潘宇杰</td>
+<td style="text-align:center">物理/化学</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">徐王政</td>
+<td style="text-align:center">化学</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">X_R112961705490</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">朱天乐</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">llzdengni</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">沈宇昊</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">shenyuhao2017</td>
+</tr>
+<tr>
+<td style="text-align:center">111</td>
+<td style="text-align:center">许多多</td>
+<td style="text-align:center">生物</td>
+<td style="text-align:center">生物组组长</td>
+<td style="text-align:center">手机</td>
+<td style="text-align:center">13732371220</td>
+</tr>
+<tr>
+<td style="text-align:center">110</td>
+<td style="text-align:center">陈佳彬</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">学军</td>
+<td style="text-align:center">沈哲祺</td>
+<td style="text-align:center">物理</td>
+<td style="text-align:center">名誉副社长</td>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">smilingwx666</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <tags>
+        <tag>表单</tag>
       </tags>
   </entry>
 </search>
