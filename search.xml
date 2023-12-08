@@ -246,7 +246,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">111班</td>
+<td align="center">110</td>
 <td align="center">陈朔晗</td>
 <td align="center">物理</td>
 <td align="center"></td>
@@ -254,7 +254,7 @@
 <td align="center">csh080703</td>
 </tr>
 <tr>
-<td align="center">111班</td>
+<td align="center">111</td>
 <td align="center">朱天乐</td>
 <td align="center">物理</td>
 <td align="center"></td>
@@ -262,7 +262,7 @@
 <td align="center">llzdengni</td>
 </tr>
 <tr>
-<td align="center">110班</td>
+<td align="center">111</td>
 <td align="center">沈宇昊</td>
 <td align="center">物理</td>
 <td align="center"></td>
@@ -270,7 +270,15 @@
 <td align="center">shenyuhao2017</td>
 </tr>
 <tr>
-<td align="center">110班</td>
+<td align="center">111</td>
+<td align="center">刘静怡</td>
+<td align="center">生物</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">110</td>
 <td align="center">胡逸轩</td>
 <td align="center">信息</td>
 <td align="center">信息组组长</td>
@@ -278,7 +286,7 @@
 <td align="center">ZuoQi0711</td>
 </tr>
 <tr>
-<td align="center">110班</td>
+<td align="center">111</td>
 <td align="center">许多多</td>
 <td align="center">生物</td>
 <td align="center"></td>
@@ -286,7 +294,7 @@
 <td align="center">13732371220</td>
 </tr>
 <tr>
-<td align="center">110班</td>
+<td align="center">111</td>
 <td align="center">张驰</td>
 <td align="center">物理</td>
 <td align="center">科创组组长</td>
@@ -429,6 +437,14 @@
 <td align="center">111</td>
 <td align="center">周光明</td>
 <td align="center">物理</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">111</td>
+<td align="center">刘静怡</td>
+<td align="center">生物</td>
 <td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
@@ -702,9 +718,8 @@ A:PreAmp板厚1.0其余都是嘉立创默认</p>
   <entry>
     <title>STM-DIY项目简述</title>
     <url>/article/42af9bcf.html</url>
-    <content><![CDATA[<h2 id="项目简述"><a class="markdownIt-Anchor" href="#项目简述"></a> 项目简述</h2>
-<p><strong>扫描隧道显微镜</strong>（Scanning Tunneling Microscopy）简称STM，是基于量子隧穿效应，利用隧穿电流特性工作的一种能够实现原子级分辨率成像的显微镜。通过将导电探针悬停在通电样品表面几纳米处进行栅格扫描，监测隧穿电流变化情况，扫描隧道显微镜能够实现样品表面形貌成像。由于隧穿电流随距离指数性变化的特征，扫描隧道显微镜能够达到0.1nm的横向分辨率与0.01nm的垂直分辨率。<br />
-该项目是对STM的DIY制作，该项目通过学生对STM的优化与自定义来提升学生的<strong>创新思维</strong>和<strong>实践能力</strong>。</p>
+    <content><![CDATA[<h2 id="项目简述"><a href="#项目简述" class="headerlink" title="项目简述"></a>项目简述</h2><p><strong>扫描隧道显微镜</strong>（Scanning Tunneling Microscopy）简称STM，是基于量子隧穿效应，利用隧穿电流特性工作的一种能够实现原子级分辨率成像的显微镜。通过将导电探针悬停在通电样品表面几纳米处进行栅格扫描，监测隧穿电流变化情况，扫描隧道显微镜能够实现样品表面形貌成像。由于隧穿电流随距离指数性变化的特征，扫描隧道显微镜能够达到0.1nm的横向分辨率与0.01nm的垂直分辨率。<br>该项目是对STM的DIY制作，该项目通过学生对STM的优化与自定义来提升学生的<strong>创新思维</strong>和<strong>实践能力</strong>。</p>
+<h2 id="项目文件共享链接-OneDrive"><a href="#项目文件共享链接-OneDrive" class="headerlink" title="项目文件共享链接(OneDrive)"></a><a href="https://1drv.ms/f/s!AqnoLbnra8qNhKEGMuarQxg_zwwmSw?e=o0SV5W">项目文件共享链接(OneDrive)</a></h2><p>注：可能需要科学上网工具</p>
 ]]></content>
       <categories>
         <category>扫描隧道显微镜（STM）</category>
@@ -841,6 +856,18 @@ A:PreAmp板厚1.0其余都是嘉立创默认</p>
 <td align="center">中午</td>
 <td align="center">胡逸轩 曾潘杰</td>
 <td align="center">设计社徽</td>
+</tr>
+<tr>
+<td align="center">12.7</td>
+<td align="center">晚自习第二节</td>
+<td align="center">胡逸轩</td>
+<td align="center">设计社徽</td>
+</tr>
+<tr>
+<td align="center">12.7</td>
+<td align="center">晚自习第三节</td>
+<td align="center">胡逸轩 张驰 金宇昊 周光明</td>
+<td align="center">示波器使用 焊接 文档编纂</td>
 </tr>
 </tbody></table>
 ]]></content>
