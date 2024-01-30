@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Qi&#39;s Tea Record</title>
+  <title>Qi&#39;s Tea Rec</title>
   
   <subtitle>How about a cup of Tea?</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-01-30T02:24:39.567Z</updated>
+  <updated>2024-01-30T02:31:48.390Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://example.com/article/f7d18982"/>
     <id>http://example.com/article/f7d18982</id>
     <published>2024-01-30T01:36:37.000Z</published>
-    <updated>2024-01-30T02:24:39.567Z</updated>
+    <updated>2024-01-30T02:31:48.390Z</updated>
     
-    <content type="html"><![CDATA[<p>Hello, welcome to QCL, this is my first article<br>But I don’t know what I’m going to do with this site after that yet(</p>]]></content>
+    <content type="html"><![CDATA[<p>Hello,My Friend<br>Welcome to Qi’s Tea Rec<br>It’s where I record something interesting or meaningful in my life</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Hello, welcome to QCL, this is my first article&lt;br&gt;But I don’t know what I’m going to do with this site after that yet(&lt;/p&gt;
+    <summary type="html">&lt;p&gt;Hello,My Friend&lt;br&gt;Welcome to Qi’s Tea Rec&lt;br&gt;It’s where I record something interesting or meaningful in my life&lt;/p&gt;
 </summary>
       
     
