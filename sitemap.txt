@@ -1,5 +1,6 @@
-http://example.com/tags/
+http://example.com/article/f7d18982
 http://example.com/about/
+http://example.com/tags/
 http://example.com/archives/
 http://example.com/categories/
 http://example.com/link/
