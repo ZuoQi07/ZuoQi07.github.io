@@ -1,3 +1,4 @@
+http://example.com/article/49778680
 http://example.com/article/f7d18982
 http://example.com/about/
 http://example.com/tags/
