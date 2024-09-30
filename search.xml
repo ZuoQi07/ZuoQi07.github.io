@@ -4,6 +4,187 @@
   
     
     <entry>
+      <title>2023.10.1会议</title>
+      <link href="/2024/09/30/2023-10-1%E4%BC%9A%E8%AE%AE/"/>
+      <url>/2024/09/30/2023-10-1%E4%BC%9A%E8%AE%AE/</url>
+      
+        <content type="html"><![CDATA[<h1>大纲</h1><h2 id="会议概要">会议概要</h2><p>时间：2023.10.01 9:30~12:00</p><p>方式：腾讯线上会议（会议号：853 717 163）</p><p>参与人：胡逸轩、解学仁、张驰</p><p>​       马伟霖（Dimsmary）</p><p>内容：关于对Dimsmary的第三代STM复刻的相关问题</p><h2 id="会议内容">会议内容</h2><h3 id="整体问题">整体问题</h3><ol><li>对于复现本实验的难度评估</li><li>对于我们复现费用的评估</li></ol><h3 id="建议性问题">建议性问题</h3><ol><li>对于我们的社团有什么建议（人员技术需求等方面）</li><li>对于控制程序的编写语言有什么学习建议</li><li>对于实践操作所需要工具的建议</li><li>对于元件采购的建议</li></ol><h3 id="细节问题">细节问题</h3><ol><li>关于压电滑台组装和调试时需要注意的细节</li><li>关于样品台的采购渠道</li><li>关于整个显微镜顶盖的材料及加工方式</li><li>关于实验操作环境的要求</li><li>关于压电蜂鸣片的操作细节</li></ol><h1>会议成果</h1><p><img src="https://pic.imgdb.cn/item/66fa089ff21886ccc056517c.webp" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+          <category> 马伟霖第三代STM </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>问题解答</title>
+      <link href="/2024/09/30/%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/"/>
+      <url>/2024/09/30/%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</url>
+      
+        <content type="html"><![CDATA[<p>Q:做这个项目之前的准备（组装用工具）</p><p>A:加热台、电烙铁、风箱</p><p>Q:大体积部件的制作与加工（顶盖、底座）</p><p>A:3D打印</p><p>Q:制作过程中遇到的主要困难</p><p>A:压电滑台成功概率低，需要尽量使磁铁接触面和滑台保持平行</p><p>Q:固定用螺丝用什么型号</p><p>A:六角螺丝全套工具</p><p>Q:压电蜂鸣片的切割方法</p><p>A:有两种，一个是用带钻头的小电磨（速度一般），另一个是用切割刀（速度很慢，但方便操控，成功率高）</p><p>Q:各部分的连接方式及结构</p><p>A:主体-连接板-电路板（SMA转接IPEX）</p><p>Q:控制程序设计</p><p>A:基于Platform IO和Python开发设计</p><p>Q:样品台磁铁的材料是？</p><p>A:钕铁硼</p><p>Q:PCB制版文件导出的DRC问题怎么处理</p><p>A:不用管</p><p>Q:您给的Step模型在CNC加工时需要注意什么</p><p>A: 最小粗糙程度Ra1.6；最严公差GB/T 1804-2000 m级；表面不做处理</p><p>Q:压电滑台中的固定轴和台面是根据模型加工还是？</p><p>A:在淘宝购买，型号是bsp715</p><p>Q:压电陶瓷的型号及购买渠道</p><p>A:在淘宝购买，是Tokin的</p><p>Q:PCB板在加工时注意事项</p><p>A:PreAmp板厚1.0其余都是嘉立创默认</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+          <category> 马伟霖第三代STM </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>项目简述</title>
+      <link href="/2024/09/30/%E9%A1%B9%E7%9B%AE%E7%AE%80%E8%BF%B0/"/>
+      <url>/2024/09/30/%E9%A1%B9%E7%9B%AE%E7%AE%80%E8%BF%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目概要-Summary">项目概要 Summary</h2><p>扫描隧道显微镜（STM）是基于量子隧穿效应，利用隧穿电流特性工作的一种能够实现原子级分辨率成像的显微镜。</p><p>通过将导电探针悬停在通电样品表面几纳米处进行栅格扫描，监测隧穿电流变化情况，扫描隧道显微镜能够实现样品表面形貌成像。由于隧穿电流随距离指数性变化的特征，扫描隧道显微镜能够达到0.1nm的横向分辨率与0.01nm的垂直分辨率。</p><h2 id="项目进度-Progress">项目进度 Progress</h2><p>1.控制电路板已基本焊接完毕</p><p>2.减震系统框架开始搭建</p><p>3.显微镜整体结构材料已购买</p><p>4.理论准备充分</p><p>5.所有材料基本到位</p><h2 id="项目目的-Purpose">项目目的 Purpose</h2><p>该项目是对STM的DIY，同时也是对马伟霖第三代STM的复刻与复现</p><p>旨在提升学生的创新思维和实践能力</p><p>和在实验中发现问题，解决问题的能力</p><h1>鸣谢 Thanks List</h1><p>感谢马伟霖博士的<strong>耐心指导</strong>及<strong>提供的所有文件</strong></p><p>感谢OpenSTM的所有<strong>开源作者</strong></p><p>感谢相关论文的作者给予的<strong>理论支持</strong></p><p>感谢科创社老师<strong>解学仁</strong>以及<strong>学校</strong>的大力支持</p><p>最后感谢你看到这里，你们的支持与参与是我们最大的动力！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>STM成员名单</title>
+      <link href="/2024/09/30/STM%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95/"/>
+      <url>/2024/09/30/STM%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>姓名</th><th>部门</th><th>职位</th></tr></thead><tbody><tr><td>胡逸轩</td><td>控制程序开发</td><td>组长</td></tr><tr><td></td><td>整体结构搭建</td><td>组长</td></tr><tr><td>黄梓澄</td><td>电路板焊接</td><td>成员</td></tr><tr><td>王易宇</td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>账单</title>
+      <link href="/2024/09/30/%E8%B4%A6%E5%8D%95/"/>
+      <url>/2024/09/30/%E8%B4%A6%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>平台</th><th>订单号</th><th>时间</th><th>金额</th><th>支付方</th><th>状态</th><th>备注</th></tr></thead><tbody><tr><td>立创商城</td><td>SO2310153784</td><td>2023.10.15</td><td>¥670.96</td><td>胡逸轩</td><td>已完成</td><td>元件购买、电路板定做</td></tr><tr><td>贸泽Mouser</td><td>30363553</td><td>2023.10.15</td><td>¥590.00</td><td>张驰</td><td>已完成</td><td>元件购买</td></tr><tr><td>立创商城</td><td>SO2312034058</td><td>2023.12.03</td><td>¥63.74</td><td>胡逸轩</td><td>已完成</td><td>元件购买</td></tr><tr><td>立创代购</td><td>SO2312033964</td><td>2023.12.03</td><td>¥27.86</td><td>胡逸轩</td><td>已完成</td><td>元件购买</td></tr><tr><td>立创PCB</td><td>Y9 Y10 Y11 Y12 Y13</td><td>2023.12.09</td><td>¥101.50</td><td>胡逸轩</td><td>已完成</td><td>电路板定做</td></tr><tr><td>淘宝</td><td>3670911435388425374</td><td>2023.12.09</td><td>¥190.00</td><td>胡逸轩</td><td>已完成</td><td>滑台主体</td></tr><tr><td>淘宝</td><td>3670911435389425374</td><td>2023.12.09</td><td>¥19.00</td><td>胡逸轩</td><td>已完成</td><td>堆叠压电陶瓷</td></tr><tr><td>立创CNC</td><td>032312100002284</td><td>2023.12.10</td><td>¥318.49</td><td>张驰</td><td>已完成</td><td>显微镜本体</td></tr><tr><td>立创3D打印</td><td>G23121000093</td><td>2023.12.10</td><td>¥79.03</td><td>张驰</td><td>已完成</td><td>显微镜外壳</td></tr><tr><td>立创商城</td><td>SO2401010606</td><td>2024.01.01</td><td>¥16.16</td><td>胡逸轩</td><td>已完成</td><td>探针针座</td></tr><tr><td>立创商城</td><td>SO2401010632</td><td>2024.01.01</td><td>¥49.53</td><td>胡逸轩</td><td>已完成</td><td>IPEX针座</td></tr><tr><td>立创商城</td><td>SO2401086440</td><td>2024.01.08</td><td>¥30.99</td><td>胡逸轩</td><td>已完成</td><td>关键部件</td></tr><tr><td>立创商城</td><td>SO2401086629</td><td>2024.01.09</td><td>¥25.90</td><td>胡逸轩</td><td>已完成</td><td>元件</td></tr><tr><td>淘宝</td><td>3745894285444321649</td><td>2024.01.21</td><td>¥14.37</td><td>张驰</td><td>已完成</td><td>探针</td></tr><tr><td>立创商城</td><td>SO2401267950</td><td>2024.01.26</td><td>¥24.58</td><td>解学仁</td><td>已完成</td><td>ESP32处理器</td></tr><tr><td>淘宝</td><td>3762133525436425374</td><td>2024.01.30</td><td>¥34.05</td><td>胡逸轩</td><td>已完成</td><td>线缆</td></tr><tr><td>淘宝</td><td>3761790372526425374</td><td>2024.01.30</td><td>¥22.48</td><td>胡逸轩</td><td>已完成</td><td>线缆</td></tr><tr><td>淘宝</td><td>3762362451773425374</td><td>2024.01.30</td><td>¥9.05</td><td>胡逸轩</td><td>已完成</td><td>线缆</td></tr><tr><td>立创商城</td><td>SO2401309577</td><td>2024.01.30</td><td>¥13.16</td><td>胡逸轩</td><td>已完成</td><td>元件</td></tr><tr><td>京东</td><td>286334983996</td><td>2024.01.30</td><td>¥39.40</td><td>张驰</td><td>已完成</td><td>导电银浆</td></tr><tr><td>京东</td><td>286379798963</td><td>2024.01.30</td><td>¥38.70</td><td>张驰</td><td>已完成</td><td>胶水</td></tr><tr><td>京东</td><td>286356229849</td><td>2024.01.30</td><td>¥25.00</td><td>张驰</td><td>已完成</td><td>解胶水</td></tr><tr><td>京东</td><td>289510127138</td><td>2024.01.30</td><td>¥21.99</td><td>张驰</td><td>已完成</td><td>减震垫板</td></tr><tr><td>淘宝</td><td>3745604448933321649</td><td>2024.01.30</td><td>¥12.50</td><td>张驰</td><td>已完成</td><td>方形磁铁</td></tr><tr><td>立创FA</td><td>FASO24013103377</td><td>2024.01.31</td><td>¥30.11</td><td>胡逸轩</td><td>已完成</td><td>电路板固定柱</td></tr><tr><td>立创商城</td><td>SO2402034155</td><td>2024.02.03</td><td>¥178.31</td><td>张驰</td><td>已完成</td><td>替换元件</td></tr><tr><td>淘宝</td><td>2072248788540425374</td><td>2024.03.03</td><td>¥81.00</td><td>胡逸轩</td><td>运输中</td><td>堆叠压电陶瓷</td></tr><tr><td>淘宝</td><td>2072248788541425374</td><td>2024.03.03</td><td>¥15.80</td><td>胡逸轩</td><td>运输中</td><td>替换元件</td></tr><tr><td>淘宝</td><td>2072248788542425374</td><td>2024.03.03</td><td>¥32.00</td><td>胡逸轩</td><td>运输中</td><td>替换元件</td></tr><tr><td>淘宝</td><td>2072248788543425374</td><td>2024.03.03</td><td>¥25.22</td><td>胡逸轩</td><td>已完成</td><td>线缆</td></tr><tr><td>淘宝</td><td>2065431542914425374</td><td>2024.03.03</td><td>¥77.36</td><td>解学仁</td><td>已完成</td><td>桌垫</td></tr><tr><td>淘宝</td><td>2065091919415425374</td><td>2024.03.03</td><td>¥17.80</td><td>解学仁</td><td>已完成</td><td>洗板水</td></tr><tr><td>立创商城</td><td>SO24030212954</td><td>2024.03.05</td><td>¥375.71</td><td>胡逸轩</td><td>已完成</td><td>替换元件</td></tr><tr><td>立创商城</td><td>SO24030212954</td><td>2024.03.05</td><td>¥300.00</td><td>张驰</td><td>已完成</td><td>替换元件</td></tr><tr><td>多渠道</td><td></td><td></td><td>¥100.00</td><td>张驰</td><td>已完成</td><td>减震</td></tr><tr><td>合计</td><td></td><td></td><td>¥3,671.75</td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+          <category> 物料 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>工具清单</title>
+      <link href="/2024/09/30/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/"/>
+      <url>/2024/09/30/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>序号</th><th>名称</th><th>型号</th><th>单价</th><th>数量</th><th>总价</th><th>备注</th></tr></thead><tbody><tr><td>1</td><td>焊台</td><td>风枪电烙铁二合一</td><td>¥253.00</td><td>1</td><td>¥253.00</td><td><a href="https://m.tb.cn/h.5HRlBUbVOrUByxD?tk=g7MwWQLUlyG">链接</a></td></tr><tr><td>2</td><td>示波器</td><td>DS1102Z-E</td><td>¥1,699.00</td><td>2</td><td>¥3,398.00</td><td>学校购买</td></tr><tr><td>3</td><td>万用表</td><td>ZOYI四位半</td><td>¥108.00</td><td>2</td><td>¥216.00</td><td></td></tr><tr><td>4</td><td>加热台</td><td>bakon白光恒温加热台BK946L</td><td>¥339.00</td><td>1</td><td>¥339.00</td><td></td></tr><tr><td>5</td><td>镊子</td><td>bakon白光ESD防静电镊子</td><td>¥5.00</td><td>11</td><td>¥55.00</td><td></td></tr><tr><td>6</td><td>吸锡器</td><td>德力西强力铝合金吸锡器</td><td>¥35.00</td><td>2</td><td>¥70.00</td><td></td></tr><tr><td>7</td><td>螺丝刀套装</td><td>17合一异型螺丝刀套装</td><td>¥23.00</td><td>1</td><td>¥23.00</td><td></td></tr><tr><td>8</td><td>螺丝刀套装</td><td>¥42.00</td><td>1</td><td>¥42.00</td><td></td><td></td></tr><tr><td>9</td><td>胶水</td><td></td><td></td><td>3</td><td>¥38.70</td><td>张驰购买</td></tr><tr><td>10</td><td>解胶水</td><td></td><td>¥25.00</td><td>1</td><td>¥25.00</td><td></td></tr><tr><td>合计</td><td></td><td>¥4,396.00</td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+          <category> 物料 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>物料清单</title>
+      <link href="/2024/09/30/%E7%89%A9%E6%96%99%E6%B8%85%E5%8D%95/"/>
+      <url>/2024/09/30/%E7%89%A9%E6%96%99%E6%B8%85%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>类别</th><th>名称</th><th>数量</th><th>渠道</th><th>型号/尺寸</th></tr></thead><tbody><tr><td>外壳</td><td>顶盖</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368433103-1075f870-154d-4b7c-879a-60055a303db7.zip">Shell_cover.zip</a></td></tr><tr><td></td><td>底座</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368441852-d4b3ced3-4cfd-49eb-805d-26229dcac6a0.zip">Shell.zip</a></td></tr><tr><td>压电滑台</td><td>底座</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368679954-6e26c63b-832e-4b0e-8ac9-9a4baa3f4b4b.zip">PZM_Base_extend.zip</a></td></tr><tr><td></td><td>样品台连接板</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368580511-34a95001-7a1f-41a1-a662-341aa5930ba3.zip">Sample_Table.zip</a></td></tr><tr><td></td><td>磁铁（圆形）</td><td>1</td><td>立创FA</td><td>ACTA-B2-D3-L2</td></tr><tr><td></td><td>堆叠压电陶瓷</td><td>1</td><td>淘宝</td><td>AL165 X1.65 X 5D-4F</td></tr><tr><td></td><td>滑组</td><td>1</td><td>淘宝</td><td>BSP715</td></tr><tr><td></td><td>Sample Connect Board</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368768529-2da27b31-f430-48a0-a83c-cfd2bce0acf7.zip">Gerber_Sample_ConnectBoard_2023-08-25.zip</a></td></tr><tr><td>扫描头</td><td>MMCX连接器</td><td>1</td><td>立创商城</td><td>KH-MMCX-KE-STM</td></tr><tr><td></td><td>压电蜂鸣片</td><td>1</td><td>立创商城/淘宝</td><td>7BB-12-9</td></tr><tr><td></td><td>探针</td><td>1</td><td>淘宝</td><td>d=0.3 l=1cm</td></tr><tr><td></td><td>Scanner Connector</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368367143-c8ea8af8-2081-4d07-aa38-e7ecd2a57a09.zip">Gerber_ScannerConnector_2023-09-04.zip</a></td></tr><tr><td></td><td>Scanner Mount</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368357432-e88e1b67-5b35-4cbf-9c16-24bfb73c21ec.zip">Gerber_ScannerMount_2023-08-25.zip</a></td></tr><tr><td></td><td>扫描头连接板</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368598851-e24b2877-7446-484a-b902-26d49bd358f6.zip">Scanner_Mount.zip</a></td></tr><tr><td></td><td>扫描头盖板</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368614082-6bb2dc7d-1bef-408e-816c-c775468155b8.zip">Scanner_cover.zip</a></td></tr><tr><td></td><td>PreAmp盖板</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368623464-b5c6d120-acbc-4814-858a-05b545959dfd.zip">Preamp_cover.zip</a></td></tr><tr><td></td><td>PreAmp元器件</td><td>1</td><td>/</td><td><a href="https://www.yuque.com/zuoqiqi-yv9p7/oyl7g7/sfxy7ltk3noqinql">详细清单</a></td></tr><tr><td></td><td>PreAmp</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368324705-1673c70f-1811-4cf5-8b31-217cc8eb0e88.zip">Gerber_PreAmp_2023-08-25.zip</a></td></tr><tr><td>样品台</td><td>Sample Table</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368309463-6b0013db-1140-4b92-8cb5-86c03d8c6ce7.zip">Gerber_SampleTable_2023-08-25.zip</a></td></tr><tr><td></td><td>磁铁（方形）</td><td>2</td><td>立创FA</td><td>E-ACTD-W10-H2-T2</td></tr><tr><td>控制电路板</td><td>MCU Board</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368296716-f21832ba-d1f1-4c8a-9c06-0bd69916a255.zip">Gerber_MCUBoard_2023-08-25.zip</a></td></tr><tr><td></td><td>Power Board</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368290705-55f5eb08-a11b-40cc-a576-265297bef583.zip">Gerber_PowerBoard_2023-08-25.zip</a></td></tr><tr><td></td><td>Control Board</td><td>1</td><td>立创PCB</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368260890-ffc20718-8dd9-4e3a-accb-fc4e45d3ca87.zip">Gerber_ControlBoard_2023-09-09.zip</a></td></tr><tr><td></td><td>MCU Board元器件</td><td>1</td><td>/</td><td><a href="https://www.yuque.com/zuoqiqi-yv9p7/oyl7g7/ym4xghs92falrcr3">详细清单</a></td></tr><tr><td></td><td>Power Board元器件</td><td>1</td><td>/</td><td><a href="https://www.yuque.com/zuoqiqi-yv9p7/oyl7g7/ee7hkdi0kethxi0q">详细清单</a></td></tr><tr><td></td><td>Control Board元器件</td><td>1</td><td>/</td><td><a href="https://www.yuque.com/zuoqiqi-yv9p7/oyl7g7/gt9gelezh0xflv0e">详细清单</a></td></tr><tr><td></td><td>IDC排线</td><td>1</td><td>淘宝</td><td>2 x 7Pin,10 cm</td></tr><tr><td></td><td>SMA-SMA线缆*4</td><td>4</td><td>立创FA</td><td>DOSIN-811-0211A(SMA TO SMA）40cm</td></tr><tr><td></td><td>固定用六角螺柱*12</td><td>12</td><td>立创FA</td><td>EJLC-M3-L16</td></tr><tr><td>连接线</td><td>SMA-IPEX线缆*9</td><td>9</td><td>淘宝</td><td>40cm 内螺内针</td></tr><tr><td>FPC线缆</td><td>1</td><td>立创商城</td><td>JS05A-05P030-3-4</td><td></td></tr><tr><td>整体</td><td>底座</td><td>1</td><td>三维猴</td><td><a href="https://www.yuque.com/attachments/yuque/0/2024/zip/40770351/1707368739782-930406fb-35d9-4c5a-95e5-98d95af88e39.zip">Base.zip</a></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+          <category> 物料 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>项目评估</title>
+      <link href="/2024/09/30/%E9%A1%B9%E7%9B%AE%E8%AF%84%E4%BC%B0/"/>
+      <url>/2024/09/30/%E9%A1%B9%E7%9B%AE%E8%AF%84%E4%BC%B0/</url>
+      
+        <content type="html"><![CDATA[<h1>项目进展</h1><h2 id="控制电路部分">控制电路部分</h2><table><thead><tr><th>名称</th><th>状态</th></tr></thead><tbody><tr><td>控制板</td><td>通过检测</td></tr><tr><td>电源板</td><td>通过检测</td></tr><tr><td>单片机</td><td>通过检测</td></tr></tbody></table><h2 id="本体部分">本体部分</h2><h3 id="扫描头">扫描头</h3><table><thead><tr><th>名称</th><th>状态</th><th>预计时间</th></tr></thead><tbody><tr><td>探针</td><td>未完成</td><td>1-2h</td></tr><tr><td>压电蜂鸣片</td><td>未检测</td><td>20min</td></tr><tr><td>针座</td><td>通过检测</td><td></td></tr><tr><td>控制板</td><td>未检测</td><td>20min</td></tr><tr><td>Amp</td><td>未检测</td><td>1h</td></tr></tbody></table><h3 id="滑台">滑台</h3><table><thead><tr><th>名称</th><th>状态</th></tr></thead><tbody><tr><td>滑轨</td><td>通过检测</td></tr><tr><td>台面</td><td>通过检测</td></tr><tr><td>压电陶瓷</td><td>通过检测</td></tr><tr><td>样品台</td><td>通过检测</td></tr><tr><td>底座</td><td>通过检测</td></tr><tr><td>连接</td><td>通过检测</td></tr></tbody></table><h2 id="减震系统部分">减震系统部分</h2><table><thead><tr><th>名称</th><th>状态</th><th>预计时间</th></tr></thead><tbody><tr><td>底板</td><td>通过检测</td><td></td></tr><tr><td>配重</td><td>通过检测</td><td></td></tr><tr><td>平整</td><td>未检测</td><td>1h</td></tr><tr><td>垫片</td><td>未检测</td><td>1-2h</td></tr></tbody></table><h2 id="控制程序部分">控制程序部分</h2><table><thead><tr><th>名称</th><th>状态</th><th>预计时间</th></tr></thead><tbody><tr><td>偏置电压曲线</td><td>未完成</td><td>7-14days</td></tr><tr><td>隧穿电流曲线</td><td>未完成</td><td>14days</td></tr><tr><td>滑台进近</td><td>未检测</td><td>7days</td></tr><tr><td>图像扫描</td><td>未完成</td><td>14days</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>问题</title>
+      <link href="/2024/09/30/%E9%97%AE%E9%A2%98&amp;%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>/2024/09/30/%E9%97%AE%E9%A2%98&amp;%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      
+        <content type="html"><![CDATA[<p><strong>1.滑台Approach不成功</strong></p><p>问题描述：在所有组件就绪后（滑台部分和探头探针及所有电路）在软件UI上进行滑台Approach，滑台后退一段距离后停止，此时Punch Value为24000左右，有蜂鸣器的声音不断（不知道是哪部分发出来的声音）</p><p>过程疑点：所有参数均正确；软件手动控制滑台Forward与Abstract均能正常前进与后退；检查控制程序发现Approach与Forward调用同一函数；</p><p>解决方案：</p><p><strong>2.探针尖端详细要求不清晰</strong></p><p>问题描述：在按照3.0手册方式剪切完探针后无法辨别该针尖是否符合要求</p><p>操作技巧：</p><p><strong>3.PreAmp板需要用螺丝固定吗</strong></p><p>问题描述：发现PreAmp电路板和金属壳体上有对应的螺纹孔，询问是否有必要进行固定</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2023.11.23会议</title>
       <link href="/2024/09/29/2023-11-23%E4%BC%9A%E8%AE%AE/"/>
       <url>/2024/09/29/2023-11-23%E4%BC%9A%E8%AE%AE/</url>
@@ -245,9 +426,9 @@
     
     
     <entry>
-      <title>成员名单</title>
-      <link href="/2024/09/29/%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95/"/>
-      <url>/2024/09/29/%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95/</url>
+      <title>科创社成员名单</title>
+      <link href="/2024/09/29/%E7%A7%91%E5%88%9B%E7%A4%BE%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95/"/>
+      <url>/2024/09/29/%E7%A7%91%E5%88%9B%E7%A4%BE%E6%88%90%E5%91%98%E5%90%8D%E5%8D%95/</url>
       
         <content type="html"><![CDATA[<table><thead><tr><th>班级</th><th>姓名</th><th>联系方式1</th><th style="text-align:center">号码</th><th>联系方式2</th><th>号码</th><th>职位1</th><th>职位2</th><th>小组</th><th>组内职务2</th><th>组内职务1</th></tr></thead><tbody><tr><td>211</td><td>张驰</td><td>微信</td><td style="text-align:center">BlueArchive0117</td><td></td><td></td><td>副社长</td><td></td><td>STM</td><td></td><td>替补</td></tr><tr><td>210</td><td>黄梓澄</td><td>微信</td><td style="text-align:center">hzc873x</td><td>电话</td><td>18057282118</td><td>管理</td><td></td><td>STM</td><td></td><td>硬件</td></tr><tr><td>210</td><td>陈朔晗</td><td>微信</td><td style="text-align:center">csh080703</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>210</td><td>胡逸轩</td><td>微信</td><td style="text-align:center">ZuoQi0711</td><td>电话</td><td>13735110099</td><td>社长</td><td></td><td>STM</td><td>软件</td><td>组长</td></tr><tr><td>210</td><td>刘然</td><td>微信</td><td style="text-align:center">LR3356272152</td><td></td><td></td><td>管理</td><td></td><td></td><td></td><td></td></tr><tr><td>207</td><td>康裴俊</td><td>微信</td><td style="text-align:center">18072627339</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>205</td><td>汪树一</td><td>QQ</td><td style="text-align:center">2131415975</td><td></td><td></td><td>摄影</td><td>外交</td><td></td><td></td><td></td></tr><tr><td>204</td><td>金星宇</td><td>微信</td><td style="text-align:center">15824141742</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>202</td><td>吴忧</td><td>微信</td><td style="text-align:center">wy3426084309</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>202</td><td>刘晓华</td><td>家长电话</td><td style="text-align:center">18653804750</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>202</td><td>张万年</td><td>微信</td><td style="text-align:center">13157201598</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>202</td><td>潘笑笑</td><td>微信</td><td style="text-align:center">panxiaoxiao45</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>202</td><td>崔子卉</td><td>QQ</td><td style="text-align:center">3635785398</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>202</td><td>童艺初</td><td>微信</td><td style="text-align:center">18267102612</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>108</td><td>王易宇</td><td>电话</td><td style="text-align:center">15957239004</td><td>QQ</td><td>625510458</td><td></td><td></td><td>STM</td><td></td><td>助手</td></tr><tr><td>108</td><td>张家瑞</td><td>电话</td><td style="text-align:center">18967270098</td><td>微信</td><td>18967270098</td><td></td><td></td><td>VFD2号</td><td></td><td>组长</td></tr><tr><td>108</td><td>陈鑫磊</td><td>电话</td><td style="text-align:center">17857608891</td><td></td><td></td><td>管理</td><td></td><td>VFD2号</td><td></td><td>助手</td></tr><tr><td>105</td><td>陶可扬</td><td>电话</td><td style="text-align:center">17357262161</td><td></td><td></td><td>外交</td><td></td><td>VFD2号</td><td></td><td>助手</td></tr><tr><td>104</td><td>金泰宇</td><td>家长电话</td><td style="text-align:center">13819276518</td><td></td><td></td><td></td><td></td><td>VFD1号</td><td></td><td>助手</td></tr><tr><td>103</td><td>郑心悦</td><td>电话</td><td style="text-align:center">19703288011</td><td>QQ</td><td>2523461469</td><td>宣传</td><td></td><td>VFD1号</td><td></td><td>硬件</td></tr><tr><td>103</td><td>陶可抑</td><td>电话</td><td style="text-align:center">15757298035</td><td></td><td></td><td>宣传</td><td></td><td>VFD1号</td><td></td><td>替补</td></tr><tr><td>103</td><td>沈朱泽俊</td><td>电话</td><td style="text-align:center">13515826586</td><td></td><td></td><td>管理</td><td></td><td>VFD2号</td><td>软件</td><td>硬件</td></tr><tr><td>103</td><td>张亦天</td><td>电话</td><td style="text-align:center">13738216815</td><td>QQ</td><td>13738216815</td><td></td><td></td><td>VFD1号</td><td></td><td>软件</td></tr><tr><td>102</td><td>金中玉</td><td>电话</td><td style="text-align:center">13515829112</td><td>家长电话</td><td>13216519118</td><td></td><td></td><td>VFD1号</td><td>软件</td><td>组长</td></tr><tr><td>101</td><td>王宇</td><td>电话</td><td style="text-align:center">15158801556</td><td>QQ</td><td>2973771574</td><td></td><td></td><td>VFD1号</td><td></td><td>助手</td></tr></tbody></table>]]></content>
       
