@@ -343,7 +343,7 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'http://dg-kc.click',
+      envId: 'http://www.dg-kc.click',
       region: 'ap-zhejiang',
       urls: [window.location.pathname],
       includeReply: false
@@ -357,7 +357,7 @@
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'http://dg-kc.click',
+      envId: 'http://www.dg-kc.click',
       region: 'ap-zhejiang',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
