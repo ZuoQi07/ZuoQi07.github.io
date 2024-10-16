@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>对安知鱼主题目录颜色的设置</title>
+      <title>关于”PL2303HXA自2012已停产,请联系供货商”</title>
+      <link href="/2024/10/15/%E5%85%B3%E4%BA%8E%E2%80%9DPL2303HXA%E8%87%AA2012%E5%B7%B2%E5%81%9C%E4%BA%A7-%E8%AF%B7%E8%81%94%E7%B3%BB%E4%BE%9B%E8%B4%A7%E5%95%86%E2%80%9D/"/>
+      <url>/2024/10/15/%E5%85%B3%E4%BA%8E%E2%80%9DPL2303HXA%E8%87%AA2012%E5%B7%B2%E5%81%9C%E4%BA%A7-%E8%AF%B7%E8%81%94%E7%B3%BB%E4%BE%9B%E8%B4%A7%E5%95%86%E2%80%9D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题">问题</h2><p>在设备管理器中提示“PL2303HXA自2012已停产,请联系供货商”</p><h2 id="解决方法">解决方法</h2><p>首先我们需要下载<a href="https://tmp.link/f/670e6da533f74">PL2303驱动</a></p><p>安装好PL2303驱动之后，首先我们鼠标右键“此电脑”，选择管理，进入设备管理器，展开端口(COM和LPT)选项，鼠标右键点击“PL2303HXA自2012已停产,请联系供货商”的设备，选择“更新驱动程序”</p><p>这时候会提示“你要如何搜索驱动程序?”，我们点击“浏览我的计算机以查找驱动程序软件”</p><p>点击选择“让我从计算机上的可用驱动程序列表中选取”</p><p>我们选择比较老的驱动版本，如下Prolific USB-to-Serial Comm Port版本：3.3.2.105，并且下一步进入安装</p><p>等待安装完成</p><p>之后再打开设备管理器会发现名称显示恢复正常，问题解决</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 硬件开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对安知鱼主题目录颜色的设置问题</title>
       <link href="/2024/10/15/%E5%AF%B9%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE%E7%9A%84%E8%A1%A5%E5%85%85/"/>
       <url>/2024/10/15/%E5%AF%B9%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE%E7%9A%84%E8%A1%A5%E5%85%85/</url>
       
         <content type="html"><![CDATA[<h2 id="适用性">适用性</h2><p><strong>AnZhiYu主题1.6.14</strong></p><h2 id="问题">问题</h2><p>在修改主题配置文件中</p><p>theme_color.toc_color</p><p>发现在深色模式下更改<strong>未生效</strong></p><h2 id="解决办法">解决办法</h2><p>修改<u>[BlogRoot]\themes\anzhiyu\source\css_layout\sidebar.styl</u></p><p>将<strong>所有</strong></p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="built_in">var</span>(--anzhiyu-lighttext);</span><br></pre></td></tr></table></figure><p>更改为</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br></pre></td></tr></table></figure><blockquote><p>**注：**其中&quot;#ffffff&quot;为你想更改的十六进制颜色（不可省略）</p></blockquote><p>最后执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>打开<a href="http://localhost:4000/">http://localhost:4000/</a> 即可看到效果</p>]]></content>
       
       
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题 </tag>
+            
+        </tags>
       
     </entry>
     
