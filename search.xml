@@ -4,6 +4,95 @@
   
     
     <entry>
+      <title>Hexo美化日志</title>
+      <link href="/2024/10/17/Hexo%E7%BE%8E%E5%8C%96%E6%97%A5%E5%BF%97/"/>
+      <url>/2024/10/17/Hexo%E7%BE%8E%E5%8C%96%E6%97%A5%E5%BF%97/</url>
+      
+        <content type="html"><![CDATA[<h1>描述</h1><p>本文为该博客的美化日志</p><h1>2024/10/17</h1><ol><li>添加加载动画</li><li>设置主页分类大块栏目</li><li>添加文章摘要GPT</li><li>修改主页右侧轮播图</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+          <category> 前端开发 </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一些关于hexo的快速指令</title>
+      <link href="/2024/10/17/%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8Ehexo%E7%9A%84%E5%BF%AB%E9%80%9F%E6%8C%87%E4%BB%A4/"/>
+      <url>/2024/10/17/%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8Ehexo%E7%9A%84%E5%BF%AB%E9%80%9F%E6%8C%87%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="适用性">适用性</h2><p>Windows系统</p><h2 id="前言">前言</h2><p>本文是关于Hexo博客维护的一些技巧，可以节省一定时间</p><blockquote><p>注：本文中出现的[BlogRoot]均指你的博客根目录</p></blockquote><h2 id="目的">目的</h2><p>通过bat批处理文件实现博客后台快速：</p><ol><li><a href="#%E6%B8%85%E9%99%A4%E7%BC%93%E5%AD%98">清除缓存</a></li><li><a href="#%E6%9C%AC%E5%9C%B0%E6%B5%8B%E8%AF%95">本地测试</a></li><li><a href="#%E4%B8%8A%E4%BC%A0%E7%BD%91%E7%AB%99">上传网站</a></li><li><a href="#%E6%89%93%E5%BC%80%E7%BD%91%E7%AB%99">打开网站</a></li><li><a href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0">新建文章</a></li><li><a href="#%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2">新建页面</a></li></ol><h2 id="实现">实现</h2><h3 id="写在前面">写在前面</h3><p>新建所有的bat文件均为<strong>ANSI编码</strong>，否则会出现<strong>中文乱码</strong>现象</p><p>所有文件双击运行即可</p><h3 id="清除缓存">清除缓存</h3><p>新建[BlogRoot]\清除缓存.bat</p><p>内容为：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span>.exe /k &quot;@<span class="built_in">echo</span> off &amp;&amp; hexo cl &amp;&amp; <span class="built_in">echo</span>. &amp;&amp; <span class="built_in">echo</span> 已清理缓存 &amp;&amp; <span class="built_in">pause</span> &amp;&amp; <span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="本地测试">本地测试</h3><p>新建[BlogRoot]\本地测试.bat</p><p>内容为：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span>.exe /k &quot;@<span class="built_in">echo</span> off &amp;&amp; hexo cl &amp;&amp; <span class="built_in">echo</span>. &amp;&amp; <span class="built_in">echo</span> 已清理缓存 &amp;&amp; hexo s &amp;&amp; <span class="built_in">pause</span> &amp;&amp; <span class="keyword">exit</span>&quot;</span><br><span class="line"><span class="built_in">start</span> http://localhost:<span class="number">4000</span>/</span><br></pre></td></tr></table></figure><h3 id="上传网站">上传网站</h3><p>新建[BlogRoot]\上传网站.bat</p><p>内容为：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span>.exe /k &quot;@<span class="built_in">echo</span> off &amp;&amp; hexo cl &amp;&amp; <span class="built_in">echo</span>. &amp;&amp; <span class="built_in">echo</span> 已清理缓存 &amp;&amp; hexo d &amp;&amp; <span class="built_in">echo</span>. &amp;&amp; <span class="built_in">echo</span> 指令已完成 如出错请检查配置 &amp;&amp; <span class="built_in">pause</span> &amp;&amp; <span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="打开网站">打开网站</h3><p>新建[BlogRoot]\打开网站.bat</p><p>内容为：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">start</span> https://example.com/</span><br></pre></td></tr></table></figure><blockquote><p>注：其中**“<a href="http://example.com">example.com</a>”**更换为你自己的域名</p></blockquote><h3 id="新建文章">新建文章</h3><p>新建[BlogRoot]\新建文章.bat</p><p>内容为：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cls</span></span><br><span class="line"><span class="built_in">set</span> /p t1=&quot;请输入文章文件名：&quot; </span><br><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span>.exe /k &quot;hexo n <span class="variable">%t1%</span> &amp;&amp; <span class="built_in">echo</span>. &amp;&amp; <span class="built_in">echo</span> 已在 source/_posts 目录下生成文件：<span class="variable">%t1%</span>.<span class="built_in">md</span> 与 资源文件夹： <span class="variable">%t1%</span> &amp;&amp; <span class="built_in">pause</span> &amp;&amp; <span class="keyword">exit</span>&quot;</span><br></pre></td></tr></table></figure><h3 id="新建页面">新建页面</h3><p>新建[BlogRoot]\新建页面.bat</p><p>内容为：</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cls</span></span><br><span class="line"><span class="built_in">set</span> /p t2=&quot;请输入独立页面文件名：&quot;</span><br><span class="line"><span class="built_in">start</span> <span class="built_in">cmd</span>.exe /k &quot;hexo n page <span class="variable">%t2%</span> &amp;&amp; <span class="built_in">echo</span>. &amp;&amp; <span class="built_in">echo</span> 已在 source 目录下生成一个文件夹： <span class="variable">%t2%</span> 并在文件夹内创建了文件： index.<span class="built_in">md</span> &amp;&amp; <span class="built_in">pause</span> &amp;&amp; <span class="keyword">exit</span>&quot;</span><br></pre></td></tr></table></figure><h3 id="快捷下载">快捷下载</h3><p><a href="https://tmp.link/f/6710ed326c947">文件下载链接</a></p><blockquote><p>注：其中“打开网页”文件中的**“dg-kc.top”**更换为你自己的域名</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+          <category> 前端开发 </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于部署hexo至热铁盒网页托管</title>
+      <link href="/2024/10/17/%E5%85%B3%E4%BA%8E%E9%83%A8%E7%BD%B2hexo%E8%87%B3%E7%83%AD%E9%93%81%E7%9B%92%E7%BD%91%E9%A1%B5%E6%89%98%E7%AE%A1/"/>
+      <url>/2024/10/17/%E5%85%B3%E4%BA%8E%E9%83%A8%E7%BD%B2hexo%E8%87%B3%E7%83%AD%E9%93%81%E7%9B%92%E7%BD%91%E9%A1%B5%E6%89%98%E7%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<h1>前言</h1><p>本文是关于Hexo博客部署至热铁盒网页托管过程中发现的一些问题</p><p>本文所有内容仅为<strong>个人观点</strong>，若有不当欢迎在评论区指出，感谢您的反馈！</p><p>我个人认为该方法<strong>并不合适</strong>Hexo博客的部署</p><h1>热铁盒网页托管</h1><h2 id="简介">简介</h2><p>由热铁盒开发</p><p>提供在线网站前端代码编辑以及文件资源加速，会员仅为<strong>15元/月</strong>并且在会员期间续费价格为<strong>12元/月</strong></p><p>目前可通过四种方式（GitHub/GitLab/Gitee/本地）进行自动部署</p><h2 id="优点">优点</h2><ol><li>容易上手，没有服务器的繁琐配置</li><li>在线编辑，界面简洁</li><li>有API接口</li><li>免费域名且免费国内加速免备案</li><li>能设置网站密码</li></ol><h2 id="缺点">缺点</h2><ol><li>对于较大文件不能编辑，只能删除后再次上传</li><li>不能上传覆盖文件</li><li>对于大文件不能执行自动部署（放弃原因之一）</li></ol><h2 id="适用场景">适用场景</h2><ol><li>单页面或结构简单的网页制作</li><li>轻量级日志</li></ol><h1>放弃原因</h1><ol><li>通过GitHub/GitLab/Gitee自动部署会涉及到Action的使用，官方已明确该功能<strong>不能滥用</strong></li><li>热铁盒网页托管对于大文件不能执行自动部署（致命弱点）</li><li>本地部署依赖冲突难以解决（个人原因）</li><li>平台客服回复迟缓</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+          <category> 前端开发 </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题 </tag>
+            
+            <tag> 热铁盒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于”PL2303HXA自2012已停产,请联系供货商”</title>
       <link href="/2024/10/15/%E5%85%B3%E4%BA%8E%E2%80%9DPL2303HXA%E8%87%AA2012%E5%B7%B2%E5%81%9C%E4%BA%A7-%E8%AF%B7%E8%81%94%E7%B3%BB%E4%BE%9B%E8%B4%A7%E5%95%86%E2%80%9D/"/>
       <url>/2024/10/15/%E5%85%B3%E4%BA%8E%E2%80%9DPL2303HXA%E8%87%AA2012%E5%B7%B2%E5%81%9C%E4%BA%A7-%E8%AF%B7%E8%81%94%E7%B3%BB%E4%BE%9B%E8%B4%A7%E5%95%86%E2%80%9D/</url>
@@ -13,6 +102,8 @@
       
       <categories>
           
+          <category> 计算机 </category>
+          
           <category> 硬件开发 </category>
           
       </categories>
@@ -21,6 +112,8 @@
         <tags>
             
             <tag> 问题 </tag>
+            
+            <tag> 串口通信 </tag>
             
         </tags>
       
@@ -33,12 +126,16 @@
       <link href="/2024/10/15/%E5%AF%B9%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE%E7%9A%84%E8%A1%A5%E5%85%85/"/>
       <url>/2024/10/15/%E5%AF%B9%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE%E7%9A%84%E8%A1%A5%E5%85%85/</url>
       
-        <content type="html"><![CDATA[<h2 id="适用性">适用性</h2><p><strong>AnZhiYu主题1.6.14</strong></p><h2 id="问题">问题</h2><p>在修改主题配置文件中</p><p>theme_color.toc_color</p><p>发现在深色模式下更改<strong>未生效</strong></p><h2 id="解决办法">解决办法</h2><p>修改<u>[BlogRoot]\themes\anzhiyu\source\css_layout\sidebar.styl</u></p><p>将<strong>所有</strong></p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="built_in">var</span>(--anzhiyu-lighttext);</span><br></pre></td></tr></table></figure><p>更改为</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br></pre></td></tr></table></figure><blockquote><p>**注：**其中&quot;#ffffff&quot;为你想更改的十六进制颜色（不可省略）</p></blockquote><p>最后执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>打开<a href="http://localhost:4000/">http://localhost:4000/</a> 即可看到效果</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="适用性">适用性</h2><p><strong>AnZhiYu主题1.6.14</strong></p><h2 id="问题">问题</h2><p>在修改主题配置文件中</p><p>theme_color.toc_color</p><p>发现在深色模式下更改<strong>未生效</strong></p><h2 id="解决办法">解决办法</h2><p>修改[BlogRoot]\themes\anzhiyu\source\css_layout\sidebar.styl</p><p>将<strong>所有</strong></p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="built_in">var</span>(--anzhiyu-lighttext);</span><br></pre></td></tr></table></figure><p>更改为</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="number">#ffffff</span>;</span><br></pre></td></tr></table></figure><blockquote><p>**注：**其中&quot;#ffffff&quot;为你想更改的十六进制颜色（不可省略）</p></blockquote><p>最后执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>打开<a href="http://localhost:4000/">http://localhost:4000/</a> 即可看到效果</p>]]></content>
       
       
       <categories>
           
+          <category> 计算机 </category>
+          
           <category> 前端开发 </category>
+          
+          <category> Hexo </category>
           
       </categories>
       
@@ -46,6 +143,8 @@
         <tags>
             
             <tag> 问题 </tag>
+            
+            <tag> 安知鱼主题 </tag>
             
         </tags>
       
